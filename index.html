@@ -780,6 +780,220 @@
 </section>
 <!-- ===== End Trust / Stats / Recognition Section ===== -->
 
+  <!-- ========================================================= -->
+<!-- GULL EMPIRE — ENTERPRISE CAPABILITY MATRIX SECTION         -->
+<!-- Tech Stack: HTML5, Tailwind CSS 3, Modern Interactivity  -->
+<!-- ========================================================= -->
+
+<section class="w-full max-w-7xl mx-auto bg-[#040208] border border-[#1f1636] rounded-3xl p-6 sm:p-12 relative z-10 shadow-2xl overflow-hidden font-sans text-white">
+    
+    <!-- Ambient Background Glows -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/20 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <!-- SECTION HEADER -->
+    <header class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-10 border-b border-[#1f1636]">
+        <div class="lg:col-span-8 space-y-4">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-[11px] font-mono font-bold tracking-widest text-amber-400 uppercase">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                INTERNAL SERVICE DEEP DIVE
+            </div>
+            
+            <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                What teams <span class="bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent">hire us for.</span>
+            </h2>
+        </div>
+
+        <div class="lg:col-span-4 lg:text-right space-y-4">
+            <p class="text-xs sm:text-sm text-slate-400 font-mono leading-relaxed">
+                One senior operator or a full growth squad — dedicated bench, your time zone, billable monthly.
+            </p>
+            <button onclick="alert('Booking Session Started')" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-xs uppercase tracking-widest px-7 py-3.5 rounded-xl shadow-lg shadow-purple-900/40 hover:scale-105 transition-all">
+                Schedule A Call
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- SERVICES MATRIX CARDS -->
+    <div class="mt-8 space-y-5" id="servicesContainer">
+
+        <!-- CARD 01 -->
+        <article class="service-card active group bg-[#0a0512] border border-purple-500/50 rounded-2xl p-6 sm:p-8 cursor-pointer relative transition-all duration-300 shadow-[0_0_40px_-10px_rgba(139,63,224,0.35)]" data-card="1">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                <div class="flex items-start gap-6 sm:gap-8">
+                    <span class="card-num text-3xl sm:text-4xl font-mono font-bold text-amber-400 transition-colors">01</span>
+                    <div class="space-y-3">
+                        <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                            AI & ML Development
+                        </h3>
+                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
+                            <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">LLM Apps</span>
+                            <span class="text-neutral-600">•</span>
+                            <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">RAG Pipelines</span>
+                            <span class="text-neutral-600">•</span>
+                            <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">Voice & Chatbots</span>
+                            <span class="text-neutral-600">•</span>
+                            <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">Autonomous Agents</span>
+                        </div>
+                        <p class="text-sm text-neutral-400 max-w-2xl leading-relaxed">
+                            Built for production traffic and handed over with complete runbooks to operate seamlessly.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-amber-400 group-hover:text-white transition-colors self-end lg:self-center">
+                    AI Capabilities <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </div>
+
+            <!-- Expandable Drawer -->
+            <div class="drawer-content mt-6 pt-6 border-t border-[#1f1636] grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono">
+                <div class="bg-black/50 p-3 rounded-lg border border-purple-900/40">
+                    <span class="text-neutral-500 block">DELIVERY SPEED</span>
+                    <span class="text-amber-400 font-bold">Production Ready in 14 Days</span>
+                </div>
+                <div class="bg-black/50 p-3 rounded-lg border border-purple-900/40">
+                    <span class="text-neutral-500 block">STACK</span>
+                    <span class="text-purple-300 font-bold">Python, LangChain, OpenAI API</span>
+                </div>
+                <div class="bg-black/50 p-3 rounded-lg border border-purple-900/40">
+                    <span class="text-neutral-500 block">SLA</span>
+                    <span class="text-white font-bold">99.9% Uptime Guarantee</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- CARD 02 -->
+        <article class="service-card group bg-[#0a0512]/40 border border-[#1f1636] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 cursor-pointer relative transition-all duration-300" data-card="2">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                <div class="flex items-start gap-6 sm:gap-8">
+                    <span class="card-num text-3xl sm:text-4xl font-mono font-bold text-slate-600 transition-colors">02</span>
+                    <div class="space-y-3">
+                        <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                            Custom Software & Marketplace Architecture
+                        </h3>
+                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
+                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Web Portals</span>
+                            <span class="text-neutral-600">•</span>
+                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Amazon Seller Engines</span>
+                            <span class="text-neutral-600">•</span>
+                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Cloud & DevOps</span>
+                        </div>
+                        <p class="text-sm text-neutral-400 max-w-2xl leading-relaxed">
+                            Senior-only teams operating in your time zone, billable monthly with complete scale flexibility.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-slate-400 group-hover:text-white transition-colors self-end lg:self-center">
+                    All Services <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </div>
+
+            <!-- Expandable Drawer -->
+            <div class="drawer-content mt-6 pt-6 border-t border-[#1f1636] grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono hidden">
+                <div class="bg-black/50 p-3 rounded-lg border border-purple-900/40">
+                    <span class="text-neutral-500 block">MANAGEMENT</span>
+                    <span class="text-amber-400 font-bold">Dedicated Growth Lead</span>
+                </div>
+                <div class="bg-black/50 p-3 rounded-lg border border-purple-900/40">
+                    <span class="text-neutral-500 block">FRAMEWORK</span>
+                    <span class="text-purple-300 font-bold">Next.js, Tailwind, Node.js</span>
+                </div>
+                <div class="bg-black/50 p-3 rounded-lg border border-purple-900/40">
+                    <span class="text-neutral-500 block">CONTRACT</span>
+                    <span class="text-white font-bold">Cancel Any Time</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- CARD 03 -->
+        <article class="service-card group bg-[#0a0512]/40 border border-[#1f1636] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 cursor-pointer relative transition-all duration-300" data-card="3">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                <div class="flex items-start gap-6 sm:gap-8">
+                    <span class="card-num text-3xl sm:text-4xl font-mono font-bold text-slate-600 transition-colors">03</span>
+                    <div class="space-y-3">
+                        <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                            Industry Expertise & Outbound Acquisition
+                        </h3>
+                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
+                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">E-Commerce & DTC</span>
+                            <span class="text-neutral-600">•</span>
+                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Fintech</span>
+                            <span class="text-neutral-600">•</span>
+                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">B2B Lead Gen</span>
+                        </div>
+                        <p class="text-sm text-neutral-400 max-w-2xl leading-relaxed">
+                            Vertical-specific market access where operational nuances and compliance parameters are mastered.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-slate-400 group-hover:text-white transition-colors self-end lg:self-center">
+                    Industries Served <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+            </div>
+
+            <!-- Expandable Drawer -->
+            <div class="drawer-content mt-6 pt-6 border-t border-[#1f1636] grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono hidden">
+                <div class="bg-black/50 p-3 rounded-lg border border-purple-900/40">
+                    <span class="text-neutral-500 block">REACH</span>
+                    <span class="text-amber-400 font-bold">US, UK & Global Markets</span>
+                </div>
+                <div class="bg-black/50 p-3 rounded-lg border border-purple-900/40">
+                    <span class="text-neutral-500 block">OUTREACH</span>
+                    <span class="text-purple-300 font-bold">Verified B2B Prospecting</span>
+                </div>
+                <div class="bg-black/50 p-3 rounded-lg border border-purple-900/40">
+                    <span class="text-neutral-500 block">COMPLIANCE</span>
+                    <span class="text-white font-bold">GDPR & Amazon TOS Compliant</span>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- INTERACTIVE SCRIPT -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.service-card');
+
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Deactivate all cards
+                cards.forEach(c => {
+                    c.classList.remove('active', 'border-purple-500/50', 'bg-[#0a0512]');
+                    c.classList.add('bg-[#0a0512]/40', 'border-[#1f1636]');
+                    c.style.boxShadow = 'none';
+
+                    const num = c.querySelector('.card-num');
+                    if (num) {
+                        num.classList.remove('text-amber-400');
+                        num.classList.add('text-slate-600');
+                    }
+
+                    const drawer = c.querySelector('.drawer-content');
+                    if (drawer) drawer.classList.add('hidden');
+                });
+
+                // Activate clicked card
+                card.classList.add('active', 'border-purple-500/50', 'bg-[#0a0512]');
+                card.classList.remove('bg-[#0a0512]/40', 'border-[#1f1636]');
+                card.style.boxShadow = '0 0 40px -10px rgba(139, 63, 224, 0.35)';
+
+                const num = card.querySelector('.card-num');
+                if (num) {
+                    num.classList.add('text-amber-400');
+                    num.classList.remove('text-slate-600');
+                }
+
+                const drawer = card.querySelector('.drawer-content');
+                if (drawer) drawer.classList.remove('hidden');
+            });
+        });
+    });
+</script>
+  
 <!-- Start: Enterprise Dark Luxury Footer -->
 <footer class="w-full footer-glow text-slate-400 border-t border-borderViolet pt-12 md:pt-16 pb-8 relative overflow-hidden">
 
