@@ -956,12 +956,11 @@
     });
 </script>
 
-  <!-- ========================================================= -->
-<!-- GULL EMPIRE — THE WORK / CASE STUDY (2019 ARCHIVE + REAL IMAGES) -->
-<!-- Tech Stack: HTML5, Tailwind CSS 3, Vanilla JS Dynamic Frame -->
+<!-- ========================================================= -->
+<!-- GULL EMPIRE — THE WORK SECTION (SPACING & ALIGNMENT FIXED) -->
 <!-- ========================================================= -->
 
-<section class="w-full max-w-7xl mx-auto bg-[#040208] border border-[#1f1636] rounded-3xl p-6 sm:p-12 relative z-10 shadow-2xl overflow-hidden font-sans text-white">
+<section class="w-full max-w-7xl mx-auto bg-[#040208] border border-[#1f1636] rounded-3xl p-6 sm:p-12 my-16 sm:my-24 relative z-10 shadow-2xl overflow-hidden font-sans text-white">
     
     <!-- Ambient Background Glows -->
     <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/20 rounded-full blur-[140px] pointer-events-none"></div>
@@ -982,7 +981,6 @@
         </div>
 
         <div class="lg:col-span-4 lg:text-right space-y-4">
-            <!-- Updated Archive Date Range (2019 -> 2026) -->
             <p class="text-xs font-mono text-slate-400 tracking-wider uppercase">
                 ARCHIVE · 2019 → 2026
             </p>
@@ -994,37 +992,32 @@
     </header>
 
     <!-- MAIN CASE DISPLAY BLOCK -->
-    <div class="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+    <div class="mt-12 mb-4 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 
-        <!-- LEFT COLUMN: 3D INTERACTIVE IPHONE 17 WITH REAL IMAGES -->
-        <div id="phoneInteractiveCanvas" class="lg:col-span-7 relative bg-gradient-to-br from-[#0e071c] to-[#05020a] border border-[#261b42] rounded-2xl p-6 sm:p-10 overflow-hidden flex items-center justify-center min-h-[520px] cursor-pointer group">
+        <!-- LEFT COLUMN: 3D INTERACTIVE IPHONE FRAME -->
+        <div id="phoneInteractiveCanvas" class="lg:col-span-7 relative bg-gradient-to-br from-[#0e071c] to-[#05020a] border border-[#261b42] rounded-2xl p-6 sm:p-10 overflow-hidden flex items-center justify-center min-h-[500px] cursor-pointer group">
             
-            <!-- Featured Badge -->
             <div class="absolute top-6 left-6 z-30 inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-950/80 border border-purple-500/40 text-[10px] font-mono font-bold tracking-widest text-purple-300 uppercase shadow-lg backdrop-blur-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
                 FEATURED · 01
             </div>
 
-            <!-- Glow Effect -->
             <div class="absolute inset-0 bg-radial from-purple-600/15 via-transparent to-transparent pointer-events-none"></div>
 
-            <!-- PHONES CONTAINER -->
-            <div id="phoneWrapper" class="relative w-full max-w-md h-[420px] flex items-center justify-center pt-6 transition-transform duration-200 ease-out">
+            <div id="phoneWrapper" class="relative w-full max-w-md h-[400px] flex items-center justify-center pt-6 transition-transform duration-200 ease-out">
                 
-                <!-- BACKGROUND LEFT PHONE (Real UI Image Placeholders) -->
+                <!-- BACKGROUND LEFT PHONE -->
                 <div class="absolute -left-6 sm:left-0 top-12 w-48 h-[330px] bg-black border-[3px] border-slate-700/60 rounded-[34px] opacity-35 scale-90 -rotate-12 shadow-2xl overflow-hidden hidden sm:block">
                     <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" 
-                         alt="App UI Left" 
-                         class="w-full h-full object-cover filter brightness-75 contrast-125" />
+                         alt="App UI Left" class="w-full h-full object-cover filter brightness-75 contrast-125" />
                 </div>
 
-                <!-- MAIN CENTER PHONE: IPHONE 17 PRO MAX FRAME WITH REAL IMAGE -->
+                <!-- MAIN CENTER PHONE -->
                 <div class="relative z-20 w-60 sm:w-68 h-[385px] bg-black border-[4px] border-[#383144] rounded-[44px] shadow-[0_25px_60px_rgba(0,0,0,0.95)] overflow-hidden ring-1 ring-purple-500/40 transition-all duration-300">
                     
-                    <!-- Titanium Edge Glow -->
                     <div class="absolute inset-0 rounded-[40px] border border-white/10 pointer-events-none z-40"></div>
 
-                    <!-- Dynamic Island Notch -->
+                    <!-- Dynamic Island -->
                     <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-4.5 bg-black rounded-full z-50 flex items-center justify-between px-2.5 border border-white/10 shadow-inner">
                         <div class="w-2.5 h-2.5 rounded-full bg-[#110c1d] flex items-center justify-center">
                             <div class="w-1 h-1 rounded-full bg-purple-900"></div>
@@ -1032,18 +1025,12 @@
                         <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
                     </div>
 
-                    <!-- SCREEN REAL IMAGE CONTAINER -->
+                    <!-- App Image -->
                     <div class="w-full h-full relative overflow-hidden group">
-                        <!-- Replace this src URL with your own screenshots later -->
-                        <img id="mainAppImage" 
-                             src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=800&auto=format&fit=crop" 
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=800&auto=format&fit=crop" 
                              alt="Apex NeoBank UI Screen" 
                              class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
-                        
-                        <!-- Subtle UI Overlay Shadow for Realistic Screen Depth -->
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none"></div>
-                        
-                        <!-- Floating Live UI Pill Badge -->
                         <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/80 border border-purple-500/40 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-mono text-amber-400 font-bold tracking-wider z-30 shadow-lg">
                             APEX V2.4 LIVE
                         </div>
@@ -1053,14 +1040,13 @@
                 <!-- BACKGROUND RIGHT PHONE -->
                 <div class="absolute -right-6 sm:right-0 top-12 w-48 h-[330px] bg-black border-[3px] border-slate-700/60 rounded-[34px] opacity-35 scale-90 rotate-12 shadow-2xl overflow-hidden hidden sm:block">
                     <img src="https://images.unsplash.com/photo-1616469829941-c7200edec809?q=80&w=800&auto=format&fit=crop" 
-                         alt="App UI Right" 
-                         class="w-full h-full object-cover filter brightness-75 contrast-125" />
+                         alt="App UI Right" class="w-full h-full object-cover filter brightness-75 contrast-125" />
                 </div>
 
             </div>
         </div>
 
-        <!-- RIGHT COLUMN: UPDATED BANK & CASE DETAILS -->
+        <!-- RIGHT COLUMN: CASE DETAILS -->
         <div class="lg:col-span-5 space-y-6 text-left">
             <div class="flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-purple-400 uppercase">
                 <span>FINTECH</span>
@@ -1068,12 +1054,10 @@
                 <span>ENTERPRISE NEOBANKING</span>
             </div>
 
-            <!-- New Bank Name -->
             <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
                 Apex NeoBank
             </h3>
 
-            <!-- Updated Description -->
             <p class="text-sm sm:text-base text-slate-400 leading-relaxed font-sans">
                 Next-generation digital banking platform engineered from scratch. Delivered complete infrastructure — core web apps, mobile iOS/Android ecosystem, and real-time internal transaction engines.
             </p>
@@ -1099,7 +1083,7 @@
 
     </div>
 </section>
-
+  
 <!-- INTERACTIVE SCRIPT (3D Mouse Parallax Tilt) -->
 <script>
     const canvas = document.getElementById('phoneInteractiveCanvas');
