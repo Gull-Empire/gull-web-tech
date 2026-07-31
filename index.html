@@ -2042,8 +2042,9 @@
     }
 </script>
 
+
   <!-- ========================================================= -->
-<!-- GULL WEB — FREQUENTLY ASKED QUESTIONS (FAQ) SECTION       -->
+<!-- GULL WEB — FREQUENTLY ASKED QUESTIONS (SMOOTH ANIMATED)   -->
 <!-- Tech Stack: HTML5, Tailwind CSS 3, Vanilla JS             -->
 <!-- ========================================================= -->
 
@@ -2079,146 +2080,134 @@
         <div class="max-w-5xl mx-auto space-y-4">
 
             <!-- FAQ ITEM 01 (OPEN BY DEFAULT) -->
-            <div class="faq-item rounded-2xl bg-[#0a0512]/70 border border-amber-500/40 transition-all duration-300 overflow-hidden shadow-[0_0_25px_rgba(245,158,11,0.08)]">
-                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group">
+            <div class="faq-item is-open rounded-2xl bg-[#0a0512]/70 border border-amber-500/40 transition-all duration-500 shadow-[0_0_25px_rgba(245,158,11,0.08)]">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
                     <div class="flex items-center gap-5 sm:gap-8">
                         <span class="font-mono text-sm sm:text-base font-bold text-amber-400">01</span>
                         <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-300 transition-colors">
                             What should you know about Gull Web?
                         </h3>
                     </div>
-                    <span class="faq-icon font-mono text-amber-400 text-xl font-bold transition-transform duration-300 rotate-180">−</span>
+                    
+                    <!-- Smooth Rotating Icon Wrapper -->
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out rotate-45 text-amber-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
                 </button>
-                <div class="faq-content block px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23">
-                    <p class="text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
-                        Gull Web is a high-velocity engineering and marketplace architecture firm. We blend nearshore cost efficiency with strict onshore delivery standards — zero timezone friction, zero language barriers, and absolute ownership over your codebase.
-                    </p>
+
+                <!-- Grid Smooth Height Transition -->
+                <div class="faq-accordion-grid grid grid-rows-[1fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            Gull Web is a high-velocity engineering and marketplace architecture firm. We blend nearshore cost efficiency with strict onshore delivery standards — zero timezone friction, zero language barriers, and absolute ownership over your codebase.
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- FAQ ITEM 02 -->
-            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 overflow-hidden">
-                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group">
+            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-500">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
                     <div class="flex items-center gap-5 sm:gap-8">
                         <span class="font-mono text-sm sm:text-base font-bold text-amber-400">02</span>
                         <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
                             What types of projects do you specialize in?
                         </h3>
                     </div>
-                    <span class="faq-icon font-mono text-purple-400 text-xl font-bold transition-transform duration-300">+</span>
+                    
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out text-purple-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
                 </button>
-                <div class="faq-content hidden px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23">
-                    <p class="text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
-                        We build custom web platforms, complex enterprise Next.js applications, automated marketplace management architectures (including Amazon FBA infrastructure), and scalable backend APIs built for high throughput.
-                    </p>
+
+                <div class="faq-accordion-grid grid grid-rows-[0fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            We build custom web platforms, complex enterprise Next.js applications, automated marketplace management architectures (including Amazon FBA infrastructure), and scalable backend APIs built for high throughput.
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- FAQ ITEM 03 -->
-            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 overflow-hidden">
-                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group">
+            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-500">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
                     <div class="flex items-center gap-5 sm:gap-8">
                         <span class="font-mono text-sm sm:text-base font-bold text-amber-400">03</span>
                         <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
                             Where are your developers located and what time zone do they work in?
                         </h3>
                     </div>
-                    <span class="faq-icon font-mono text-purple-400 text-xl font-bold transition-transform duration-300">+</span>
+                    
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out text-purple-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
                 </button>
-                <div class="faq-content hidden px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23">
-                    <p class="text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
-                        Our engineering hubs are strategically aligned to overlap directly with US Eastern and European working hours. You get full real-time daily collaboration without overnight delays or waiting for email updates.
-                    </p>
+
+                <div class="faq-accordion-grid grid grid-rows-[0fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            Our engineering hubs are strategically aligned to overlap directly with US Eastern and European working hours. You get full real-time daily collaboration without overnight delays or waiting for email updates.
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- FAQ ITEM 04 -->
-            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 overflow-hidden">
-                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group">
+            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-500">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
                     <div class="flex items-center gap-5 sm:gap-8">
                         <span class="font-mono text-sm sm:text-base font-bold text-amber-400">04</span>
                         <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
                             What’s your pricing structure?
                         </h3>
                     </div>
-                    <span class="faq-icon font-mono text-purple-400 text-xl font-bold transition-transform duration-300">+</span>
+                    
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out text-purple-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
                 </button>
-                <div class="faq-content hidden px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23">
-                    <p class="text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
-                        We operate on predictable monthly retainers or dedicated team sprints. No hidden platform markups, no rigid multi-year lock-ins. You pay for pure senior execution with complete flexibility to scale up or down.
-                    </p>
+
+                <div class="faq-accordion-grid grid grid-rows-[0fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            We operate on predictable monthly retainers or dedicated team sprints. No hidden platform markups, no rigid multi-year lock-ins. You pay for pure senior execution with complete flexibility to scale up or down.
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- FAQ ITEM 05 -->
-            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 overflow-hidden">
-                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group">
+            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-500">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
                     <div class="flex items-center gap-5 sm:gap-8">
                         <span class="font-mono text-sm sm:text-base font-bold text-amber-400">05</span>
                         <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
                             Do you offer guarantees or quality assurance?
                         </h3>
                     </div>
-                    <span class="faq-icon font-mono text-purple-400 text-xl font-bold transition-transform duration-300">+</span>
-                </button>
-                <div class="faq-content hidden px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23">
-                    <p class="text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
-                        Every sprint undergoes automated CI/CD pipeline tests, code peer-reviews, and dedicated QA verification. We guarantee clean, production-ready code that meets enterprise security standards before any pull request is merged.
-                    </p>
-                </div>
-            </div>
-
-            <!-- FAQ ITEM 06 -->
-            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 overflow-hidden">
-                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group">
-                    <div class="flex items-center gap-5 sm:gap-8">
-                        <span class="font-mono text-sm sm:text-base font-bold text-amber-400">06</span>
-                        <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
-                            How do you hire your developers?
-                        </h3>
+                    
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out text-purple-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
                     </div>
-                    <span class="faq-icon font-mono text-purple-400 text-xl font-bold transition-transform duration-300">+</span>
                 </button>
-                <div class="faq-content hidden px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23">
-                    <p class="text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
-                        Our screening process accepts less than 2% of applicants. Candidates endure rigorous live coding sessions, system architecture defense tests, and communication evaluations before joining Gull Web.
-                    </p>
-                </div>
-            </div>
 
-            <!-- FAQ ITEM 07 -->
-            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 overflow-hidden">
-                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group">
-                    <div class="flex items-center gap-5 sm:gap-8">
-                        <span class="font-mono text-sm sm:text-base font-bold text-amber-400">07</span>
-                        <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
-                            Are developers dedicated to my project, or do you move them around?
-                        </h3>
+                <div class="faq-accordion-grid grid grid-rows-[0fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            Every sprint undergoes automated CI/CD pipeline tests, code peer-reviews, and dedicated QA verification. We guarantee clean, production-ready code that meets enterprise security standards before any pull request is merged.
+                        </div>
                     </div>
-                    <span class="faq-icon font-mono text-purple-400 text-xl font-bold transition-transform duration-300">+</span>
-                </button>
-                <div class="faq-content hidden px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23">
-                    <p class="text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
-                        100% dedicated. The engineers assigned to your pod work exclusively on your product, attend your daily standups, and integrate directly into your workflows.
-                    </p>
-                </div>
-            </div>
-
-            <!-- FAQ ITEM 08 -->
-            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 overflow-hidden">
-                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group">
-                    <div class="flex items-center gap-5 sm:gap-8">
-                        <span class="font-mono text-sm sm:text-base font-bold text-amber-400">08</span>
-                        <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
-                            What if I’m not satisfied with a developer’s performance?
-                        </h3>
-                    </div>
-                    <span class="faq-icon font-mono text-purple-400 text-xl font-bold transition-transform duration-300">+</span>
-                </button>
-                <div class="faq-content hidden px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23">
-                    <p class="text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
-                        We offer a zero-friction replacement guarantee. If a team member isn't aligning with your technical expectations, we replace them within 5 business days with no double-billing or onboarding delay.
-                    </p>
                 </div>
             </div>
 
@@ -2227,39 +2216,39 @@
     </div>
 </section>
 
-<!-- Accordion Toggle Script -->
+<!-- Smooth Toggle JavaScript -->
 <script>
-    function toggleFaq(buttonElement) {
-        const parentItem = buttonElement.closest('.faq-item');
-        const content = parentItem.querySelector('.faq-content');
-        const icon = parentItem.querySelector('.faq-icon');
+    function toggleFaq(btn) {
+        const item = btn.closest('.faq-item');
+        const grid = item.querySelector('.faq-accordion-grid');
+        const iconWrapper = item.querySelector('.faq-icon-wrapper');
+        const isOpen = item.classList.contains('is-open');
 
-        // Check if currently open
-        const isOpen = !content.classList.contains('hidden');
-
-        // Close all accordion items
-        document.querySelectorAll('.faq-item').forEach(item => {
-            item.classList.remove('bg-[#0a0512]/70', 'border-amber-500/40', 'shadow-[0_0_25px_rgba(245,158,11,0.08)]');
-            item.classList.add('bg-[#0a0512]/40', 'border-[#1b122c]');
+        // Close all items smoothly
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+            otherItem.classList.remove('is-open', 'bg-[#0a0512]/70', 'border-amber-500/40', 'shadow-[0_0_25px_rgba(245,158,11,0.08)]');
+            otherItem.classList.add('bg-[#0a0512]/40', 'border-[#1b122c]');
             
-            const itemContent = item.querySelector('.faq-content');
-            const itemIcon = item.querySelector('.faq-icon');
+            const otherGrid = otherItem.querySelector('.faq-accordion-grid');
+            const otherIcon = otherItem.querySelector('.faq-icon-wrapper');
             
-            itemContent.classList.add('hidden');
-            itemIcon.textContent = '+';
-            itemIcon.classList.remove('rotate-180', 'text-amber-400');
-            itemIcon.classList.add('text-purple-400');
+            otherGrid.classList.remove('grid-rows-[1fr]');
+            otherGrid.classList.add('grid-rows-[0fr]');
+            
+            otherIcon.classList.remove('rotate-45', 'text-amber-400');
+            otherIcon.classList.add('text-purple-400');
         });
 
-        // Open clicked item if it wasn't open
+        // Open clicked item if it was closed
         if (!isOpen) {
-            parentItem.classList.remove('bg-[#0a0512]/40', 'border-[#1b122c]');
-            parentItem.classList.add('bg-[#0a0512]/70', 'border-amber-500/40', 'shadow-[0_0_25px_rgba(245,158,11,0.08)]');
+            item.classList.add('is-open', 'bg-[#0a0512]/70', 'border-amber-500/40', 'shadow-[0_0_25px_rgba(245,158,11,0.08)]');
+            item.classList.remove('bg-[#0a0512]/40', 'border-[#1b122c]');
             
-            content.classList.remove('hidden');
-            icon.textContent = '−';
-            icon.classList.add('rotate-180', 'text-amber-400');
-            icon.classList.remove('text-purple-400');
+            grid.classList.remove('grid-rows-[0fr]');
+            grid.classList.add('grid-rows-[1fr]');
+            
+            iconWrapper.classList.add('rotate-45', 'text-amber-400');
+            iconWrapper.classList.remove('text-purple-400');
         }
     }
 </script>
