@@ -781,142 +781,257 @@
 <!-- ===== End Trust / Stats / Recognition Section ===== -->
 
 <!-- ========================================================= -->
-<!-- GULL EMPIRE — WHAT TEAMS HIRE US FOR (EXACT DATA MATCH)    -->
-<!-- Tech Stack: HTML5, Tailwind CSS 3, JS Interactivity        -->
+<!-- GULL EMPIRE — THE WORK SECTION (UPDATED BRANDS & MATCHED BG) -->
 <!-- ========================================================= -->
 
-<section class="w-full max-w-7xl mx-auto bg-[#040208] border border-[#1f1636] rounded-3xl p-6 sm:p-12 relative z-10 shadow-2xl overflow-hidden font-sans text-white">
+<section class="w-full bg-[#040208] text-white font-sans border-y border-[#1b122c] py-16 px-4 sm:px-8 relative overflow-hidden">
     
     <!-- Ambient Background Glows -->
-    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/20 rounded-full blur-[140px] pointer-events-none"></div>
-    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-600/10 rounded-full blur-[140px] pointer-events-none"></div>
 
-    <!-- SECTION HEADER -->
-    <header class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-10 border-b border-[#1f1636]">
-        <div class="lg:col-span-8 space-y-4">
-            <!-- Badge / Small Label -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-[11px] font-mono font-bold tracking-widest text-amber-400 uppercase">
-                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-                WHAT WE DO
+    <div class="max-w-7xl mx-auto space-y-12 relative z-10">
+
+        <!-- 1. HEADER -->
+        <header class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end pb-10 border-b border-[#1b122c]">
+            <div class="lg:col-span-8 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-[11px] font-mono font-bold tracking-widest text-purple-400 uppercase">
+                    <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+                    THE WORK
+                </div>
+                
+                <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                    Shipped systems. <br class="hidden sm:inline"/>
+                    <span class="bg-gradient-to-r from-purple-400 via-amber-300 to-amber-500 bg-clip-text text-transparent">Referenceable results.</span>
+                </h2>
             </div>
-            
-            <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-                What teams <span class="bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent">hire us for.</span>
-            </h2>
+
+            <div class="lg:col-span-4 lg:text-right space-y-4">
+                <p class="text-xs font-mono text-slate-400 tracking-wider uppercase">
+                    ARCHIVE · 2019 → 2026
+                </p>
+                <a href="#full-index" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-amber-400 hover:text-white transition-colors group">
+                    BROWSE ALL 35 CASES 
+                    <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- 2. FEATURED CASE STUDY (NOVA BANK) -->
+        <div class="py-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center border-b border-[#1b122c]">
+
+            <!-- LEFT: 3D PHONE MOCKUP -->
+            <div id="phoneInteractiveCanvas" class="lg:col-span-7 relative bg-gradient-to-br from-[#0a0512] to-[#040208] border border-[#1b122c] rounded-2xl p-6 sm:p-10 overflow-hidden flex items-center justify-center min-h-[440px] cursor-pointer group">
+                
+                <div class="absolute top-6 left-6 z-30 inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-950/80 border border-purple-500/40 text-[10px] font-mono font-bold tracking-widest text-purple-300 uppercase shadow-lg backdrop-blur-md">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+                    FEATURED · 01
+                </div>
+
+                <div id="phoneWrapper" class="relative w-full max-w-md h-[360px] flex items-center justify-center pt-4 transition-transform duration-200 ease-out">
+                    
+                    <!-- BACKGROUND LEFT PHONE -->
+                    <div class="absolute -left-4 sm:left-2 top-10 w-44 h-[300px] bg-black border-[3px] border-slate-700/60 rounded-[32px] opacity-30 scale-90 -rotate-12 shadow-2xl overflow-hidden hidden sm:block">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" 
+                             alt="App UI Left" class="w-full h-full object-cover filter brightness-75 contrast-125" />
+                    </div>
+
+                    <!-- CENTER PHONE FRAME -->
+                    <div class="relative z-20 w-56 sm:w-64 h-[340px] bg-black border-[4px] border-[#383144] rounded-[40px] shadow-[0_25px_60px_rgba(0,0,0,0.95)] overflow-hidden ring-1 ring-purple-500/40 transition-all duration-300">
+                        <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-20 h-4 bg-black rounded-full z-50 flex items-center justify-between px-2 border border-white/10">
+                            <div class="w-2 h-2 rounded-full bg-purple-900"></div>
+                            <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
+                        </div>
+
+                        <div class="w-full h-full relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Nova Bank App Screen" 
+                                 class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none"></div>
+                            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/80 border border-purple-500/40 backdrop-blur-md px-3 py-0.5 rounded-full text-[9px] font-mono text-amber-400 font-bold tracking-wider z-30">
+                                NOVA V2.4 LIVE
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BACKGROUND RIGHT PHONE -->
+                    <div class="absolute -right-4 sm:right-2 top-10 w-44 h-[300px] bg-black border-[3px] border-slate-700/60 rounded-[32px] opacity-30 scale-90 rotate-12 shadow-2xl overflow-hidden hidden sm:block">
+                        <img src="https://images.unsplash.com/photo-1616469829941-c7200edec809?q=80&w=800&auto=format&fit=crop" 
+                             alt="App UI Right" class="w-full h-full object-cover filter brightness-75 contrast-125" />
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT: CASE DETAILS -->
+            <div class="lg:col-span-5 space-y-6 text-left">
+                <div class="flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-purple-400 uppercase">
+                    <span>FINTECH</span>
+                    <span class="text-slate-600">•</span>
+                    <span>ENTERPRISE NEOBANKING</span>
+                </div>
+
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+                    Nova Bank
+                </h3>
+
+                <p class="text-sm text-slate-400 leading-relaxed font-sans">
+                    Digital banking infrastructure built for next-gen fintech scaling. Delivered end-to-end — cloud architecture, high-frequency core payment engine, and secure mobile apps.
+                </p>
+
+                <div class="grid grid-cols-2 gap-3 pt-2 font-mono text-xs">
+                    <div class="bg-[#0a0512] border border-[#1b122c] p-3 rounded-xl">
+                        <span class="text-slate-500 block text-[10px]">TECH STACK</span>
+                        <span class="text-amber-400 font-bold">Next.js & Swift</span>
+                    </div>
+                    <div class="bg-[#0a0512] border border-[#1b122c] p-3 rounded-xl">
+                        <span class="text-slate-500 block text-[10px]">SCALE</span>
+                        <span class="text-purple-300 font-bold">3.2M Active Users</span>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <a href="#" class="inline-flex items-center gap-3 bg-purple-950/50 hover:bg-purple-900/60 border border-purple-700/40 text-white font-mono font-bold text-xs uppercase tracking-widest px-6 py-3.5 rounded-xl transition-all group shadow-lg">
+                        READ NOVA BANK CASE
+                        <span class="text-amber-400 group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </div>
+            </div>
+
         </div>
 
-        <div class="lg:col-span-4 lg:text-right space-y-4">
-            <p class="text-xs sm:text-sm text-slate-400 font-mono leading-relaxed">
-                One senior engineer or a full product team — nearshore bench, your time zone, billable monthly.
-            </p>
-            <button class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-xs uppercase tracking-widest px-7 py-3.5 rounded-xl shadow-lg shadow-purple-900/40 hover:scale-105 transition-all">
-                SCHEDULE A CALL
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-            </button>
+        <!-- 3. UPDATED ARCHIVE LIST (UNIQUE BRAND NAMES) -->
+        <div class="pt-4 space-y-1" id="full-index">
+
+            <!-- Item 02 -->
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">02</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Velox Pay</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">E-COMMERCE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Shopify subscription payment infrastructure deployed for high-volume merchants.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <!-- Item 03 -->
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">03</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">VaultFlow</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">REAL ESTATE SAAS</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Property analytics engine that increased recurring client revenue by 24% MoM.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <!-- Item 04 -->
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">04</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Lumina Core</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">E-COMMERCE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Global digital storefront refactored to handle Black Friday traffic spikes.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <!-- Item 05 -->
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">05</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">TransAct Global</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">LOGISTICS</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Cross-border freight automation and tracking portal for enterprise fleets.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <!-- Item 06 -->
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">06</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Nexus Grid</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">E-COMMERCE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Headless storefront architecture integrated with real-time iOS application.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <!-- Item 07 -->
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">07</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Zenith Health</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">MOBILE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Comprehensive wellness mobile app tailored for enterprise communities.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <!-- Item 08 -->
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">08</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Crest Cloud</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">REAL ESTATE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Multi-tenant property management platform built from ground up.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <!-- Item 09 -->
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">09</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Urban Restor</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">RESTORATION</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Asset recovery and workflow dispatch system engineered for national networks.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
         </div>
-    </header>
 
-    <!-- SERVICES MATRIX CARDS -->
-    <div class="mt-8 space-y-5" id="servicesContainer">
-
-        <!-- ITEM 01 -->
-        <article class="service-card active group bg-[#0a0512] border border-purple-500/50 rounded-2xl p-6 sm:p-8 cursor-pointer relative transition-all duration-300 shadow-[0_0_40px_-10px_rgba(139,63,224,0.35)]" data-card="1">
-            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-                <div class="flex items-start gap-6 sm:gap-8">
-                    <span class="card-num text-3xl sm:text-4xl font-mono font-bold text-amber-400 transition-colors">01</span>
-                    <div class="space-y-3">
-                        <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
-                            AI & ML development
-                        </h3>
-                        <!-- Sub Tags (Exact match with Image 1) -->
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
-                            <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">LLM apps</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">RAG pipelines</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">Voice & chatbots</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">Agents</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">Enterprise search</span>
-                        </div>
-                        <!-- Description (Exact match with Image 1) -->
-                        <p class="text-sm text-neutral-400 max-w-2xl leading-relaxed">
-                            Built for production traffic and handed over with the runbooks to operate it.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-amber-400 group-hover:text-white transition-colors self-end lg:self-center">
-                    AI CAPABILITIES <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-            </div>
-        </article>
-
-        <!-- ITEM 02 -->
-        <article class="service-card group bg-[#0a0512]/40 border border-[#1f1636] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 cursor-pointer relative transition-all duration-300" data-card="2">
-            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-                <div class="flex items-start gap-6 sm:gap-8">
-                    <span class="card-num text-3xl sm:text-4xl font-mono font-bold text-slate-600 transition-colors">02</span>
-                    <div class="space-y-3">
-                        <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
-                            Custom software
-                        </h3>
-                        <!-- Sub Tags (Exact match with Image 1) -->
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Web</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Mobile</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Data</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Cloud & DevOps</span>
-                        </div>
-                        <!-- Description (Exact match with Image 1) -->
-                        <p class="text-sm text-neutral-400 max-w-2xl leading-relaxed">
-                            Senior-only teams, your time zone, billable monthly — stop any time.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-slate-400 group-hover:text-white transition-colors self-end lg:self-center">
-                    ALL SERVICES <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-            </div>
-        </article>
-
-        <!-- ITEM 03 -->
-        <article class="service-card group bg-[#0a0512]/40 border border-[#1f1636] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 cursor-pointer relative transition-all duration-300" data-card="3">
-            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-                <div class="flex items-start gap-6 sm:gap-8">
-                    <span class="card-num text-3xl sm:text-4xl font-mono font-bold text-slate-600 transition-colors">03</span>
-                    <div class="space-y-3">
-                        <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
-                            Industry expertise
-                        </h3>
-                        <!-- Sub Tags (Exact match with Image 1) -->
-                        <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Fintech</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Healthcare</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Retail & DTC</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Logistics</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">EdTech</span>
-                            <span class="text-neutral-600">•</span>
-                            <span class="bg-neutral-900 border border-neutral-800 px-3 py-1 rounded text-neutral-300">Real estate</span>
-                        </div>
-                        <!-- Description (Exact match with Image 1) -->
-                        <p class="text-sm text-neutral-400 max-w-2xl leading-relaxed">
-                            Verticals where the compliance shape and failure modes aren't new to us.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-slate-400 group-hover:text-white transition-colors self-end lg:self-center">
-                    INDUSTRIES SERVED <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-                </div>
-            </div>
-        </article>
+        <!-- 4. FOOTER LINK -->
+        <div class="pt-8 text-right border-t border-[#1b122c]">
+            <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-amber-400 hover:text-white transition-colors group">
+                VIEW THE FULL INDEX 
+                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+        </div>
 
     </div>
 </section>
@@ -956,287 +1071,7 @@
     });
 </script>
 
-<!-- ========================================================= -->
-<!-- GULL EMPIRE — THE WORK (COMPLETE SEAMLESS FEATURED + INDEX) -->
-<!-- Tech Stack: HTML5 + Tailwind CSS + Vanilla JS Tilt -->
-<!-- ========================================================= -->
 
-<section class="w-full max-w-7xl mx-auto bg-[#040208] border border-[#1f1636] rounded-3xl p-6 sm:p-12 relative z-10 shadow-2xl overflow-hidden font-sans text-white my-12">
-    
-    <!-- Ambient Background Glows -->
-    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/20 rounded-full blur-[140px] pointer-events-none"></div>
-    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
-
-    <!-- 1. SECTION HEADER -->
-    <header class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-10 border-b border-[#1f1636]">
-        <div class="lg:col-span-8 space-y-4">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-[11px] font-mono font-bold tracking-widest text-purple-400 uppercase">
-                <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
-                THE WORK
-            </div>
-            
-            <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-                Shipped systems. <br class="hidden sm:inline"/>
-                <span class="bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent">Referenceable results.</span>
-            </h2>
-        </div>
-
-        <div class="lg:col-span-4 lg:text-right space-y-4">
-            <p class="text-xs font-mono text-slate-400 tracking-wider uppercase">
-                ARCHIVE · 2019 → 2026
-            </p>
-            <a href="#full-index" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-amber-400 hover:text-white transition-colors group">
-                BROWSE ALL 35 CASES 
-                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-            </a>
-        </div>
-    </header>
-
-    <!-- 2. FEATURED CASE STUDY (APEX NEOBANK) -->
-    <div class="py-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center border-b border-[#1f1636]">
-
-        <!-- LEFT: 3D PHONE MOCKUP -->
-        <div id="phoneInteractiveCanvas" class="lg:col-span-7 relative bg-gradient-to-br from-[#0e071c] to-[#05020a] border border-[#261b42] rounded-2xl p-6 sm:p-10 overflow-hidden flex items-center justify-center min-h-[460px] cursor-pointer group">
-            
-            <div class="absolute top-6 left-6 z-30 inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-950/80 border border-purple-500/40 text-[10px] font-mono font-bold tracking-widest text-purple-300 uppercase shadow-lg backdrop-blur-md">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
-                FEATURED · 01
-            </div>
-
-            <div id="phoneWrapper" class="relative w-full max-w-md h-[380px] flex items-center justify-center pt-4 transition-transform duration-200 ease-out">
-                
-                <!-- BACKGROUND LEFT PHONE -->
-                <div class="absolute -left-4 sm:left-2 top-10 w-44 h-[310px] bg-black border-[3px] border-slate-700/60 rounded-[32px] opacity-30 scale-90 -rotate-12 shadow-2xl overflow-hidden hidden sm:block">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" 
-                         alt="App UI Left" class="w-full h-full object-cover filter brightness-75 contrast-125" />
-                </div>
-
-                <!-- CENTER PHONE FRAME -->
-                <div class="relative z-20 w-56 sm:w-64 h-[360px] bg-black border-[4px] border-[#383144] rounded-[40px] shadow-[0_25px_60px_rgba(0,0,0,0.95)] overflow-hidden ring-1 ring-purple-500/40 transition-all duration-300">
-                    
-                    <div class="absolute inset-0 rounded-[36px] border border-white/10 pointer-events-none z-40"></div>
-
-                    <!-- Dynamic Island Notch -->
-                    <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-20 h-4 bg-black rounded-full z-50 flex items-center justify-between px-2 border border-white/10">
-                        <div class="w-2 h-2 rounded-full bg-purple-900"></div>
-                        <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
-                    </div>
-
-                    <!-- Real App Screen Image -->
-                    <div class="w-full h-full relative overflow-hidden group">
-                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=800&auto=format&fit=crop" 
-                             alt="Apex NeoBank App Screen" 
-                             class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none"></div>
-                        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/80 border border-purple-500/40 backdrop-blur-md px-3 py-0.5 rounded-full text-[9px] font-mono text-amber-400 font-bold tracking-wider z-30">
-                            APEX V2.4 LIVE
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BACKGROUND RIGHT PHONE -->
-                <div class="absolute -right-4 sm:right-2 top-10 w-44 h-[310px] bg-black border-[3px] border-slate-700/60 rounded-[32px] opacity-30 scale-90 rotate-12 shadow-2xl overflow-hidden hidden sm:block">
-                    <img src="https://images.unsplash.com/photo-1616469829941-c7200edec809?q=80&w=800&auto=format&fit=crop" 
-                         alt="App UI Right" class="w-full h-full object-cover filter brightness-75 contrast-125" />
-                </div>
-
-            </div>
-        </div>
-
-        <!-- RIGHT: CASE DETAILS -->
-        <div class="lg:col-span-5 space-y-6 text-left">
-            <div class="flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-purple-400 uppercase">
-                <span>FINTECH</span>
-                <span class="text-slate-600">•</span>
-                <span>ENTERPRISE NEOBANKING</span>
-            </div>
-
-            <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-                Apex NeoBank
-            </h3>
-
-            <p class="text-sm text-slate-400 leading-relaxed font-sans">
-                Digital banking platform rebuilt for a flagship regional bank. Delivered end-to-end — architecture, web platform, mobile ecosystem, and the internal tooling that operates it.
-            </p>
-
-            <div class="grid grid-cols-2 gap-3 pt-2 font-mono text-xs">
-                <div class="bg-[#0a0512] border border-[#1f1636] p-3 rounded-xl">
-                    <span class="text-slate-500 block text-[10px]">FRAMEWORK</span>
-                    <span class="text-amber-400 font-bold">iOS 17 & Next.js</span>
-                </div>
-                <div class="bg-[#0a0512] border border-[#1f1636] p-3 rounded-xl">
-                    <span class="text-slate-500 block text-[10px]">SCALABILITY</span>
-                    <span class="text-purple-300 font-bold">4.8M Active Users</span>
-                </div>
-            </div>
-
-            <div class="pt-2">
-                <a href="#" class="inline-flex items-center gap-3 bg-purple-950/60 hover:bg-purple-900/60 border border-purple-700/50 text-white font-mono font-bold text-xs uppercase tracking-widest px-6 py-3.5 rounded-xl transition-all group shadow-lg">
-                    READ THE APEX BANK CASE
-                    <span class="text-amber-400 group-hover:translate-x-1 transition-transform">→</span>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- 3. ARCHIVE INDEX LIST (02 to 09) -->
-    <div class="pt-8 space-y-1" id="full-index">
-
-        <!-- Item 02: Rodeo -->
-        <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0e071c]/60 border-b border-[#1f1636]/60 transition-all duration-200 cursor-pointer">
-            <div class="flex items-baseline gap-4 md:w-1/3">
-                <span class="text-xs font-mono text-purple-400 font-bold">02</span>
-                <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Rodeo</h4>
-            </div>
-            <div class="md:w-1/4 my-1 md:my-0">
-                <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#140b28] px-2.5 py-1 rounded border border-[#261b42]">E-COMMERCE</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Shopify subscription plugin shipped on live merchant traffic in 8 weeks.</p>
-            <div class="text-right md:w-12 mt-2 md:mt-0">
-                <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
-            </div>
-        </div>
-
-        <!-- Item 03: PetScreening -->
-        <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0e071c]/60 border-b border-[#1f1636]/60 transition-all duration-200 cursor-pointer">
-            <div class="flex items-baseline gap-4 md:w-1/3">
-                <span class="text-xs font-mono text-purple-400 font-bold">03</span>
-                <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">PetScreening</h4>
-            </div>
-            <div class="md:w-1/4 my-1 md:my-0">
-                <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#140b28] px-2.5 py-1 rounded border border-[#261b42]">REAL ESTATE SAAS</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Platform re-architecture that took MRR from flat to 21% MoM.</p>
-            <div class="text-right md:w-12 mt-2 md:mt-0">
-                <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
-            </div>
-        </div>
-
-        <!-- Item 04: Blendjet -->
-        <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0e071c]/60 border-b border-[#1f1636]/60 transition-all duration-200 cursor-pointer">
-            <div class="flex items-baseline gap-4 md:w-1/3">
-                <span class="text-xs font-mono text-purple-400 font-bold">04</span>
-                <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Blendjet</h4>
-            </div>
-            <div class="md:w-1/4 my-1 md:my-0">
-                <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#140b28] px-2.5 py-1 rounded border border-[#261b42]">E-COMMERCE</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Global funnel re-architecture for peak-load launch traffic.</p>
-            <div class="text-right md:w-12 mt-2 md:mt-0">
-                <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
-            </div>
-        </div>
-
-        <!-- Item 05: Saudia Cargo -->
-        <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0e071c]/60 border-b border-[#1f1636]/60 transition-all duration-200 cursor-pointer">
-            <div class="flex items-baseline gap-4 md:w-1/3">
-                <span class="text-xs font-mono text-purple-400 font-bold">05</span>
-                <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Saudia Cargo</h4>
-            </div>
-            <div class="md:w-1/4 my-1 md:my-0">
-                <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#140b28] px-2.5 py-1 rounded border border-[#261b42]">LOGISTICS</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Logistics SaaS for a national cargo carrier.</p>
-            <div class="text-right md:w-12 mt-2 md:mt-0">
-                <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
-            </div>
-        </div>
-
-        <!-- Item 06: RSVLTs -->
-        <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0e071c]/60 border-b border-[#1f1636]/60 transition-all duration-200 cursor-pointer">
-            <div class="flex items-baseline gap-4 md:w-1/3">
-                <span class="text-xs font-mono text-purple-400 font-bold">06</span>
-                <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">RSVLTs</h4>
-            </div>
-            <div class="md:w-1/4 my-1 md:my-0">
-                <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#140b28] px-2.5 py-1 rounded border border-[#261b42]">E-COMMERCE</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Commerce platform plus companion mobile app.</p>
-            <div class="text-right md:w-12 mt-2 md:mt-0">
-                <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
-            </div>
-        </div>
-
-        <!-- Item 07: Elevation -->
-        <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0e071c]/60 border-b border-[#1f1636]/60 transition-all duration-200 cursor-pointer">
-            <div class="flex items-baseline gap-4 md:w-1/3">
-                <span class="text-xs font-mono text-purple-400 font-bold">07</span>
-                <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Elevation</h4>
-            </div>
-            <div class="md:w-1/4 my-1 md:my-0">
-                <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#140b28] px-2.5 py-1 rounded border border-[#261b42]">MOBILE</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Mobile app for a global faith community.</p>
-            <div class="text-right md:w-12 mt-2 md:mt-0">
-                <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
-            </div>
-        </div>
-
-        <!-- Item 08: HMS -->
-        <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0e071c]/60 border-b border-[#1f1636]/60 transition-all duration-200 cursor-pointer">
-            <div class="flex items-baseline gap-4 md:w-1/3">
-                <span class="text-xs font-mono text-purple-400 font-bold">08</span>
-                <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">HMS</h4>
-            </div>
-            <div class="md:w-1/4 my-1 md:my-0">
-                <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#140b28] px-2.5 py-1 rounded border border-[#261b42]">REAL ESTATE</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Real-estate SaaS, delivered end to end.</p>
-            <div class="text-right md:w-12 mt-2 md:mt-0">
-                <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
-            </div>
-        </div>
-
-        <!-- Item 09: CRDN -->
-        <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0e071c]/60 transition-all duration-200 cursor-pointer">
-            <div class="flex items-baseline gap-4 md:w-1/3">
-                <span class="text-xs font-mono text-purple-400 font-bold">09</span>
-                <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">CRDN</h4>
-            </div>
-            <div class="md:w-1/4 my-1 md:my-0">
-                <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#140b28] px-2.5 py-1 rounded border border-[#261b42]">RESTORATION</span>
-            </div>
-            <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Property-restoration platform, built from the ground up.</p>
-            <div class="text-right md:w-12 mt-2 md:mt-0">
-                <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- 4. BOTTOM FOOTER LINK -->
-    <div class="pt-10 text-right border-t border-[#1f1636] mt-6">
-        <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-amber-400 hover:text-white transition-colors group">
-            VIEW THE FULL INDEX 
-            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
-        </a>
-    </div>
-
-</section>
-
-<!-- INTERACTIVE 3D TILT SCRIPT -->
-<script>
-    const canvas = document.getElementById('phoneInteractiveCanvas');
-    const wrapper = document.getElementById('phoneWrapper');
-
-    if (canvas && wrapper) {
-        canvas.addEventListener('mousemove', (e) => {
-            const rect = canvas.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width / 2;
-            const y = e.clientY - rect.top - rect.height / 2;
-            
-            const rotateX = (-y / rect.height) * 12;
-            const rotateY = (x / rect.width) * 12;
-
-            wrapper.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        });
-
-        canvas.addEventListener('mouseleave', () => {
-            wrapper.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
-        });
-    }
-</script>
   
 <!-- Start: Enterprise Dark Luxury Footer -->
 <footer class="w-full footer-glow text-slate-400 border-t border-borderViolet pt-12 md:pt-16 pb-8 relative overflow-hidden">
