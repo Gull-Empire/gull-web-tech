@@ -1801,6 +1801,246 @@
         activeBtn.querySelector('span').className = 'text-amber-400 font-bold';
     }
 </script>
+
+  <!-- ========================================================= -->
+<!-- GULL WEB — NEXT-GEN INSIGHTS & ENGINEERING BENCH          -->
+<!-- Tech Stack: HTML5, Tailwind CSS 3, Vanilla JS             -->
+<!-- ========================================================= -->
+
+<section class="w-full bg-[#040208] text-white font-sans py-24 px-4 sm:px-8 relative overflow-hidden border-b border-[#1b122c] selection:bg-purple-500 selection:text-white">
+    
+    <!-- Dynamic Ambient Lighting Effects -->
+    <div class="absolute -top-40 left-1/3 w-[500px] h-[500px] bg-purple-900/15 rounded-full blur-[160px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 right-10 w-[450px] h-[450px] bg-amber-500/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto space-y-14 relative z-10">
+
+        <!-- TOP BAR: HEADER & FILTERS -->
+        <header class="space-y-8 pb-8 border-b border-[#1b122c]">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+                
+                <div class="space-y-3 max-w-2xl">
+                    <!-- Section Tag -->
+                    <div class="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 text-[11px] font-mono font-bold tracking-widest text-purple-400 uppercase">
+                        <span class="w-2 h-2 rounded-full bg-purple-400 animate-ping"></span>
+                        INSIGHTS & PERSPECTIVES
+                    </div>
+                    
+                    <h2 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
+                        Writing from our <br class="hidden sm:inline" />
+                        <span class="bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent">engineering bench.</span>
+                    </h2>
+                </div>
+
+                <!-- All Posts Link -->
+                <a href="#" class="inline-flex items-center gap-3 px-5 py-2.5 rounded-xl bg-[#0a0512] border border-[#26173d] hover:border-amber-400/50 text-xs font-mono font-bold tracking-widest text-amber-400 hover:text-white uppercase transition-all duration-300 hover:shadow-[0_0_20px_rgba(245,158,11,0.2)] group">
+                    <span>EXPLORE ALL ARTICLES</span>
+                    <span class="transform group-hover:translate-x-1.5 transition-transform duration-300 text-sm">→</span>
+                </a>
+            </div>
+
+            <!-- CATEGORY FILTER TABS -->
+            <div class="flex items-center gap-3 overflow-x-auto no-scrollbar pt-4">
+                <button onclick="filterCategory('all')" id="btn-all" class="filter-btn active-filter text-xs font-mono font-bold px-4 py-2 rounded-lg border border-amber-400 bg-amber-400/10 text-amber-300 transition-all">
+                    ALL POSTS
+                </button>
+                <button onclick="filterCategory('healthcare')" id="btn-healthcare" class="filter-btn text-xs font-mono font-bold px-4 py-2 rounded-lg border border-[#1b122c] bg-[#0a0512] text-slate-400 hover:text-white hover:border-purple-500/40 transition-all">
+                    HEALTHCARE
+                </button>
+                <button onclick="filterCategory('ai')" id="btn-ai" class="filter-btn text-xs font-mono font-bold px-4 py-2 rounded-lg border border-[#1b122c] bg-[#0a0512] text-slate-400 hover:text-white hover:border-purple-500/40 transition-all">
+                    AI & TECH
+                </button>
+                <button onclick="filterCategory('saas')" id="btn-saas" class="filter-btn text-xs font-mono font-bold px-4 py-2 rounded-lg border border-[#1b122c] bg-[#0a0512] text-slate-400 hover:text-white hover:border-purple-500/40 transition-all">
+                    ENTERPRISE SAAS
+                </button>
+            </div>
+        </header>
+
+
+        <!-- FEATURED POST (HERO ARTICLE CARD) -->
+        <article class="post-item group relative bg-[#0a0512]/80 border border-[#1b122c] hover:border-amber-500/40 rounded-3xl p-6 sm:p-10 transition-all duration-500 hover:shadow-[0_20px_50px_-15px_rgba(139,63,224,0.3)] backdrop-blur-xl" data-category="healthcare">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Visual Showcase -->
+                <div class="lg:col-span-6 relative rounded-2xl overflow-hidden bg-[#040208] border border-[#23173d] aspect-[16/10] group-hover:border-purple-500/40 transition-colors">
+                    
+                    <!-- Dynamic Glowing Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040208] via-transparent to-transparent z-10 opacity-70"></div>
+                    
+                    <!-- Top Badge -->
+                    <div class="absolute top-5 left-5 z-20 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#040208]/80 backdrop-blur-md border border-amber-400/40 text-[10px] font-mono font-bold tracking-widest text-amber-300 uppercase shadow-lg">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        FEATURED ARCHITECTURE
+                    </div>
+
+                    <!-- Holographic Code Terminal Mockup -->
+                    <div class="w-full h-full bg-gradient-to-br from-purple-950/70 via-[#0a0512] to-amber-950/30 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-700">
+                        <div class="w-full max-w-md p-5 rounded-2xl bg-[#040208]/90 border border-purple-500/30 shadow-2xl space-y-3 font-mono text-xs text-slate-300 relative">
+                            
+                            <!-- Window Bar -->
+                            <div class="flex items-center justify-between pb-3 border-b border-purple-900/40">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                                    <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                                    <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                                </div>
+                                <span class="text-[10px] text-purple-400 font-semibold">gullweb-healthcare-v2.ts</span>
+                            </div>
+
+                            <!-- Mock Syntax -->
+                            <p><span class="text-purple-400 font-bold">import</span> { HIPAAEngine, Encryption } <span class="text-purple-400 font-bold">from</span> <span class="text-green-400">'@gullweb/core'</span>;</p>
+                            <p class="text-slate-400"><span class="text-purple-400 font-bold">export const</span> <span class="text-amber-300">HealthcareStack</span> = <span class="text-purple-400">async</span> () => {</p>
+                            <p class="text-slate-300 pl-4"><span class="text-purple-400 font-bold">await</span> HIPAAEngine.<span class="text-amber-400">verifySecurity</span>({</p>
+                            <p class="text-slate-400 pl-8">ehrIntegration: <span class="text-green-400">true</span>,</p>
+                            <p class="text-slate-400 pl-8">encryption: <span class="text-green-400">'AES-256-GCM'</span>,</p>
+                            <p class="text-slate-400 pl-8">uptimeSLO: <span class="text-amber-400">'99.99%'</span></p>
+                            <p class="text-slate-300 pl-4">});</p>
+                            <p class="text-slate-400">};</p>
+
+                            <!-- Mini Glow Accent -->
+                            <div class="absolute -bottom-2 -right-2 w-16 h-16 bg-amber-400/20 rounded-full blur-xl pointer-events-none"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="flex items-center gap-3 text-xs font-mono tracking-wider">
+                        <span class="px-2.5 py-1 rounded bg-purple-950 border border-purple-800/50 text-purple-300 font-bold uppercase">HEALTHCARE</span>
+                        <span class="text-slate-600">•</span>
+                        <span class="text-slate-400">JULY 31, 2026</span>
+                    </div>
+
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-white group-hover:text-amber-300 transition-colors leading-tight">
+                        Best Healthcare Software Development Agency in the USA (2026)
+                    </h3>
+
+                    <p class="text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
+                        Compare the top healthcare software development agencies in the USA by HIPAA architecture, seamless EHR integrations, clinical UX standards, and verified performance.
+                    </p>
+
+                    <div class="pt-4 flex items-center gap-4">
+                        <a href="#" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#040208] font-mono font-black text-xs uppercase tracking-widest transition-all shadow-[0_0_20px_rgba(245,158,11,0.3)]">
+                            READ THE POST <span class="text-sm">→</span>
+                        </a>
+                        <span class="text-xs font-mono text-slate-500">8 MIN READ</span>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- SECONDARY ARTICLES GRID LIST -->
+        <div class="space-y-4">
+
+            <!-- ARTICLE 02 -->
+            <article class="post-item group block p-6 sm:p-7 rounded-2xl bg-[#0a0512]/50 border border-[#1b122c] hover:border-purple-500/50 hover:bg-[#0a0512] transition-all duration-300" data-category="healthcare">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="flex items-start md:items-center gap-6">
+                        <span class="text-2xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">02</span>
+                        <div class="space-y-1.5">
+                            <div class="flex items-center gap-3 text-xs font-mono">
+                                <span class="text-purple-400 font-bold uppercase tracking-wider">HEALTHCARE</span>
+                                <span class="text-slate-600">—</span>
+                                <span class="text-slate-400">JULY 29, 2026</span>
+                            </div>
+                            <h4 class="text-lg sm:text-xl font-bold text-slate-100 group-hover:text-amber-300 transition-colors">
+                                How to Choose a Healthcare Software Development Agency in 2026
+                            </h4>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 self-end md:self-center">
+                        <span class="text-xs font-mono text-slate-500 hidden sm:inline">5 MIN READ</span>
+                        <div class="w-10 h-10 rounded-xl bg-[#150a28] border border-purple-900/40 flex items-center justify-center text-amber-400 group-hover:text-white group-hover:bg-purple-600 transition-all">
+                            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ARTICLE 03 -->
+            <article class="post-item group block p-6 sm:p-7 rounded-2xl bg-[#0a0512]/50 border border-[#1b122c] hover:border-purple-500/50 hover:bg-[#0a0512] transition-all duration-300" data-category="ai">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="flex items-start md:items-center gap-6">
+                        <span class="text-2xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">03</span>
+                        <div class="space-y-1.5">
+                            <div class="flex items-center gap-3 text-xs font-mono">
+                                <span class="text-amber-400 font-bold uppercase tracking-wider">AI & TECH</span>
+                                <span class="text-slate-600">—</span>
+                                <span class="text-slate-400">JULY 28, 2026</span>
+                            </div>
+                            <h4 class="text-lg sm:text-xl font-bold text-slate-100 group-hover:text-amber-300 transition-colors">
+                                Mental Health App Development: Complete 2026 Architectural Guide
+                            </h4>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 self-end md:self-center">
+                        <span class="text-xs font-mono text-slate-500 hidden sm:inline">12 MIN READ</span>
+                        <div class="w-10 h-10 rounded-xl bg-[#150a28] border border-purple-900/40 flex items-center justify-center text-amber-400 group-hover:text-white group-hover:bg-purple-600 transition-all">
+                            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ARTICLE 04 -->
+            <article class="post-item group block p-6 sm:p-7 rounded-2xl bg-[#0a0512]/50 border border-[#1b122c] hover:border-purple-500/50 hover:bg-[#0a0512] transition-all duration-300" data-category="saas">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="flex items-start md:items-center gap-6">
+                        <span class="text-2xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">04</span>
+                        <div class="space-y-1.5">
+                            <div class="flex items-center gap-3 text-xs font-mono">
+                                <span class="text-purple-400 font-bold uppercase tracking-wider">ENTERPRISE SAAS</span>
+                                <span class="text-slate-600">—</span>
+                                <span class="text-slate-400">JULY 27, 2026</span>
+                            </div>
+                            <h4 class="text-lg sm:text-xl font-bold text-slate-100 group-hover:text-amber-300 transition-colors">
+                                AI in Healthcare: How Startups Are Building the Next Generation of Health Tech
+                            </h4>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 self-end md:self-center">
+                        <span class="text-xs font-mono text-slate-500 hidden sm:inline">9 MIN READ</span>
+                        <div class="w-10 h-10 rounded-xl bg-[#150a28] border border-purple-900/40 flex items-center justify-center text-amber-400 group-hover:text-white group-hover:bg-purple-600 transition-all">
+                            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Category Filtering Script -->
+<script>
+    function filterCategory(category) {
+        // Update tab button styles
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.className = 'filter-btn text-xs font-mono font-bold px-4 py-2 rounded-lg border border-[#1b122c] bg-[#0a0512] text-slate-400 hover:text-white hover:border-purple-500/40 transition-all';
+        });
+
+        const activeBtn = document.getElementById(`btn-${category}`);
+        if(activeBtn) {
+            activeBtn.className = 'filter-btn active-filter text-xs font-mono font-bold px-4 py-2 rounded-lg border border-amber-400 bg-amber-400/10 text-amber-300 transition-all';
+        }
+
+        // Filter items
+        const posts = document.querySelectorAll('.post-item');
+        posts.forEach(post => {
+            if(category === 'all' || post.getAttribute('data-category') === category) {
+                post.style.display = 'block';
+            } else {
+                post.style.display = 'none';
+            }
+        });
+    }
+</script>
   
 <!-- Start: Enterprise Dark Luxury Footer -->
 <footer class="w-full footer-glow text-slate-400 border-t border-borderViolet pt-12 md:pt-16 pb-8 relative overflow-hidden">
