@@ -718,111 +718,163 @@ document.addEventListener('DOMContentLoaded', () => {
 
         </div>
     </section>
-
-<!-- HERO TOP HEADER -->
-        <div class="space-y-6 max-w-3xl">
+<!-- MAIN HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-6 pt-12 pb-20 w-full">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            <!-- Breadcrumbs -->
-            <nav class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-slate-400">
-                <a href="#" class="hover:text-gold-400 transition-colors">Home</a>
-                <span class="text-brand-500 font-bold">/</span>
-                <span class="text-gold-400">About Us</span>
-            </nav>
+            <!-- LEFT CONTENT COLUMN -->
+            <div class="lg:col-span-7 space-y-6">
+                
+                <!-- Tag / Badge & Breadcrumb -->
+                <div class="flex flex-wrap items-center gap-3">
+                    <nav class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-slate-400">
+                        <a href="#" class="hover:text-gold-400 transition-colors">Home</a>
+                        <span class="text-brand-500 font-bold">/</span>
+                        <span class="text-gold-400">About Gull Empire</span>
+                    </nav>
 
-            <!-- Tech Badge Icon -->
-            <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 text-brand-400 shadow-[0_0_20px_rgba(139,63,224,0.25)]">
-                <i class="fa-solid fa-layer-group text-lg"></i>
-            </div>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/30 text-[11px] font-extrabold uppercase tracking-widest text-gold-400">
+                        <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+                        Engineering &amp; Commerce Engine
+                    </span>
+                </div>
 
-            <!-- Main Heading -->
-            <h1 class="text-4xl sm:text-6xl font-heading font-extrabold text-white tracking-tight leading-tight">
-                We Build <span class="bg-gradient-to-r from-white via-slate-100 to-gold-400 bg-clip-text text-transparent">Intelligent Platforms</span>
-            </h1>
+                <!-- Main Hero Headline -->
+                <h1 class="text-4xl sm:text-6xl font-heading font-extrabold text-white tracking-tight leading-[1.1]">
+                    We Engineer <br>
+                    <span class="bg-gradient-to-r from-white via-slate-100 to-gold-400 bg-clip-text text-transparent">
+                        High-Scale Digital Platforms.
+                    </span>
+                </h1>
 
-            <!-- Subtitle -->
-            <div class="space-y-2">
-                <h3 class="text-lg font-bold text-gold-400 tracking-wide uppercase text-xs">About Gull Empire</h3>
-                <p class="text-slate-400 text-base sm:text-lg font-normal leading-relaxed max-w-2xl">
-                    An enterprise engineering partner driving scalable digital infrastructure, algorithmic AI engines, and high-performance custom software since 2016.
+                <!-- Description Paragraph -->
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+                    Gull Empire bridges enterprise custom web architecture, automated marketplace management, and high-converting growth systems under one integrated strategy.
                 </p>
+
+                <!-- CTA Action Buttons -->
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#contact" class="px-7 py-3.5 rounded-lg bg-gradient-to-r from-brand-500 to-brand-700 hover:from-brand-400 hover:to-brand-600 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2">
+                        Work With Us
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+
+                    <a href="#work" class="px-7 py-3.5 rounded-lg bg-ink-800/80 hover:bg-brand-500/10 border border-brand-500/30 hover:border-gold-400/60 text-slate-200 hover:text-gold-400 font-bold text-xs uppercase tracking-wider transition-all duration-200">
+                        See Our Work
+                    </a>
+                </div>
             </div>
 
-            <!-- Action CTA Buttons -->
-            <div class="flex flex-wrap items-center gap-4 pt-4">
-                <a href="#contact" class="px-7 py-3.5 rounded-lg bg-gradient-to-r from-brand-500 to-brand-700 hover:from-brand-400 hover:to-brand-600 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2">
-                    Work With Us
-                    <i class="fa-solid fa-arrow-right text-xs"></i>
-                </a>
+            <!-- RIGHT IDE CODE TERMINAL COLUMN -->
+            <div class="lg:col-span-5 w-full">
+                <div class="code-window rounded-xl overflow-hidden relative group">
+                    
+                    <!-- IDE Window Header Bar -->
+                    <div class="px-4 py-3 bg-black/50 border-b border-brand-500/20 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+                        </div>
+                        <div class="text-[11px] font-mono text-slate-400 flex items-center gap-1.5">
+                            <i class="fa-solid fa-code text-brand-400"></i>
+                            gullempire.config.ts
+                        </div>
+                        <div class="text-xs text-slate-500">
+                            <i class="fa-regular fa-copy hover:text-gold-400 cursor-pointer transition-colors" title="Copy Code" id="copyBtn"></i>
+                        </div>
+                    </div>
 
-                <a href="#portfolio" class="px-7 py-3.5 rounded-lg bg-ink-800/80 hover:bg-brand-500/10 border border-brand-500/30 hover:border-gold-400/60 text-slate-200 hover:text-gold-400 font-bold text-xs uppercase tracking-wider transition-all duration-200">
-                    See Our Work
-                </a>
+                    <!-- IDE Window Code Content -->
+                    <div class="p-5 font-mono text-xs sm:text-[13px] leading-relaxed overflow-x-auto text-slate-300">
+                        <div class="space-y-1">
+                            <div><span class="tok-keyword">const</span> <span class="tok-var">agency</span> = <span class="tok-keyword">new</span> <span class="tok-fn">GullEmpireEngine</span>();</div>
+                            <br>
+                            <div><span class="tok-var">agency</span>.<span class="tok-fn">deployInfrastructure</span>({</div>
+                            <div class="pl-4"><span class="tok-obj">architecture</span>: <span class="tok-str">"Next.js + Microservices"</span>,</div>
+                            <div class="pl-4"><span class="tok-obj">marketplaceScaling</span>: <span class="tok-str">"Amazon FBA Automation"</span>,</div>
+                            <div class="pl-4"><span class="tok-obj">outboundStrategy</span>: <span class="tok-str">"B2B Client Acquisition"</span>,</div>
+                            <div class="pl-4"><span class="tok-obj">performanceSla</span>: <span class="tok-str">"99.99% Guaranteed"</span></div>
+                            <div>});</div>
+                            <br>
+                            <div class="tok-comment">// Executing system initialization...</div>
+                            <div class="text-emerald-400 font-semibold flex items-center gap-2 pt-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                                &gt; [SUCCESS] All systems operational.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Accent Bar -->
+                    <div class="h-1 w-full bg-gradient-to-r from-brand-500 via-gold-400 to-brand-700"></div>
+                </div>
             </div>
+
         </div>
 
-        <!-- STATS SECTION WITH TECH BRACKETS -->
-        <div class="relative stats-container rounded-2xl p-8 sm:p-12">
+        <!-- STATS / PROOF GRID SECTION -->
+        <div class="mt-20 relative stats-card rounded-2xl p-8 sm:p-12">
             
-            <!-- Tech Corners -->
+            <!-- Tech Corner Brackets -->
             <div class="tech-bracket bracket-tl"></div>
             <div class="tech-bracket bracket-tr"></div>
             <div class="tech-bracket bracket-bl"></div>
             <div class="tech-bracket bracket-br"></div>
 
-            <!-- Grid Layout -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
                 
                 <!-- Stat 1 -->
-                <div class="space-y-2 group">
+                <div class="space-y-1.5 group">
                     <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
                         <span class="counter" data-target="4.9" data-decimals="1">0</span>
                     </div>
-                    <p class="text-sm font-bold text-slate-200 tracking-wide">Verified Client Ratings</p>
+                    <p class="text-sm font-bold text-slate-200">Verified Client Ratings</p>
                     <p class="text-xs text-slate-400">Clutch, DesignRush & Upwork</p>
                 </div>
 
                 <!-- Stat 2 -->
-                <div class="space-y-2 group">
+                <div class="space-y-1.5 group">
                     <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
-                        <span class="counter" data-target="150">0</span>%
+                        <span class="counter" data-target="150" data-decimals="0">0</span>%
                     </div>
-                    <p class="text-sm font-bold text-slate-200 tracking-wide">Retention Rate</p>
+                    <p class="text-sm font-bold text-slate-200">Retention Rate</p>
                     <p class="text-xs text-slate-400">Annual growth in enterprise renewals</p>
                 </div>
 
                 <!-- Stat 3 -->
-                <div class="space-y-2 group">
+                <div class="space-y-1.5 group">
                     <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
                         <span class="counter" data-target="2016" data-decimals="0">0</span>
                     </div>
-                    <p class="text-sm font-bold text-slate-200 tracking-wide">Year Founded</p>
+                    <p class="text-sm font-bold text-slate-200">Year Founded</p>
                     <p class="text-xs text-slate-400">Delivering global technology solutions</p>
                 </div>
 
                 <!-- Stat 4 -->
-                <div class="space-y-2 group">
+                <div class="space-y-1.5 group">
                     <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
-                        <span class="counter" data-target="100">0</span>+
+                        <span class="counter" data-target="100" data-decimals="0">0</span>+
                     </div>
-                    <p class="text-sm font-bold text-slate-200 tracking-wide">Customers Worldwide</p>
-                    <p class="text-xs text-slate-400">From Fortune 500s to High-Growth Startups</p>
+                    <p class="text-sm font-bold text-slate-200">Customers Worldwide</p>
+                    <p class="text-xs text-slate-400">From Fortune 100 to High-Growth Startups</p>
                 </div>
 
                 <!-- Stat 5 -->
-                <div class="space-y-2 group">
+                <div class="space-y-1.5 group">
                     <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
                         <span class="counter" data-target="3.2" data-decimals="1">0</span>+
                     </div>
-                    <p class="text-sm font-bold text-slate-200 tracking-wide">Years Avg. Relationship</p>
-                    <p class="text-xs text-slate-400">Long-term strategic technology partner</p>
+                    <p class="text-sm font-bold text-slate-200">Years Avg. Relationship</p>
+                    <p class="text-xs text-slate-400">Typical client lifecycle & retention</p>
                 </div>
 
                 <!-- Stat 6 -->
-                <div class="space-y-2 group">
+                <div class="space-y-1.5 group">
                     <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
-                        <span class="counter" data-target="20">0</span>+
+                        <span class="counter" data-target="20" data-decimals="0">0</span>+
                     </div>
-                    <p class="text-sm font-bold text-slate-200 tracking-wide">Countries Served</p>
+                    <p class="text-sm font-bold text-slate-200">Countries Served</p>
                     <p class="text-xs text-slate-400">Global engineers and digital deployment</p>
                 </div>
 
@@ -831,11 +883,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     </section>
 
-    <!-- Animated Counter JavaScript -->
+    <!-- JavaScript Controls & Counter Logic -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            // Stats Animated Counter
             const counters = document.querySelectorAll(".counter");
-            const speed = 150; 
+            const speed = 120;
 
             const animateCounter = (counter) => {
                 const target = +counter.getAttribute("data-target");
@@ -856,7 +909,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateCount();
             };
 
-            // Intersection Observer to run counter on scroll view
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -864,9 +916,23 @@ document.addEventListener('DOMContentLoaded', () => {
                         observer.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.5 });
+            }, { threshold: 0.4 });
 
             counters.forEach(counter => observer.observe(counter));
+
+            // Copy Button Logic
+            const copyBtn = document.getElementById("copyBtn");
+            if (copyBtn) {
+                copyBtn.addEventListener("click", () => {
+                    const codeText = `const agency = new GullEmpireEngine();\n\nagency.deployInfrastructure({\n  architecture: "Next.js + Microservices",\n  marketplaceScaling: "Amazon FBA Automation",\n  outboundStrategy: "B2B Client Acquisition",\n  performanceSla: "99.99% Guaranteed"\n});`;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        copyBtn.className = "fa-solid fa-check text-emerald-400";
+                        setTimeout(() => {
+                            copyBtn.className = "fa-regular fa-copy hover:text-gold-400 cursor-pointer transition-colors";
+                        }, 2000);
+                    });
+                });
+            }
         });
     </script>
 </body>
