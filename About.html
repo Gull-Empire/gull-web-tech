@@ -8,6 +8,41 @@
 <link rel="icon" type="image/png" sizes="16x16" href="https://gull-empire.github.io/Atticus_Deshal_upscale_upscaled.jpg">
 <link rel="apple-touch-icon" href="https://gull-empire.github.io/Atticus_Deshal_upscale_upscaled.jpg">
 
+  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { 300:'#c4b0f5', 400:'#a480ef', 500:'#8b3fe0', 600:'#7226c9', 700:'#5a1aa3', 800:'#3e1273', 900:'#240a4a' },
+          gold:  { 300:'#f3d9a4', 400:'#e8c079', 500:'#dba54e', 600:'#bb8635' },
+          ink:   { 900:'#050208', 800:'#0a0512', 700:'#0f0a1a', 600:'#170f26', 500:'#221833' },
+          /* Footer used these names directly (bg-brandDark, text-brandGold, etc.)
+             but they were never registered in the config, so Tailwind's CDN
+             build silently produced no CSS for them. Mapped to the same
+             hex values already used elsewhere so the footer matches the rest
+             of the page exactly. */
+          brandDark:   '#050208',
+          brandViolet: '#8b3fe0',
+          brandGold:   '#dba54e',
+          borderViolet:'rgba(139,63,224,0.18)',
+        }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Plus Jakarta Sans', 'sans-serif'],
+      }
+    }
+  }
+</script>
+
   <style>
   :root{
     --glow-core: rgba(139,63,224,0.55);
