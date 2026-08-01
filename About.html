@@ -619,124 +619,163 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 </section>
 
-<!-- TOP HERO SECTION -->
-    <section class="hero-bg py-16 sm:py-24 px-6 sm:px-12 border-b border-white/5">
-        <div class="max-w-6xl mx-auto space-y-6">
+<!-- ABOUT & STATS HERO SECTION ONLY -->
+<section class="relative bg-[#07050d] text-slate-100 py-16 px-6 sm:px-12 max-w-6xl mx-auto rounded-xl my-8 overflow-hidden border border-purple-900/20 shadow-2xl">
+    
+    <!-- Background Dot Pattern (CSS Inline) -->
+    <div class="absolute inset-0 pointer-events-none opacity-40" style="background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+    <div class="relative z-10 space-y-12">
+        
+        <!-- TOP CONTENT BLOCK -->
+        <div class="space-y-6 max-w-3xl">
             
-            <!-- Breadcrumb -->
-            <nav class="text-xs font-medium text-slate-400 space-x-2">
-                <a href="#" class="hover:text-white transition-colors">Home</a>
-                <span>›</span>
-                <span class="text-slate-200">About</span>
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center space-x-2 text-xs font-semibold uppercase tracking-widest text-slate-400">
+                <a href="#" class="hover:text-amber-400 transition-colors">Home</a>
+                <span class="text-purple-500">//</span>
+                <span class="text-amber-400">About</span>
             </nav>
 
-            <!-- Square Icon Box -->
-            <div class="w-12 h-12 bg-blue-600 rounded-md flex items-center justify-center text-white text-xl shadow-lg">
-                <i class="fa-solid fa-building-user"></i>
+            <!-- Purple Icon Badge -->
+            <div class="w-12 h-12 rounded-lg bg-purple-900/30 border border-purple-500/40 flex items-center justify-center text-purple-400 text-xl shadow-lg shadow-purple-500/10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h4m-4 0V11m0 0h4" />
+                </svg>
             </div>
 
-            <!-- Title Heading -->
-            <h1 class="text-4xl sm:text-6xl font-heading font-extrabold tracking-tight text-white">
-                We Engineer High-Scale Digital Platforms
-            </h1>
+            <!-- Main Heading with Amber Highlight -->
+            <h2 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                We Build <span class="text-amber-400">Intelligent Apps</span>
+            </h2>
 
-            <!-- Subtitle Section -->
-            <div class="space-y-2 pt-2">
-                <h3 class="text-lg font-bold text-white tracking-wide">About us</h3>
-                <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-2xl font-normal">
-                    Gull Empire is an enterprise engineering partner working with ambitious product, marketplace, and platform teams worldwide.
+            <!-- Paragraph Description -->
+            <div class="space-y-2 pt-1">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400">About us</h3>
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal max-w-2xl">
+                    A nearshore engineering partner working with ambitious product and platform teams since 2016.
                 </p>
             </div>
 
             <!-- Action Buttons -->
             <div class="flex flex-wrap items-center gap-4 pt-4">
-                <a href="#contact" class="px-6 py-3 bg-white text-black font-bold text-xs uppercase tracking-wider rounded-sm hover:bg-slate-200 transition-colors flex items-center gap-2">
-                    WORK WITH US <i class="fa-solid fa-arrow-right text-xs"></i>
+                <a href="#contact" class="px-7 py-3.5 bg-gradient-to-r from-purple-700 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-lg shadow-purple-600/30 transition-all duration-200 flex items-center gap-2">
+                    WORK WITH US 
+                    <span class="text-xs">→</span>
                 </a>
 
-                <a href="#work" class="px-6 py-3 bg-transparent border border-white/30 text-white font-bold text-xs uppercase tracking-wider rounded-sm hover:border-white transition-colors">
+                <a href="#work" class="px-7 py-3.5 bg-transparent border border-amber-500/80 text-amber-400 hover:bg-amber-500/10 font-bold text-xs uppercase tracking-wider rounded-md transition-all duration-200">
                     SEE OUR WORK
                 </a>
             </div>
 
         </div>
-    </section>
 
-    <!-- BOTTOM STATS SECTION (With Tech Corner Brackets) -->
-    <section class="py-16 px-4 sm:px-8 bg-[#030206]">
-        <div class="max-w-6xl mx-auto">
+        <!-- BOTTOM STATS CARD (With Tech Corner Brackets) -->
+        <div class="relative bg-[#0f0b1a]/80 backdrop-blur-md p-8 sm:p-12 rounded-lg border border-purple-500/20">
             
-            <!-- The Stats Container Card -->
-            <div class="relative stats-box p-8 sm:p-14 rounded-sm">
+            <!-- Tech Corner Brackets (Amber Accent) -->
+            <div class="absolute -top-[1px] -left-[1px] w-3.5 h-3.5 border-t-2 border-l-2 border-amber-500"></div>
+            <div class="absolute -top-[1px] -right-[1px] w-3.5 h-3.5 border-t-2 border-r-2 border-amber-500"></div>
+            <div class="absolute -bottom-[1px] -left-[1px] w-3.5 h-3.5 border-b-2 border-l-2 border-amber-500"></div>
+            <div class="absolute -bottom-[1px] -right-[1px] w-3.5 h-3.5 border-b-2 border-r-2 border-amber-500"></div>
+
+            <!-- 6 Items Stats Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-8">
                 
-                <!-- Corner Tech Brackets -->
-                <div class="corner-bracket cb-tl"></div>
-                <div class="corner-bracket cb-tr"></div>
-                <div class="corner-bracket cb-bl"></div>
-                <div class="corner-bracket cb-br"></div>
-
-                <!-- 6 Stats Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8">
-                    
-                    <!-- Stat 1 -->
-                    <div class="space-y-1">
-                        <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white">
-                            4.9
-                        </div>
-                        <p class="text-sm font-bold text-white pt-1">Verified Client Ratings</p>
-                        <p class="text-xs text-slate-400">Clutch, DesignRush & Upwork</p>
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        <span class="stat-counter" data-target="4.9" data-decimals="1">0</span>
                     </div>
+                    <p class="text-sm font-bold text-slate-200 pt-1">Verified Client Ratings</p>
+                    <p class="text-xs text-slate-400">Clutch, DesignRush</p>
+                </div>
 
-                    <!-- Stat 2 -->
-                    <div class="space-y-1">
-                        <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white">
-                            150%
-                        </div>
-                        <p class="text-sm font-bold text-white pt-1">Retention Rate</p>
-                        <p class="text-xs text-slate-400">Annual growth in renewals</p>
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        <span class="stat-counter" data-target="150" data-decimals="0">0</span>%
                     </div>
+                    <p class="text-sm font-bold text-slate-200 pt-1">Retention Rate</p>
+                    <p class="text-xs text-slate-400">Annual growth in renewals</p>
+                </div>
 
-                    <!-- Stat 3 -->
-                    <div class="space-y-1">
-                        <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white">
-                            2016
-                        </div>
-                        <p class="text-sm font-bold text-white pt-1">Year Founded</p>
-                        <p class="text-xs text-slate-400">Global technology infrastructure</p>
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        <span class="stat-counter" data-target="2016" data-decimals="0">0</span>
                     </div>
+                    <p class="text-sm font-bold text-slate-200 pt-1">Year Founded</p>
+                    <p class="text-xs text-slate-400">San Francisco, California</p>
+                </div>
 
-                    <!-- Stat 4 -->
-                    <div class="space-y-1">
-                        <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white">
-                            100+
-                        </div>
-                        <p class="text-sm font-bold text-white pt-1">Customers</p>
-                        <p class="text-xs text-slate-400">Fortune 100 to Startups</p>
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        <span class="stat-counter" data-target="100" data-decimals="0">0</span>+
                     </div>
+                    <p class="text-sm font-bold text-slate-200 pt-1">Customers</p>
+                    <p class="text-xs text-slate-400">Fortune 100 to Startups</p>
+                </div>
 
-                    <!-- Stat 5 -->
-                    <div class="space-y-1">
-                        <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white">
-                            3.2+
-                        </div>
-                        <p class="text-sm font-bold text-white pt-1">Years and growing</p>
-                        <p class="text-xs text-slate-400">Typical customer lifecycle</p>
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        <span class="stat-counter" data-target="3.2" data-decimals="1">0</span>+
                     </div>
+                    <p class="text-sm font-bold text-slate-200 pt-1">Years and growing</p>
+                    <p class="text-xs text-slate-400">Typical customer life</p>
+                </div>
 
-                    <!-- Stat 6 -->
-                    <div class="space-y-1">
-                        <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white">
-                            20+
-                        </div>
-                        <p class="text-sm font-bold text-white pt-1">Countries</p>
-                        <p class="text-xs text-slate-400">Developers & client deployment</p>
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        <span class="stat-counter" data-target="20" data-decimals="0">0</span>+
                     </div>
-
+                    <p class="text-sm font-bold text-slate-200 pt-1">Countries</p>
+                    <p class="text-xs text-slate-400">Developers across Latin America</p>
                 </div>
 
             </div>
 
         </div>
-    </section>
+
+    </div>
+
+    <!-- JAVASCRIPT FOR COUNTER ANIMATION -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".stat-counter");
+            
+            const animateCounter = (counter) => {
+                const target = +counter.getAttribute("data-target");
+                const decimals = +counter.getAttribute("data-decimals") || 0;
+                let count = 0;
+                const speed = 100;
+                const increment = target / speed;
+
+                const updateCount = () => {
+                    count += increment;
+                    if (count < target) {
+                        counter.innerText = count.toFixed(decimals);
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target.toFixed(decimals);
+                    }
+                };
+
+                updateCount();
+            };
+
+            const observer = new IntersectionObserver((entries, observerInstance) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        observerInstance.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            counters.forEach(counter => observer.observe(counter));
+        });
+    </script>
+</section>
+
+    
 </body>
 </html>
