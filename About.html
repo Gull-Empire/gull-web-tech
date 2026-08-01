@@ -540,6 +540,83 @@
     </a>
   </div>
 </aside>
+    <!-- JavaScript Implementation -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Mega Menu Controls
+    const navItems = document.querySelectorAll('.nav-item');
+    const navTriggers = document.querySelectorAll('.nav-trigger');
+    const megaContainer = document.getElementById('megaContainer');
+    const megaScrim = document.getElementById('megaScrim');
+    const megaPanels = document.querySelectorAll('.mega-content');
+
+    function closeMegaMenu() {
+        navItems.forEach(item => item.classList.remove('open'));
+        megaContainer.classList.remove('open');
+        megaScrim.classList.remove('show');
+        setTimeout(() => {
+            megaPanels.forEach(panel => panel.style.display = 'none');
+        }, 200);
+    }
+
+    navTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const targetPanelId = `panel-${trigger.dataset.panel}`;
+            const targetPanel = document.getElementById(targetPanelId);
+            const parentItem = trigger.closest('.nav-item');
+
+            if (parentItem.classList.contains('open')) {
+                closeMegaMenu();
+                return;
+            }
+
+            navItems.forEach(item => item.classList.remove('open'));
+            megaPanels.forEach(panel => panel.style.display = 'none');
+
+            parentItem.classList.add('open');
+            if (targetPanel) targetPanel.style.display = 'grid';
+            megaContainer.classList.add('open');
+            megaScrim.classList.add('show');
+        });
+    });
+
+    megaScrim.addEventListener('click', closeMegaMenu);
+    document.addEventListener('click', (e) => {
+        if (!megaContainer.contains(e.target) && !e.target.classList.contains('nav-trigger')) {
+            closeMegaMenu();
+        }
+    });
+
+    // Mobile Drawer Controls
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const closeMobileBtn = document.getElementById('closeMobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+
+    function openMobileMenu() {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileOverlay.classList.remove('opacity-0', 'pointer-events-none');
+    }
+
+    function closeMobileMenu() {
+        mobileMenu.classList.add('translate-x-full');
+        mobileOverlay.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    if (hamburgerBtn) hamburgerBtn.addEventListener('click', openMobileMenu);
+    if (closeMobileBtn) closeMobileBtn.addEventListener('click', closeMobileMenu);
+    if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileMenu);
+
+    // Mobile Accordions
+    const accBtns = document.querySelectorAll('.mobile-acc-btn');
+    accBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+        });
+    });
+});
+</script>
 </section>
 
 
