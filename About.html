@@ -719,117 +719,155 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </section>
 
+<!-- HERO TOP HEADER -->
+        <div class="space-y-6 max-w-3xl">
+            
+            <!-- Breadcrumbs -->
+            <nav class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-slate-400">
+                <a href="#" class="hover:text-gold-400 transition-colors">Home</a>
+                <span class="text-brand-500 font-bold">/</span>
+                <span class="text-gold-400">About Us</span>
+            </nav>
 
-    <!-- ========================================================= -->
-    <!-- SECTION 2: HIGH-IMPACT METRICS & METRIC CARDS             -->
-    <!-- ========================================================= -->
-    <section class="w-full py-24 px-4 sm:px-8 relative">
-        <div class="max-w-7xl mx-auto relative z-10 space-y-12">
-
-            <!-- Section Label -->
-            <div class="flex items-center gap-3">
-                <span class="w-8 h-[2px] bg-amber-400"></span>
-                <span class="text-xs font-mono font-bold tracking-widest text-amber-400 uppercase">PROVEN TRACK RECORD</span>
+            <!-- Tech Badge Icon -->
+            <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/30 text-brand-400 shadow-[0_0_20px_rgba(139,63,224,0.25)]">
+                <i class="fa-solid fa-layer-group text-lg"></i>
             </div>
 
-            <!-- METRICS CONTAINER -->
-            <div class="relative bg-[#0a0512]/90 border border-[#1b122c] rounded-3xl p-8 sm:p-14 backdrop-blur-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)]">
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-6xl font-heading font-extrabold text-white tracking-tight leading-tight">
+                We Build <span class="bg-gradient-to-r from-white via-slate-100 to-gold-400 bg-clip-text text-transparent">Intelligent Platforms</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <div class="space-y-2">
+                <h3 class="text-lg font-bold text-gold-400 tracking-wide uppercase text-xs">About Gull Empire</h3>
+                <p class="text-slate-400 text-base sm:text-lg font-normal leading-relaxed max-w-2xl">
+                    An enterprise engineering partner driving scalable digital infrastructure, algorithmic AI engines, and high-performance custom software since 2016.
+                </p>
+            </div>
+
+            <!-- Action CTA Buttons -->
+            <div class="flex flex-wrap items-center gap-4 pt-4">
+                <a href="#contact" class="px-7 py-3.5 rounded-lg bg-gradient-to-r from-brand-500 to-brand-700 hover:from-brand-400 hover:to-brand-600 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50 hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2">
+                    Work With Us
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+
+                <a href="#portfolio" class="px-7 py-3.5 rounded-lg bg-ink-800/80 hover:bg-brand-500/10 border border-brand-500/30 hover:border-gold-400/60 text-slate-200 hover:text-gold-400 font-bold text-xs uppercase tracking-wider transition-all duration-200">
+                    See Our Work
+                </a>
+            </div>
+        </div>
+
+        <!-- STATS SECTION WITH TECH BRACKETS -->
+        <div class="relative stats-container rounded-2xl p-8 sm:p-12">
+            
+            <!-- Tech Corners -->
+            <div class="tech-bracket bracket-tl"></div>
+            <div class="tech-bracket bracket-tr"></div>
+            <div class="tech-bracket bracket-bl"></div>
+            <div class="tech-bracket bracket-br"></div>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
                 
-                <!-- Futuristic Corner Accents with Glow -->
-                <div class="absolute top-4 left-4 w-6 h-6 border-t-2 border-l-2 border-amber-400 shadow-[0_0_10px_#f59e0b]"></div>
-                <div class="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-amber-400 shadow-[0_0_10px_#f59e0b]"></div>
-                <div class="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-amber-400 shadow-[0_0_10px_#f59e0b]"></div>
-                <div class="absolute bottom-4 right-4 w-6 h-6 border-b-2 border-r-2 border-amber-400 shadow-[0_0_10px_#f59e0b]"></div>
-
-                <!-- GRID ITEMS -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-12">
-
-                    <!-- METRIC 01 -->
-                    <div class="space-y-2 border-l-2 border-purple-500/40 pl-6 group hover:border-amber-400 transition-colors duration-300">
-                        <div class="text-5xl sm:text-6xl font-mono font-black bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent group-hover:scale-105 transition-transform origin-left">
-                            4.9
-                        </div>
-                        <h3 class="text-base font-bold text-white tracking-wide">
-                            Verified Client Rating
-                        </h3>
-                        <p class="text-xs font-mono text-slate-400 leading-relaxed">
-                            Across Clutch, Upwork & Enterprise Reviews
-                        </p>
+                <!-- Stat 1 -->
+                <div class="space-y-2 group">
+                    <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
+                        <span class="counter" data-target="4.9" data-decimals="1">0</span>
                     </div>
+                    <p class="text-sm font-bold text-slate-200 tracking-wide">Verified Client Ratings</p>
+                    <p class="text-xs text-slate-400">Clutch, DesignRush & Upwork</p>
+                </div>
 
-                    <!-- METRIC 02 -->
-                    <div class="space-y-2 border-l-2 border-purple-500/40 pl-6 group hover:border-amber-400 transition-colors duration-300">
-                        <div class="text-5xl sm:text-6xl font-mono font-black bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent group-hover:scale-105 transition-transform origin-left">
-                            150%
-                        </div>
-                        <h3 class="text-base font-bold text-white tracking-wide">
-                            Client Retention Rate
-                        </h3>
-                        <p class="text-xs font-mono text-slate-400 leading-relaxed">
-                            Consistent multi-year account renewals
-                        </p>
+                <!-- Stat 2 -->
+                <div class="space-y-2 group">
+                    <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
+                        <span class="counter" data-target="150">0</span>%
                     </div>
+                    <p class="text-sm font-bold text-slate-200 tracking-wide">Retention Rate</p>
+                    <p class="text-xs text-slate-400">Annual growth in enterprise renewals</p>
+                </div>
 
-                    <!-- METRIC 03 -->
-                    <div class="space-y-2 border-l-2 border-purple-500/40 pl-6 group hover:border-amber-400 transition-colors duration-300">
-                        <div class="text-5xl sm:text-6xl font-mono font-black bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent group-hover:scale-105 transition-transform origin-left">
-                            2020
-                        </div>
-                        <h3 class="text-base font-bold text-white tracking-wide">
-                            Year Established
-                        </h3>
-                        <p class="text-xs font-mono text-slate-400 leading-relaxed">
-                            Engineering & Commerce Architecture
-                        </p>
+                <!-- Stat 3 -->
+                <div class="space-y-2 group">
+                    <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
+                        <span class="counter" data-target="2016" data-decimals="0">0</span>
                     </div>
+                    <p class="text-sm font-bold text-slate-200 tracking-wide">Year Founded</p>
+                    <p class="text-xs text-slate-400">Delivering global technology solutions</p>
+                </div>
 
-                    <!-- METRIC 04 -->
-                    <div class="space-y-2 border-l-2 border-purple-500/40 pl-6 group hover:border-amber-400 transition-colors duration-300">
-                        <div class="text-5xl sm:text-6xl font-mono font-black bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent group-hover:scale-105 transition-transform origin-left">
-                            100+
-                        </div>
-                        <h3 class="text-base font-bold text-white tracking-wide">
-                            Platforms & Stores
-                        </h3>
-                        <p class="text-xs font-mono text-slate-400 leading-relaxed">
-                            Shipped for scaling startups & brands
-                        </p>
+                <!-- Stat 4 -->
+                <div class="space-y-2 group">
+                    <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
+                        <span class="counter" data-target="100">0</span>+
                     </div>
+                    <p class="text-sm font-bold text-slate-200 tracking-wide">Customers Worldwide</p>
+                    <p class="text-xs text-slate-400">From Fortune 500s to High-Growth Startups</p>
+                </div>
 
-                    <!-- METRIC 05 -->
-                    <div class="space-y-2 border-l-2 border-purple-500/40 pl-6 group hover:border-amber-400 transition-colors duration-300">
-                        <div class="text-5xl sm:text-6xl font-mono font-black bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent group-hover:scale-105 transition-transform origin-left">
-                            3.2+
-                        </div>
-                        <h3 class="text-base font-bold text-white tracking-wide">
-                            Years Avg. Partnership
-                        </h3>
-                        <p class="text-xs font-mono text-slate-400 leading-relaxed">
-                            Long-term dedicated engineering pods
-                        </p>
+                <!-- Stat 5 -->
+                <div class="space-y-2 group">
+                    <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
+                        <span class="counter" data-target="3.2" data-decimals="1">0</span>+
                     </div>
+                    <p class="text-sm font-bold text-slate-200 tracking-wide">Years Avg. Relationship</p>
+                    <p class="text-xs text-slate-400">Long-term strategic technology partner</p>
+                </div>
 
-                    <!-- METRIC 06 -->
-                    <div class="space-y-2 border-l-2 border-purple-500/40 pl-6 group hover:border-amber-400 transition-colors duration-300">
-                        <div class="text-5xl sm:text-6xl font-mono font-black bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent group-hover:scale-105 transition-transform origin-left">
-                            15+
-                        </div>
-                        <h3 class="text-base font-bold text-white tracking-wide">
-                            Global Markets
-                        </h3>
-                        <p class="text-xs font-mono text-slate-400 leading-relaxed">
-                            Deployed platforms & active marketplaces
-                        </p>
+                <!-- Stat 6 -->
+                <div class="space-y-2 group">
+                    <div class="text-4xl sm:text-5xl font-heading font-extrabold text-white flex items-center group-hover:text-gold-400 transition-colors">
+                        <span class="counter" data-target="20">0</span>+
                     </div>
-
+                    <p class="text-sm font-bold text-slate-200 tracking-wide">Countries Served</p>
+                    <p class="text-xs text-slate-400">Global engineers and digital deployment</p>
                 </div>
 
             </div>
-
         </div>
+
     </section>
 
-</div>
+    <!-- Animated Counter JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".counter");
+            const speed = 150; 
 
+            const animateCounter = (counter) => {
+                const target = +counter.getAttribute("data-target");
+                const decimals = counter.getAttribute("data-decimals") || 0;
+                let count = 0;
+                const inc = target / speed;
+
+                const updateCount = () => {
+                    count += inc;
+                    if (count < target) {
+                        counter.innerText = count.toFixed(decimals);
+                        setTimeout(updateCount, 15);
+                    } else {
+                        counter.innerText = target.toFixed(decimals);
+                    }
+                };
+
+                updateCount();
+            };
+
+            // Intersection Observer to run counter on scroll view
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(counter => observer.observe(counter));
+        });
+    </script>
 </body>
 </html>
