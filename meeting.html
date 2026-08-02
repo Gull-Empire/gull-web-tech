@@ -624,7 +624,7 @@
   </div>
 </aside>
 
-<!-- BOOK A CALL SECTION (PURPLE LEFT / BLACK RIGHT SPLIT) -->
+<!-- BOOK A CALL SECTION (PURPLE LEFT / BLACK RIGHT SPLIT WITH FORMSPREE + CAL.COM) -->
 <div class="relative w-full bg-[#050208] text-slate-100 min-h-screen py-16 px-4 sm:px-8 lg:px-16 overflow-hidden font-sans">
     
     <!-- Cal.com Embed Script Integration -->
@@ -639,7 +639,7 @@
     <!-- Main Container -->
     <div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
         
-        <!-- LEFT COLUMN: Deep Purple Background (Image 2 Style) -->
+        <!-- LEFT COLUMN: Deep Purple Background -->
         <div class="lg:col-span-5 bg-gradient-to-br from-[#250d5e] via-[#1b0845] to-[#120430] border border-purple-500/30 p-8 sm:p-10 rounded-2xl shadow-2xl flex flex-col justify-between space-y-10 relative overflow-hidden">
             
             <!-- Radial Glow Effect inside Left Box -->
@@ -692,7 +692,7 @@
                 <!-- Email Direct Contact -->
                 <div class="p-4 bg-black/40 border border-purple-400/20 rounded-xl backdrop-blur-sm">
                     <span class="text-[10px] text-slate-400 uppercase tracking-widest font-bold block mb-1">PREFER EMAIL?</span>
-                    <a href="mailto:contact@gullweb.com" class="text-xs font-bold text-amber-400 hover:text-white transition-colors flex items-center space-x-2">
+                    <a href="mailto:gullempire0@gmail.com" class="text-xs font-bold text-amber-400 hover:text-white transition-colors flex items-center space-x-2">
                         <span>gullempire0@gmail.com</span>
                         <span>→</span>
                     </a>
@@ -750,58 +750,59 @@
                 <span class="text-[11px] text-slate-400 font-medium">REPLY UNDER 24H</span>
             </div>
 
-            <form class="space-y-5" onsubmit="event.preventDefault();">
+            <!-- FORMSPREE INTEGRATED FORM -->
+            <form id="contact-form" action="https://formspree.io/f/mojpjjqk" method="POST" class="space-y-5">
                 
                 <!-- Full Name -->
                 <div>
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-2">FULL NAME *</label>
-                    <input type="text" placeholder="Abdullah Gull" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
+                    <input type="text" name="full_name" placeholder="Abdullah Gull" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
                 </div>
 
                 <!-- Email Address -->
                 <div>
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-2">EMAIL ADDRESS *</label>
-                    <input type="email" placeholder="name@company.com" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
+                    <input type="email" name="email" placeholder="name@company.com" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
                 </div>
 
                 <!-- Phone Number & Company Name -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                         <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-2">PHONE NUMBER</label>
-                        <input type="tel" placeholder="+92 300 0000000" class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
+                        <input type="tel" name="phone" placeholder="+92 300 0000000" class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
                     </div>
                     <div>
                         <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-2">COMPANY NAME *</label>
-                        <input type="text" placeholder="Gull Empire" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
+                        <input type="text" name="company" placeholder="Gull Empire" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
                     </div>
                 </div>
 
                 <!-- Company Website -->
                 <div>
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-2">WHAT IS YOUR COMPANY WEBSITE? *</label>
-                    <input type="url" placeholder="https://example.com" class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
+                    <input type="url" name="website" placeholder="https://example.com" class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
                 </div>
 
                 <!-- How can we help & Budget -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
                         <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-2">HOW CAN WE HELP? *</label>
-                        <select class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
+                        <select name="service_needed" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
                             <option value="" disabled selected>Pick the closest fit</option>
-                            <option value="dedicated-team">Dedicated Engineering Team</option>
-                            <option value="web-app">Full-Stack Web App Development</option>
-                            <option value="e-commerce">E-Commerce Infrastructure</option>
-                            <option value="staff-aug">Staff Augmentation</option>
+                            <option value="Dedicated Engineering Team">Dedicated Engineering Team</option>
+                            <option value="Full-Stack Web App Development">Full-Stack Web App Development</option>
+                            <option value="E-Commerce Infrastructure">E-Commerce Infrastructure</option>
+                            <option value="Staff Augmentation">Staff Augmentation</option>
                         </select>
                     </div>
                     <div>
                         <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-2">PROJECT BUDGET *</label>
-                        <select class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
+                        <select name="budget" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
                             <option value="" disabled selected>Pick a range</option>
-                            <option value="5k-10k">$5k – $10k</option>
-                            <option value="10k-25k">$10k – $25k</option>
-                            <option value="25k-50k">$25k – $50k</option>
-                            <option value="50k+">$50k+</option>
+                            <option value="$5k – $10k">$5k – $10k</option>
+                            <option value="$10k – $25k">$10k – $25k</option>
+                            <option value="$25k – $50k">$25k – $50k</option>
+                            <option value="$50k+">$50k+</option>
                         </select>
                     </div>
                 </div>
@@ -809,34 +810,32 @@
                 <!-- Project Details -->
                 <div>
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-2">PLEASE SHARE ANYTHING THAT WILL HELP PREPARE FOR OUR MEETING *</label>
-                    <textarea rows="4" placeholder="What are you trying to build, and what's the problem you're solving?" class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors"></textarea>
+                    <textarea name="message" rows="4" placeholder="What are you trying to build, and what's the problem you're solving?" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors"></textarea>
                 </div>
 
                 <!-- How did you find us -->
                 <div>
                     <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-2">HOW DID YOU FIND US? *</label>
-                    <select class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
+                    <select name="source" required class="w-full bg-[#080511] border border-purple-500/30 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-colors">
                         <option value="" disabled selected>Pick one</option>
-                        <option value="google">Google Search</option>
-                        <option value="social">Social Media</option>
-                        <option value="referral">Client Referral</option>
-                        <option value="clutch">Clutch / Portfolio</option>
+                        <option value="Google Search">Google Search</option>
+                        <option value="Social Media">Social Media</option>
+                        <option value="Client Referral">Client Referral</option>
+                        <option value="Clutch / Portfolio">Clutch / Portfolio</option>
                     </select>
                 </div>
 
-                <!-- Cal.com Trigger Button -->
+                <!-- Combined Action Button -->
                 <button 
                     type="submit" 
-                    data-cal-link="abdullah-gull/30min"
-                    data-cal-namespace="30min"
-                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                    id="submit-btn"
                     class="w-full bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-black font-extrabold py-4 rounded-xl shadow-lg shadow-amber-500/20 transition-all duration-300 hover:scale-[1.01] uppercase tracking-wider text-sm flex items-center justify-center space-x-2 cursor-pointer mt-4"
                 >
-                    <span>SCHEDULE THE CALL</span>
+                    <span id="btn-text">SEND MESSAGE & SCHEDULE CALL</span>
                     <span class="text-base">➔</span>
                 </button>
 
-                <p class="text-[11px] text-slate-500 text-center">We won't share your info — this goes straight into an engineer's inbox.</p>
+                <p id="form-status" class="text-[11px] text-slate-400 text-center font-medium"></p>
 
             </form>
 
@@ -844,6 +843,62 @@
 
     </div>
 </div>
+
+<!-- JavaScript Integration: Formspree Dispatch + Cal.com Trigger -->
+<script>
+  (function() {
+    const form = document.getElementById("contact-form");
+    const submitBtn = document.getElementById("submit-btn");
+    const btnText = document.getElementById("btn-text");
+    const formStatus = document.getElementById("form-status");
+
+    form.addEventListener("submit", async function(e) {
+      e.preventDefault();
+      
+      // Update UI to Loading State
+      btnText.innerText = "SENDING MESSAGE...";
+      submitBtn.disabled = true;
+
+      const data = new FormData(form);
+
+      try {
+        // Step 1: Send message details to Formspree
+        const response = await fetch("https://formspree.io/f/mojpjjqk", {
+          method: "POST",
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          formStatus.innerText = "Message sent successfully! Opening calendar...";
+          formStatus.className = "text-[11px] text-emerald-400 text-center font-medium";
+          form.reset();
+
+          // Step 2: Automatically Open Cal.com Modal
+          if (window.Cal && window.Cal.ns && window.Cal.ns["30min"]) {
+            window.Cal.ns["30min"]("ui", {"hideEventTypeDetails": false, "layout": "month_view"});
+            window.Cal("click", {
+              elementOrSelector: "#submit-btn",
+              calLink: "abdullah-gull/30min",
+              config: {"layout":"month_view"}
+            });
+          }
+        } else {
+          formStatus.innerText = "Submission error. Please try again.";
+          formStatus.className = "text-[11px] text-rose-400 text-center font-medium";
+        }
+      } catch (error) {
+        formStatus.innerText = "Network connection issue. Please retry.";
+        formStatus.className = "text-[11px] text-rose-400 text-center font-medium";
+      } finally {
+        btnText.innerText = "SEND MESSAGE & SCHEDULE CALL";
+        submitBtn.disabled = false;
+      }
+    });
+  })();
+</script>
 
 <!-- Start: Enterprise Dark Luxury Footer -->
 <footer class="w-full footer-glow text-slate-400 border-t border-borderViolet pt-12 md:pt-16 pb-8 relative overflow-hidden">
