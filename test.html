@@ -1,0 +1,2495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Gull Empire Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="https://gull-empire.github.io/Atticus_Deshal_upscale_upscaled.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://gull-empire.github.io/Atticus_Deshal_upscale_upscaled.jpg">
+<link rel="apple-touch-icon" href="https://gull-empire.github.io/Atticus_Deshal_upscale_upscaled.jpg">
+
+<title>Gull Empire - Enterprise AI Solutions</title>
+
+<!-- ===== SEO Meta Tags ===== -->
+<meta name="description" content="Gull Empire builds enterprise AI solutions, custom software, and scalable web platforms. Founded by Abdullah Gull — senior engineering teams for AI, data, and e-commerce products.">
+<meta name="keywords" content="Gull Empire, Abdullah Gull, enterprise AI development, custom software development, AI agents, web development agency">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gull-empire.github.io/index.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gull Empire | Enterprise AI & Software Development">
+<meta property="og:description" content="Enterprise AI solutions, custom software, and scalable web platforms built by senior engineers. Founded by Abdullah Gull.">
+<meta property="og:image" content="https://gull-empire.github.io/gull-web-tech/ChatGPT_Image_Jul_30__2026__03_45_34_AM-removebg-preview.png">
+<meta property="og:url" content="https://gull-empire.github.io/index.html">
+<meta property="og:site_name" content="Gull Empire">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gull Empire | Enterprise AI & Software Development">
+<meta name="twitter:description" content="Enterprise AI solutions, custom software, and scalable web platforms built by senior engineers.">
+<meta name="twitter:image" content="https://gull-empire.github.io/gull-web-tech/ChatGPT_Image_Jul_30__2026__03_45_34_AM-removebg-preview.png">
+
+<!-- ===== Structured Data (JSON-LD) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://gull-empire.github.io/#organization",
+      "name": "Gull Empire",
+      "alternateName": "Gull Of Group",
+      "url": "https://gull-empire.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://gull-empire.github.io/#logo",
+        "url": "https://gull-empire.github.io/gull-web-tech/ChatGPT_Image_Jul_30__2026__03_45_34_AM-removebg-preview.png"
+      },
+      "founder": { "@id": "https://gull-empire.github.io/#person" },
+      "sameAs": [
+        "https://www.linkedin.com/in/abdullah-gull-amazon/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://gull-empire.github.io/#person",
+      "name": "Abdullah Gull",
+      "jobTitle": "Founder & CEO",
+      "worksFor": { "@id": "https://gull-empire.github.io/#organization" },
+      "sameAs": [
+        "https://www.linkedin.com/in/abdullah-gull-amazon/",
+        "https://www.upwork.com/freelancers/~0104014e457db310f6"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://gull-empire.github.io/#website",
+      "url": "https://gull-empire.github.io/",
+      "name": "Gull Empire",
+      "publisher": { "@id": "https://gull-empire.github.io/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://gull-empire.github.io/#webpage",
+      "url": "https://gull-empire.github.io/",
+      "name": "Gull Empire - Enterprise AI Solutions",
+      "isPartOf": { "@id": "https://gull-empire.github.io/#website" },
+      "about": { "@id": "https://gull-empire.github.io/#organization" },
+      "description": "Enterprise AI and custom software development — scalable ML models, data pipelines, and production-grade engineering for global companies."
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://gull-empire.github.io/#service",
+      "name": "Gull Empire",
+      "image": "https://gull-empire.github.io/gull-web-tech/ChatGPT_Image_Jul_30__2026__03_45_34_AM-removebg-preview.png",
+      "url": "https://gull-empire.github.io/",
+      "priceRange": "$$$",
+      "areaServed": "Worldwide",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "VQGG+WG9, New Metro City",
+        "addressLocality": "Sarai Alamgir",
+        "postalCode": "50000",
+        "addressCountry": "PK"
+      },
+      "founder": { "@id": "https://gull-empire.github.io/#person" }
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { 300:'#c4b0f5', 400:'#a480ef', 500:'#8b3fe0', 600:'#7226c9', 700:'#5a1aa3', 800:'#3e1273', 900:'#240a4a' },
+          gold:  { 300:'#f3d9a4', 400:'#e8c079', 500:'#dba54e', 600:'#bb8635' },
+          ink:   { 900:'#050208', 800:'#0a0512', 700:'#0f0a1a', 600:'#170f26', 500:'#221833' },
+          brandDark:   '#050208',
+          brandViolet: '#8b3fe0',
+          brandGold:   '#dba54e',
+          borderViolet:'rgba(139,63,224,0.18)',
+        }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Plus Jakarta Sans', 'sans-serif'],
+      }
+    }
+  }
+</script>
+
+<style>
+  :root{
+    --glow-core: rgba(139,63,224,0.55);
+    --glow-mid: rgba(90,26,163,0.28);
+  }
+  html{scroll-behavior:smooth;}
+  body{ background:#050208; }
+
+  .bg-luxury-glow{
+    background:
+      radial-gradient(60% 55% at 50% 38%, var(--glow-core) 0%, var(--glow-mid) 38%, transparent 70%),
+      radial-gradient(90% 60% at 85% 0%, rgba(219,165,78,0.10) 0%, transparent 55%),
+      #050208;
+  }
+  .bg-grain{
+    background-image: radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+
+  header{ position:relative; z-index:70; }
+
+  .nav-trigger{ position:relative; }
+  .nav-trigger .chevron{ transition: transform .2s ease; }
+  .nav-item.open .nav-trigger .chevron{ transform: rotate(180deg); }
+  .nav-item.open .nav-trigger{ color:#e8c079; }
+  .nav-trigger::after{
+    content:''; position:absolute; left:0; right:0; bottom:-2px; height:2px;
+    background:linear-gradient(90deg,#dba54e,#8b3fe0); transform:scaleX(0); transform-origin:left;
+    transition:transform .25s ease;
+  }
+  .nav-item.open .nav-trigger::after{ transform:scaleX(1); }
+
+  #megaScrim{
+    position:fixed; inset:0; top:0; z-index:60; background:rgba(3,1,8,.6); backdrop-filter:blur(3px);
+    opacity:0; pointer-events:none; transition:opacity .25s ease;
+  }
+  #megaScrim.show{ opacity:1; pointer-events:auto; }
+
+  #megaContainer{
+    position:absolute; top:100%; left:0; width:100%;
+    background:rgba(10,5,18,0.98);
+    border-top:1px solid rgba(139,63,224,0.25);
+    box-shadow:0 40px 80px -30px rgba(0,0,0,.85);
+    opacity:0; visibility:hidden; pointer-events:none; transform:translateY(-10px);
+    transition:opacity .22s ease, transform .22s ease, visibility .22s;
+    z-index:65; max-height:82vh; overflow-y:auto;
+  }
+  #megaContainer.open{ opacity:1; visibility:visible; pointer-events:auto; transform:translateY(0); }
+
+  .mega-col-title{
+    font-size:10px; font-weight:800; letter-spacing:.09em; text-transform:uppercase;
+    color:#8a7aa8; margin-bottom:.6rem;
+  }
+  .mega-row{
+    display:flex; align-items:center; gap:.55rem;
+    padding:.4rem .5rem; border-radius:.5rem; font-size:12.5px; font-weight:600;
+    color:#d8cfe8; transition:background .15s ease, color .15s ease, transform .15s ease;
+  }
+  .mega-row:hover{ background:rgba(139,63,224,0.14); color:#f3d9a4; transform:translateX(3px); }
+  .mega-row .dot{ width:4px; height:4px; border-radius:99px; background:#8b3fe0; flex-shrink:0; }
+
+  .mega-more{
+    display:inline-flex; align-items:center; gap:.3rem; font-size:11px; font-weight:800;
+    color:#a480ef; letter-spacing:.03em; margin-top:.4rem; padding:.3rem .5rem;
+  }
+  .mega-more:hover{ color:#e8c079; }
+
+  .mega-cta{
+    border-radius:1rem; padding:1.25rem;
+    background:linear-gradient(155deg,#5a1aa3,#8b3fe0 60%, #bb8635);
+    display:flex; flex-direction:column; justify-content:space-between; height:100%;
+    box-shadow:0 20px 40px -18px rgba(139,63,224,.6);
+  }
+
+  #mobileOverlay{ transition:opacity .25s ease; }
+  #mobileMenu{ transition:transform .35s cubic-bezier(.4,0,.2,1); }
+  .mobile-acc-panel{ display:grid; grid-template-rows:0fr; transition:grid-template-rows .3s ease; }
+  .mobile-acc-panel > div{ overflow:hidden; }
+  .mobile-acc-btn.open + .mobile-acc-panel{ grid-template-rows:1fr; }
+  .mobile-acc-btn .chevron{ transition:transform .25s ease; }
+  .mobile-acc-btn.open .chevron{ transform:rotate(180deg); }
+  .mobile-acc-btn.open{ color:#e8c079; }
+  .mobile-icon{
+    width:30px; height:30px; border-radius:9px; flex-shrink:0;
+    background:rgba(139,63,224,.15); color:#c4b0f5;
+    display:flex; align-items:center; justify-content:center;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.001ms !important; transition-duration:0.001ms !important; }
+  }
+  @media (max-width:1023px){
+    .desktop-nav, #megaContainer, #megaScrim{ display:none !important; }
+  }
+
+  .footer-glow{
+    background: radial-gradient(circle at 50% 100%, rgba(139, 63, 224, 0.15) 0%, transparent 65%), #050208;
+  }
+  .footer-link{
+    transition: all 0.2s ease-in-out;
+    color: #94a3b8;
+  }
+  .footer-link:hover{
+    color: #dba54e;
+    transform: translateX(3px);
+  }
+  @media (max-width: 767px){
+    .mobile-accordion-content{ display:none; }
+    .mobile-accordion-content.active{ display:block; }
+  }
+</style>
+</head>
+<body class="text-slate-200 font-sans antialiased overflow-x-hidden bg-luxury-glow bg-grain min-h-screen flex flex-col justify-between">
+
+<div id="megaScrim"></div>
+
+<!-- Header / Navbar -->
+<header class="w-full border-b border-brand-500/15 bg-[#0a0512]/75 backdrop-blur-md sticky top-0">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <a href="https://gull-empire.github.io/index.html" class="inline-flex items-center shrink-0 group py-1">
+      <img src="https://gull-empire.github.io/gull-web-tech/ChatGPT_Image_Jul_30__2026__03_45_34_AM-removebg-preview.png" alt="Gull Empire logo"
+           class="h-9 sm:h-11 w-auto object-contain filter drop-shadow-[0_0_12px_rgba(139,63,224,0.35)] group-hover:drop-shadow-[0_0_18px_rgba(219,165,78,0.5)] group-hover:scale-[1.03] transition-all duration-300 ease-out">
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav hidden lg:flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-slate-300">
+      <div class="nav-item">
+        <button data-panel="ai" class="nav-trigger flex items-center gap-1 px-3 py-2 rounded-lg hover:text-gold-400 hover:bg-brand-500/10 transition-colors">
+          AI Development
+          <svg class="chevron w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+      </div>
+      <div class="nav-item">
+        <button data-panel="services" class="nav-trigger flex items-center gap-1 px-3 py-2 rounded-lg hover:text-gold-400 hover:bg-brand-500/10 transition-colors">
+          Services
+          <svg class="chevron w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+      </div>
+      <div class="nav-item">
+        <button data-panel="tech" class="nav-trigger flex items-center gap-1 px-3 py-2 rounded-lg hover:text-gold-400 hover:bg-brand-500/10 transition-colors">
+          Technologies
+          <svg class="chevron w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+      </div>
+      <div class="nav-item">
+        <button data-panel="industries" class="nav-trigger flex items-center gap-1 px-3 py-2 rounded-lg hover:text-gold-400 hover:bg-brand-500/10 transition-colors">
+          Industries
+          <svg class="chevron w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+      </div>
+      <div class="nav-item">
+        <button data-panel="company" class="nav-trigger flex items-center gap-1 px-3 py-2 rounded-lg hover:text-gold-400 hover:bg-brand-500/10 transition-colors">
+          Company
+          <svg class="chevron w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+      </div>
+      <a href="#" class="px-3 py-2 rounded-lg hover:text-gold-400 hover:bg-brand-500/10 transition-colors">Case Studies</a>
+    </nav>
+
+    <a href="#" class="hidden lg:inline-flex px-5 py-2.5 rounded-lg bg-gradient-to-r from-brand-500 to-brand-700 hover:from-brand-400 hover:to-brand-600 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-brand-500/30 transition-all hover:-translate-y-0.5 shrink-0">
+      Book A Strategy Session
+    </a>
+
+    <button id="hamburgerBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-brand-500/25 text-slate-200" aria-label="Open menu">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+
+  <!-- Full-width Mega Panel (single shared container, overlays page) -->
+  <div id="megaContainer">
+    <div class="max-w-7xl mx-auto px-6 py-9">
+
+      <!-- AI DEVELOPMENT -->
+      <div id="panel-ai" class="mega-content grid grid-cols-4 gap-8" style="display:none">
+        <div class="col-span-1">
+          <div class="mega-col-title">AI Services</div>
+          <a href="#" class="mega-row"><span class="dot"></span>AI Development Services</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Voice and Chatbots</a>
+          <a href="#" class="mega-row"><span class="dot"></span>AI Agents</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Computer Vision</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Generative AI</a>
+          <a href="#" class="mega-row"><span class="dot"></span>LLM Fine Tuning</a>
+          <a href="#" class="mega-row"><span class="dot"></span>NLP Development</a>
+          <a href="#" class="mega-row"><span class="dot"></span>MLOps</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Multi Modal AI</a>
+          <a href="#" class="mega-row"><span class="dot"></span>RAG Development</a>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">By Business Size</div>
+          <a href="#" class="mega-row"><span class="dot"></span>SMB AI Solutions</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Enterprise AI Solutions</a>
+          <div class="mega-col-title mt-6">Learn More</div>
+          <a href="#" class="mega-row"><span class="dot"></span>AI Case Studies</a>
+          <a href="#" class="mega-row"><span class="dot"></span>AI Blog &amp; Insights</a>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">AI Products</div>
+          <a href="#" class="mega-row">
+            <span class="dot"></span>SmartArticleBot
+            <svg class="w-3 h-3 ml-auto opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <p class="text-[11px] text-slate-500 px-2 mt-1 leading-snug">SEO content written and published on autopilot.</p>
+        </div>
+        <div class="mega-cta">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-white/70">Get Started</span>
+            <p class="font-heading font-bold text-sm mt-2 leading-snug text-white">Book a Free AI Consultation</p>
+            <p class="text-[11px] text-white/70 mt-1 leading-snug">Discuss your AI project with our experts</p>
+          </div>
+          <a href="#" class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-white">
+            Schedule a Call
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- SERVICES -->
+      <div id="panel-services" class="mega-content grid grid-cols-4 gap-8" style="display:none">
+        <div class="col-span-1">
+          <div class="mega-col-title">How We Work</div>
+          <a href="#" class="mega-row"><span class="dot"></span>Dedicated Teams</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Virtual CTO</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Software Staffing</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Project Management</a>
+          <a href="#" class="mega-more">More Services
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">Development Areas</div>
+          <a href="#" class="mega-row"><span class="dot"></span>AI Development</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Data Engineering</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Custom Software Development</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Web App Development</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Mobile App Development</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Cloud &amp; DevOps</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Game Development</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Chatbot Development</a>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">Development Stage</div>
+          <a href="#" class="mega-row"><span class="dot"></span>Project Discovery</a>
+          <a href="#" class="mega-row"><span class="dot"></span>MVP Development</a>
+          <a href="#" class="mega-row"><span class="dot"></span>POC Development</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Frontend Development</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Back End Development</a>
+        </div>
+        <div class="mega-cta">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-white/70">Get Started</span>
+            <p class="font-heading font-bold text-sm mt-2 leading-snug text-white">Build Intelligent Apps</p>
+            <p class="text-[11px] text-white/70 mt-1 leading-snug">Talk to our engineering team today</p>
+          </div>
+          <a href="#" class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-white">
+            Talk to Us
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- TECHNOLOGIES -->
+      <div id="panel-tech" class="mega-content grid grid-cols-4 gap-8" style="display:none">
+        <div class="col-span-1">
+          <div class="mega-col-title">AI Platforms</div>
+          <a href="#" class="mega-row"><span class="dot"></span>OpenAI</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Anthropic</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Gemini</a>
+          <a href="#" class="mega-row"><span class="dot"></span>LLaMA</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Qwen</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Deepseek</a>
+          <a href="#" class="mega-more">Technologies
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">Languages &amp; Frameworks</div>
+          <div class="grid grid-cols-2 gap-x-1">
+            <a href="#" class="mega-row"><span class="dot"></span>Python</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Golang</a>
+            <a href="#" class="mega-row"><span class="dot"></span>C#</a>
+            <a href="#" class="mega-row"><span class="dot"></span>.Net</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Ruby</a>
+            <a href="#" class="mega-row"><span class="dot"></span>PHP</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Node</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Java</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Rust</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Django</a>
+            <a href="#" class="mega-row"><span class="dot"></span>pyTorch</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Tensorflow</a>
+          </div>
+          <div class="mega-col-title mt-5">Frontend</div>
+          <div class="grid grid-cols-2 gap-x-1">
+            <a href="#" class="mega-row"><span class="dot"></span>React</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Angular</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Next.js</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Vue.js</a>
+          </div>
+          <a href="#" class="mega-more">Developer Skills
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">Mobile &amp; Game</div>
+          <a href="#" class="mega-row"><span class="dot"></span>iOS</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Android</a>
+          <a href="#" class="mega-row"><span class="dot"></span>React Native</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Flutter</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Unreal</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Unity</a>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">Cloud Platforms</div>
+          <a href="#" class="mega-row"><span class="dot"></span>AWS</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Azure</a>
+          <a href="#" class="mega-row"><span class="dot"></span>GCP</a>
+          <div class="mega-col-title mt-5">Data &amp; DevOps</div>
+          <a href="#" class="mega-row"><span class="dot"></span>Databricks</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Snowflake</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Kubernetes</a>
+        </div>
+      </div>
+
+      <!-- INDUSTRIES -->
+      <div id="panel-industries" class="mega-content grid grid-cols-3 gap-8" style="display:none">
+        <div class="col-span-2">
+          <div class="mega-col-title">Industries</div>
+          <div class="grid grid-cols-2 gap-x-6">
+            <a href="#" class="mega-row"><span class="dot"></span>CRM</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Education</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Enterprise Software</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Fintech</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Game Development</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Healthcare Services</a>
+            <a href="#" class="mega-row"><span class="dot"></span>High Frequency Trading</a>
+            <a href="#" class="mega-row"><span class="dot"></span>IoT</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Media &amp; Entertainment</a>
+            <a href="#" class="mega-row"><span class="dot"></span>Manufacturing</a>
+            <a href="#" class="mega-row"><span class="dot"></span>SaaS</a>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">Departments</div>
+          <a href="#" class="mega-row"><span class="dot"></span>Customer Support</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Finance</a>
+          <a href="#" class="mega-row"><span class="dot"></span>HR</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Legal</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Marketing</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Operations</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Procurement</a>
+        </div>
+      </div>
+
+      <!-- COMPANY -->
+      <div id="panel-company" class="mega-content grid grid-cols-4 gap-8" style="display:none">
+        <div class="col-span-1">
+          <div class="mega-col-title">About Gull Empire</div>
+          <a href="#" class="mega-row"><span class="dot"></span>About Us</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Founder's Letter</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Awards</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Security</a>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">Social Proof</div>
+          <a href="#" class="mega-row"><span class="dot"></span>Clients</a>
+          <a href="#" class="mega-row"><span class="dot"></span>Case Studies</a>
+          <div class="mega-col-title mt-6">Careers</div>
+          <a href="#" class="mega-row"><span class="dot"></span>Join Our Team</a>
+        </div>
+        <div class="col-span-1">
+          <div class="mega-col-title">Resources</div>
+          <a href="#" class="mega-row"><span class="dot"></span>Blog</a>
+          <a href="#" class="mega-row"><span class="dot"></span>AI Newsletter</a>
+        </div>
+        <div class="mega-cta">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-white/70">Get Started</span>
+            <p class="font-heading font-bold text-sm mt-2 leading-snug text-white">Discuss Your Project</p>
+            <p class="text-[11px] text-white/70 mt-1 leading-snug">Talk to our team about your goals</p>
+          </div>
+          <a href="#" class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-white">
+            Schedule a Call
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Overlay + Drawer -->
+<div id="mobileOverlay" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-[80] opacity-0 pointer-events-none lg:hidden"></div>
+
+<aside id="mobileMenu" class="fixed top-0 right-0 h-full w-[88%] max-w-sm bg-[#0a0512] border-l border-brand-500/20 z-[90] shadow-2xl translate-x-full lg:hidden flex flex-col">
+  <div class="flex items-center justify-between px-5 py-4 border-b border-brand-500/15">
+    <a href="https://gull-empire.github.io/index.html" class="inline-flex items-center shrink-0">
+      <img src="https://gull-empire.github.io/gull-web-tech/ChatGPT_Image_Jul_30__2026__03_45_34_AM-removebg-preview.png" alt="Gull Empire"
+           class="h-8 w-auto object-contain filter drop-shadow-[0_0_10px_rgba(139,63,224,0.35)]">
+    </a>
+    <button id="closeMobileBtn" class="w-9 h-9 flex items-center justify-center rounded-lg border border-brand-500/25 text-slate-300" aria-label="Close menu">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <div class="flex-1 overflow-y-auto px-3 py-3">
+
+    <div class="border-b border-white/5">
+      <button class="mobile-acc-btn w-full flex items-center gap-3 px-2.5 py-3.5 text-sm font-bold text-white">
+        <span class="mobile-icon"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></span>
+        AI Development
+        <svg class="chevron w-4 h-4 text-slate-500 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="mobile-acc-panel"><div class="pl-[3.1rem] pb-2 grid gap-0.5">
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">AI Development Services</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">AI Agents</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Computer Vision</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Generative AI</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">LLM Fine Tuning</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">RAG Development</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">SMB / Enterprise AI Solutions</a>
+      </div></div>
+    </div>
+
+    <div class="border-b border-white/5">
+      <button class="mobile-acc-btn w-full flex items-center gap-3 px-2.5 py-3.5 text-sm font-bold text-white">
+        <span class="mobile-icon"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 100-8 4 4 0 000 8z"/></svg></span>
+        Services
+        <svg class="chevron w-4 h-4 text-slate-500 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="mobile-acc-panel"><div class="pl-[3.1rem] pb-2 grid gap-0.5">
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Dedicated Teams</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Virtual CTO</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Web &amp; Mobile App Development</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Cloud &amp; DevOps</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">MVP / POC Development</a>
+      </div></div>
+    </div>
+
+    <div class="border-b border-white/5">
+      <button class="mobile-acc-btn w-full flex items-center gap-3 px-2.5 py-3.5 text-sm font-bold text-white">
+        <span class="mobile-icon"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707"/></svg></span>
+        Technologies
+        <svg class="chevron w-4 h-4 text-slate-500 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="mobile-acc-panel"><div class="pl-[3.1rem] pb-2 grid gap-0.5">
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">OpenAI / Anthropic / Gemini / Deepseek</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Python / Node / Rust / Golang</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">React / Next.js / Vue.js</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">iOS / Android / Flutter / Unity</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">AWS / Azure / GCP / Kubernetes</a>
+      </div></div>
+    </div>
+
+    <div class="border-b border-white/5">
+      <button class="mobile-acc-btn w-full flex items-center gap-3 px-2.5 py-3.5 text-sm font-bold text-white">
+        <span class="mobile-icon"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16"/></svg></span>
+        Industries
+        <svg class="chevron w-4 h-4 text-slate-500 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="mobile-acc-panel"><div class="pl-[3.1rem] pb-2 grid gap-0.5">
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Fintech &amp; High Frequency Trading</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Healthcare Services</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">SaaS &amp; Enterprise Software</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Education &amp; IoT</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Departments (HR, Legal, Finance...)</a>
+      </div></div>
+    </div>
+
+    <div class="border-b border-white/5">
+      <button class="mobile-acc-btn w-full flex items-center gap-3 px-2.5 py-3.5 text-sm font-bold text-white">
+        <span class="mobile-icon"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+        Company
+        <svg class="chevron w-4 h-4 text-slate-500 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+      <div class="mobile-acc-panel"><div class="pl-[3.1rem] pb-2 grid gap-0.5">
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">About Us</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Founder's Letter</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Security</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Clients &amp; Case Studies</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Blog &amp; AI Newsletter</a>
+        <a href="#" class="block px-2.5 py-1.5 text-[13px] font-semibold text-slate-300">Join Our Team</a>
+      </div></div>
+    </div>
+
+    <a href="#" class="flex items-center gap-3 px-2.5 py-3.5 text-sm font-bold text-white">
+      <span class="mobile-icon"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></span>
+      Case Studies
+    </a>
+  </div>
+
+  <div class="p-4 border-t border-brand-500/15">
+    <a href="#" class="block text-center px-5 py-3.5 rounded-lg bg-gradient-to-r from-brand-500 to-brand-700 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-brand-500/30">
+      Book A Strategy Session
+    </a>
+  </div>
+</aside>
+
+<!-- Main Content Hero Section -->
+<main class="max-w-7xl mx-auto px-6 py-12 lg:py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center flex-grow">
+
+  <div class="lg:col-span-6 space-y-6">
+
+    <div class="hero-el inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold-400 bg-gold-500/10 px-3 py-1.5 rounded-md border border-gold-500/25">
+      <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+      Internal Service Deep Dive
+    </div>
+
+    <h1 class="hero-el font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.15] tracking-tight">
+      Enterprise AI: <br>
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-300 to-gold-400">
+        Beyond the Basics
+      </span>
+    </h1>
+
+    <p class="hero-el text-slate-400 text-base lg:text-lg leading-relaxed max-w-xl font-normal">
+      Move past the hype to deploy core, scalable AI solutions. We design, build, and integrate proprietary machine learning models and custom data pipelines that solve mission-critical business problems with production-grade efficiency.
+    </p>
+
+    <div class="hero-el flex flex-wrap gap-4 pt-2">
+      <a href="#" class="px-7 py-3.5 rounded-lg bg-gradient-to-r from-brand-500 to-brand-700 hover:from-brand-400 hover:to-brand-600 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-brand-500/30 transition-all hover:-translate-y-0.5">
+        Get Started
+      </a>
+      <a href="#" class="px-7 py-3.5 rounded-lg bg-transparent border border-gold-500/50 text-gold-400 hover:bg-gold-500/10 font-bold text-xs uppercase tracking-wider transition-all hover:-translate-y-0.5">
+        Our Methodology
+      </a>
+    </div>
+
+    <div class="pt-8">
+      <h3 class="hero-el text-xs font-extrabold uppercase tracking-widest text-white mb-4">
+        Our Enterprise AI Capabilities
+      </h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="cap-card bg-[#0d0716]/80 border border-brand-500/15 rounded-xl p-4 shadow-lg hover:shadow-brand-500/20 hover:border-gold-500/40 transition-all group relative overflow-hidden">
+          <div class="flex justify-between items-start mb-3">
+            <div class="p-2 rounded-lg bg-brand-500/15 text-brand-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+            </div>
+            <span class="text-[10px] font-bold text-gold-400 bg-gold-500/10 px-1.5 py-0.5 rounded">01</span>
+          </div>
+          <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-white mb-1">Predictive Analytics</h4>
+          <p class="text-[11px] text-slate-400 leading-snug">Leverage historical data to forecast trends and optimize resource allocation.</p>
+        </div>
+
+        <div class="cap-card bg-[#0d0716]/80 border border-brand-500/15 rounded-xl p-4 shadow-lg hover:shadow-brand-500/20 hover:border-gold-500/40 transition-all group relative overflow-hidden">
+          <div class="flex justify-between items-start mb-3">
+            <div class="p-2 rounded-lg bg-brand-500/15 text-brand-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+            </div>
+            <span class="text-[10px] font-bold text-gold-400 bg-gold-500/10 px-1.5 py-0.5 rounded">02</span>
+          </div>
+          <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-white mb-1">Natural Language</h4>
+          <p class="text-[11px] text-slate-400 leading-snug">Automate content classification, sentiment analysis, and conversational tools.</p>
+        </div>
+
+        <div class="cap-card bg-[#0d0716]/80 border border-brand-500/15 rounded-xl p-4 shadow-lg hover:shadow-brand-500/20 hover:border-gold-500/40 transition-all group relative overflow-hidden">
+          <div class="flex justify-between items-start mb-3">
+            <div class="p-2 rounded-lg bg-brand-500/15 text-brand-300">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+            </div>
+            <span class="text-[10px] font-bold text-gold-400 bg-gold-500/10 px-1.5 py-0.5 rounded">03</span>
+          </div>
+          <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-white mb-1">Computer Vision</h4>
+          <p class="text-[11px] text-slate-400 leading-snug">Implement image recognition, defect detection, and spatial intelligence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column: Interactive Neural Visual Globe -->
+  <div class="lg:col-span-6 relative flex items-center justify-center">
+    <div class="absolute inset-0 pointer-events-none z-10 flex flex-col justify-between p-4 text-[11px] font-mono font-bold text-slate-500">
+      <div class="flex justify-between">
+        <span>LONDON // 51.5074° N</span>
+        <span>TOKYO // 35.6762° E</span>
+      </div>
+      <div class="flex justify-between">
+        <span>NEW YORK // 40.7128° W</span>
+        <span>DUBAI // 25.2048° E</span>
+      </div>
+    </div>
+
+    <div class="w-full aspect-square max-w-[500px] relative rounded-full border border-brand-500/25 bg-[#0d0716]/50 backdrop-blur-sm shadow-2xl shadow-brand-700/30 flex items-center justify-center p-6">
+      <canvas id="neuralCanvas" class="w-full h-full"></canvas>
+    </div>
+  </div>
+</main>
+
+<!-- ===== Trust / Stats / Recognition Section ===== -->
+<section class="max-w-7xl mx-auto px-6 pb-16 lg:pb-20">
+
+  <!-- Trusted-by strip -->
+  <div class="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-10 pb-10 border-b border-white/5">
+    <span class="text-[10px] font-extrabold uppercase tracking-widest text-gold-400 shrink-0">
+      Trusted by teams at
+    </span>
+    <div class="flex flex-wrap items-center gap-x-9 gap-y-3 opacity-80">
+      <span class="font-heading font-bold text-slate-300 text-sm tracking-tight">Northpeak</span>
+      <span class="font-heading font-bold text-slate-300 text-sm tracking-tight">Velora</span>
+      <span class="font-heading font-bold text-slate-300 text-base tracking-tight">Arkwell</span>
+      <span class="font-heading font-bold text-slate-300 text-sm tracking-tight">PixForge</span>
+      <span class="font-heading font-bold text-slate-300 text-sm tracking-tight">Halyard</span>
+      <span class="font-heading font-bold text-slate-300 text-sm tracking-tight">Quanta Labs</span>
+    </div>
+  </div>
+
+  <!-- Eyebrow + Headline + Copy -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start pt-12">
+    <div class="space-y-4">
+      <div class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gold-400">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+        Gull Empire At A Glance
+      </div>
+      <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white leading-tight tracking-tight max-w-md">
+        A dependable partner for software that has to work.
+      </h2>
+    </div>
+    <div class="space-y-4 lg:pt-1">
+      <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-lg">
+        Senior engineers, AI specialists, and cloud architects plug directly into your delivery team. No junior-heavy benches, no offshore handoffs — just builders who own the outcome from first commit to production.
+      </p>
+      <a href="#" class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-gold-400 hover:text-gold-300 transition-colors">
+        More About Us
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Stats row -->
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 mt-14 pt-12 border-t border-white/5">
+    <div class="sm:pr-8 sm:border-r border-white/5">
+      <p class="font-heading text-4xl sm:text-5xl font-extrabold text-white">4.9</p>
+      <p class="text-xs font-bold uppercase tracking-wider text-slate-300 mt-2">Verified Client Rating</p>
+      <a href="#" class="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-500 hover:text-gold-400 transition-colors mt-1">
+        Across Clutch and DesignRush
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+    <div class="sm:pr-8 sm:border-r border-white/5">
+      <p class="font-heading text-4xl sm:text-5xl font-extrabold text-white">96%</p>
+      <p class="text-xs font-bold uppercase tracking-wider text-slate-300 mt-2">Net Promoter Score</p>
+      <p class="text-[11px] font-semibold text-slate-500 mt-1">Clients willing to refer us</p>
+    </div>
+    <div>
+      <p class="font-heading text-4xl sm:text-5xl font-extrabold text-white">140%</p>
+      <p class="text-xs font-bold uppercase tracking-wider text-slate-300 mt-2">Retention Rate</p>
+      <p class="text-[11px] font-semibold text-slate-500 mt-1">Annual growth in renewals</p>
+    </div>
+  </div>
+
+  <!-- Recognition -->
+  <div class="mt-14 pt-12 border-t border-white/5">
+    <div class="flex items-center justify-between mb-8">
+      <div class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gold-400">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+        Recognition
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-7">
+      <div class="flex items-start gap-3">
+        <div class="w-8 h-8 rounded-md bg-gold-500/15 text-gold-400 flex items-center justify-center font-bold text-xs shrink-0">C</div>
+        <div>
+          <p class="font-heading font-bold text-sm text-white">Clutch</p>
+          <p class="text-[11px] text-slate-500 leading-snug mt-0.5">Top AI Development Company · Top Staffing Agency</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-8 h-8 rounded-md bg-brand-500/15 text-brand-300 flex items-center justify-center font-bold text-xs shrink-0">TB</div>
+        <div>
+          <p class="font-heading font-bold text-sm text-white">Tech Behemoths</p>
+          <p class="text-[11px] text-slate-500 leading-snug mt-0.5">Top Software Development Company</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-8 h-8 rounded-md bg-slate-500/15 text-slate-300 flex items-center justify-center font-bold text-xs shrink-0">M</div>
+        <div>
+          <p class="font-heading font-bold text-sm text-white">The Manifest</p>
+          <p class="text-[11px] text-slate-500 leading-snug mt-0.5">Top Software Development Company</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-8 h-8 rounded-md bg-gold-500/15 text-gold-400 flex items-center justify-center font-bold text-xs shrink-0">DC</div>
+        <div>
+          <p class="font-heading font-bold text-sm text-white">DotCom Magazine</p>
+          <p class="text-[11px] text-slate-500 leading-snug mt-0.5">Impact Company of the Year</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-8 h-8 rounded-md bg-brand-500/15 text-brand-300 flex items-center justify-center font-bold text-xs shrink-0">DR</div>
+        <div>
+          <p class="font-heading font-bold text-sm text-white">DesignRush</p>
+          <p class="text-[11px] text-slate-500 leading-snug mt-0.5">Top Software Development Company</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-8 h-8 rounded-md bg-slate-500/15 text-slate-300 flex items-center justify-center font-bold text-xs shrink-0">W</div>
+        <div>
+          <p class="font-heading font-bold text-sm text-white">WRMSDC</p>
+          <p class="text-[11px] text-slate-500 leading-snug mt-0.5">Best in the West</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-8 h-8 rounded-md bg-gold-500/15 text-gold-400 flex items-center justify-center font-bold text-xs shrink-0">E</div>
+        <div>
+          <p class="font-heading font-bold text-sm text-white">Expertise.com</p>
+          <p class="text-[11px] text-slate-500 leading-snug mt-0.5">Best Software Developers in San Francisco</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-3">
+        <div class="w-8 h-8 rounded-md bg-brand-500/15 text-brand-300 flex items-center justify-center font-bold text-xs shrink-0">AR</div>
+        <div>
+          <p class="font-heading font-bold text-sm text-white">Aragon Research</p>
+          <p class="text-[11px] text-slate-500 leading-snug mt-0.5">Hot Vendor for AI</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-[10px] text-slate-600 mt-8">
+      Each listing above is a placeholder — swap in your genuine ratings, review-platform badges, and award mentions before publishing.
+    </p>
+  </div>
+</section>
+<!-- ===== End Trust / Stats / Recognition Section ===== -->
+
+
+<!-- ========================================================= -->
+<!-- GULL EMPIRE — WHAT TEAMS HIRE US FOR (MATCHED DARK THEME) -->
+<!-- ========================================================= -->
+
+<section class="w-full bg-[#040208] text-white font-sans border-y border-[#1b122c] py-20 px-4 sm:px-8 relative overflow-hidden">
+
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto space-y-12 relative z-10">
+
+        <header class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-10 border-b border-[#1b122c]">
+            <div class="lg:col-span-8 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-[11px] font-mono font-bold tracking-widest text-amber-400 uppercase">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    WHAT WE DO
+                </div>
+
+                <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                    What teams <span class="bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent">hire us for.</span>
+                </h2>
+            </div>
+
+            <div class="lg:col-span-4 lg:text-right space-y-4">
+                <p class="text-xs sm:text-sm text-slate-400 font-mono leading-relaxed">
+                    One senior engineer or a full product team — nearshore bench, your time zone, billable monthly.
+                </p>
+                <button class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-xs uppercase tracking-widest px-7 py-3.5 rounded-xl shadow-lg shadow-purple-900/40 hover:scale-105 transition-all">
+                    SCHEDULE A CALL
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+            </div>
+        </header>
+
+        <div class="space-y-4" id="servicesContainer">
+
+            <article class="service-card active group bg-[#0a0512] border border-purple-500/50 rounded-2xl p-6 sm:p-8 cursor-pointer relative transition-all duration-300 shadow-[0_0_40px_-10px_rgba(139,63,224,0.35)]" data-card="1">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                    <div class="flex items-start gap-6 sm:gap-8">
+                        <span class="card-num text-3xl sm:text-4xl font-mono font-bold text-amber-400 transition-colors">01</span>
+                        <div class="space-y-3">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                                AI & ML development
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
+                                <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">LLM apps</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">RAG pipelines</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">Voice & chatbots</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">Agents</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-purple-950/60 border border-purple-700/50 px-3 py-1 rounded text-purple-300">Enterprise search</span>
+                            </div>
+                            <p class="text-sm text-neutral-400 max-w-2xl leading-relaxed">
+                                Built for production traffic and handed over with the runbooks to operate it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-amber-400 group-hover:text-white transition-colors self-end lg:self-center">
+                        AI CAPABILITIES <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="service-card group bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 cursor-pointer relative transition-all duration-300" data-card="2">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                    <div class="flex items-start gap-6 sm:gap-8">
+                        <span class="card-num text-3xl sm:text-4xl font-mono font-bold text-slate-600 transition-colors">02</span>
+                        <div class="space-y-3">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                                Custom software
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">Web</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">Mobile</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">Data</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">Cloud & DevOps</span>
+                            </div>
+                            <p class="text-sm text-neutral-400 max-w-2xl leading-relaxed">
+                                Senior-only teams, your time zone, billable monthly — stop any time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-slate-400 group-hover:text-white transition-colors self-end lg:self-center">
+                        ALL SERVICES <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="service-card group bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 cursor-pointer relative transition-all duration-300" data-card="3">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                    <div class="flex items-start gap-6 sm:gap-8">
+                        <span class="card-num text-3xl sm:text-4xl font-mono font-bold text-slate-600 transition-colors">03</span>
+                        <div class="space-y-3">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                                Industry expertise
+                            </h3>
+                            <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-slate-400">
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">Fintech</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">Healthcare</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">Retail & DTC</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">Logistics</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">EdTech</span>
+                                <span class="text-neutral-600">•</span>
+                                <span class="bg-[#0a0512] border border-[#1b122c] px-3 py-1 rounded text-neutral-300">Real estate</span>
+                            </div>
+                            <p class="text-sm text-neutral-400 max-w-2xl leading-relaxed">
+                                Verticals where the compliance shape and failure modes aren't new to us.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-slate-400 group-hover:text-white transition-colors self-end lg:self-center">
+                        INDUSTRIES SERVED <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- GULL EMPIRE — THE WORK SECTION -->
+<!-- ========================================================= -->
+
+<section class="w-full bg-[#040208] text-white font-sans border-y border-[#1b122c] py-16 px-4 sm:px-8 relative overflow-hidden">
+
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto space-y-12 relative z-10">
+
+        <header class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end pb-10 border-b border-[#1b122c]">
+            <div class="lg:col-span-8 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-[11px] font-mono font-bold tracking-widest text-purple-400 uppercase">
+                    <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+                    THE WORK
+                </div>
+
+                <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                    Shipped systems. <br class="hidden sm:inline"/>
+                    <span class="bg-gradient-to-r from-purple-400 via-amber-300 to-amber-500 bg-clip-text text-transparent">Referenceable results.</span>
+                </h2>
+            </div>
+
+            <div class="lg:col-span-4 lg:text-right space-y-4">
+                <p class="text-xs font-mono text-slate-400 tracking-wider uppercase">
+                    ARCHIVE · 2019 → 2026
+                </p>
+                <a href="#full-index" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-amber-400 hover:text-white transition-colors group">
+                    BROWSE ALL 35 CASES
+                    <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </div>
+        </header>
+
+        <div class="py-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center border-b border-[#1b122c]">
+
+            <div id="phoneInteractiveCanvas" class="lg:col-span-7 relative bg-gradient-to-br from-[#0a0512] to-[#040208] border border-[#1b122c] rounded-2xl p-6 sm:p-10 overflow-hidden flex items-center justify-center min-h-[440px] cursor-pointer group">
+
+                <div class="absolute top-6 left-6 z-30 inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-950/80 border border-purple-500/40 text-[10px] font-mono font-bold tracking-widest text-purple-300 uppercase shadow-lg backdrop-blur-md">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+                    FEATURED · 01
+                </div>
+
+                <div id="phoneWrapper" class="relative w-full max-w-md h-[360px] flex items-center justify-center pt-4 transition-transform duration-200 ease-out">
+
+                    <div class="absolute -left-4 sm:left-2 top-10 w-44 h-[300px] bg-black border-[3px] border-slate-700/60 rounded-[32px] opacity-30 scale-90 -rotate-12 shadow-2xl overflow-hidden hidden sm:block">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop"
+                             alt="App UI Left" class="w-full h-full object-cover filter brightness-75 contrast-125" loading="lazy" />
+                    </div>
+
+                    <div class="relative z-20 w-56 sm:w-64 h-[340px] bg-black border-[4px] border-[#383144] rounded-[40px] shadow-[0_25px_60px_rgba(0,0,0,0.95)] overflow-hidden ring-1 ring-purple-500/40 transition-all duration-300">
+                        <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-20 h-4 bg-black rounded-full z-50 flex items-center justify-between px-2 border border-white/10">
+                            <div class="w-2 h-2 rounded-full bg-purple-900"></div>
+                            <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
+                        </div>
+
+                        <div class="w-full h-full relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=800&auto=format&fit=crop"
+                                 alt="Nova Bank App Screen"
+                                 class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none"></div>
+                            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/80 border border-purple-500/40 backdrop-blur-md px-3 py-0.5 rounded-full text-[9px] font-mono text-amber-400 font-bold tracking-wider z-30">
+                                NOVA V2.4 LIVE
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute -right-4 sm:right-2 top-10 w-44 h-[300px] bg-black border-[3px] border-slate-700/60 rounded-[32px] opacity-30 scale-90 rotate-12 shadow-2xl overflow-hidden hidden sm:block">
+                        <img src="https://images.unsplash.com/photo-1616469829941-c7200edec809?q=80&w=800&auto=format&fit=crop"
+                             alt="App UI Right" class="w-full h-full object-cover filter brightness-75 contrast-125" loading="lazy" />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 space-y-6 text-left">
+                <div class="flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-purple-400 uppercase">
+                    <span>FINTECH</span>
+                    <span class="text-slate-600">•</span>
+                    <span>ENTERPRISE NEOBANKING</span>
+                </div>
+
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+                    Nova Bank
+                </h3>
+
+                <p class="text-sm text-slate-400 leading-relaxed font-sans">
+                    Digital banking infrastructure built for next-gen fintech scaling. Delivered end-to-end — cloud architecture, high-frequency core payment engine, and secure mobile apps.
+                </p>
+
+                <div class="grid grid-cols-2 gap-3 pt-2 font-mono text-xs">
+                    <div class="bg-[#0a0512] border border-[#1b122c] p-3 rounded-xl">
+                        <span class="text-slate-500 block text-[10px]">TECH STACK</span>
+                        <span class="text-amber-400 font-bold">Next.js & Swift</span>
+                    </div>
+                    <div class="bg-[#0a0512] border border-[#1b122c] p-3 rounded-xl">
+                        <span class="text-slate-500 block text-[10px]">SCALE</span>
+                        <span class="text-purple-300 font-bold">3.2M Active Users</span>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <a href="#" class="inline-flex items-center gap-3 bg-purple-950/50 hover:bg-purple-900/60 border border-purple-700/40 text-white font-mono font-bold text-xs uppercase tracking-widest px-6 py-3.5 rounded-xl transition-all group shadow-lg">
+                        READ NOVA BANK CASE
+                        <span class="text-amber-400 group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pt-4 space-y-1" id="full-index">
+
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">02</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Velox Pay</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">E-COMMERCE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Shopify subscription payment infrastructure deployed for high-volume merchants.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">03</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">VaultFlow</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">REAL ESTATE SAAS</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Property analytics engine that increased recurring client revenue by 24% MoM.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">04</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Lumina Core</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">E-COMMERCE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Global digital storefront refactored to handle Black Friday traffic spikes.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">05</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">TransAct Global</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">LOGISTICS</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Cross-border freight automation and tracking portal for enterprise fleets.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">06</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Nexus Grid</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">E-COMMERCE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Headless storefront architecture integrated with real-time iOS application.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">07</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Zenith Health</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">MOBILE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Comprehensive wellness mobile app tailored for enterprise communities.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] border-b border-[#1b122c] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">08</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Crest Cloud</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">REAL ESTATE</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Multi-tenant property management platform built from ground up.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+            <div class="group flex flex-col md:flex-row md:items-center justify-between py-4 px-3 sm:px-4 rounded-xl hover:bg-[#0a0512] transition-all duration-200 cursor-pointer">
+                <div class="flex items-baseline gap-4 md:w-1/3">
+                    <span class="text-xs font-mono text-purple-400 font-bold">09</span>
+                    <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Urban Restor</h4>
+                </div>
+                <div class="md:w-1/4 my-1 md:my-0">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-slate-400 uppercase bg-[#0a0512] px-2.5 py-1 rounded border border-[#1b122c]">RESTORATION</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 md:w-5/12 leading-relaxed">Asset recovery and workflow dispatch system engineered for national networks.</p>
+                <div class="text-right md:w-12 mt-2 md:mt-0">
+                    <span class="text-slate-400 group-hover:text-amber-400 group-hover:translate-x-1 inline-block transition-all">↗</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pt-8 text-right border-t border-[#1b122c]">
+            <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-amber-400 hover:text-white transition-colors group">
+                VIEW THE FULL INDEX
+                <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- INTERACTIVE SCRIPT (single copy — the duplicate that lived after "The Work" section has been removed) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.service-card');
+
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                cards.forEach(c => {
+                    c.classList.remove('active', 'border-purple-500/50', 'bg-[#0a0512]');
+                    c.classList.add('bg-[#0a0512]/40', 'border-[#1b122c]');
+                    c.style.boxShadow = 'none';
+
+                    const num = c.querySelector('.card-num');
+                    if (num) {
+                        num.classList.remove('text-amber-400');
+                        num.classList.add('text-slate-600');
+                    }
+                });
+
+                card.classList.add('active', 'border-purple-500/50', 'bg-[#0a0512]');
+                card.classList.remove('bg-[#0a0512]/40', 'border-[#1b122c]');
+                card.style.boxShadow = '0 0 40px -10px rgba(139, 63, 224, 0.35)';
+
+                const num = card.querySelector('.card-num');
+                if (num) {
+                    num.classList.add('text-amber-400');
+                    num.classList.remove('text-slate-600');
+                }
+            });
+        });
+    });
+</script>
+
+<!-- ========================================================= -->
+<!-- GULL WEB — REVIEWS & TESTIMONIALS SECTION -->
+<!-- ========================================================= -->
+
+<section class="w-full bg-[#040208] text-white font-sans border-y border-[#1b122c] py-20 px-4 sm:px-8 relative overflow-hidden">
+
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto space-y-12 relative z-10">
+
+        <header class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-10 border-b border-[#1b122c]">
+            <div class="space-y-4 max-w-2xl">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-[11px] font-mono font-bold tracking-widest text-purple-400 uppercase">
+                    <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+                    CLIENT PROOF & REVIEWS
+                </div>
+
+                <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                    Nine Founders on reference. <br>
+                    <span class="bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent">Verified by enterprise leaders.</span>
+                </h2>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 sm:gap-4 text-xs font-mono text-slate-400">
+                <div class="px-4 py-2.5 rounded-xl bg-[#0a0512] border border-[#1b122c] flex items-center gap-2 shadow-lg">
+                    <span class="text-white font-bold">Clutch</span>
+                    <span class="text-amber-400 font-bold">4.9 ★</span>
+                </div>
+                <div class="px-4 py-2.5 rounded-xl bg-[#0a0512] border border-[#1b122c] flex items-center gap-2 shadow-lg">
+                    <span class="text-white font-bold">DesignRush</span>
+                    <span class="text-amber-400 font-bold">4.9 ★</span>
+                </div>
+                <div class="px-4 py-2.5 rounded-xl bg-[#0a0512] border border-[#1b122c] flex items-center gap-2 shadow-lg">
+                    <span class="text-white font-bold">Trustpilot</span>
+                    <span class="text-amber-400 font-bold">5.0 ★</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <article class="group bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(139,63,224,0.2)]">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-900/80 to-amber-500/30 border border-purple-500/40 flex items-center justify-center font-mono text-amber-400 font-bold text-sm shadow-inner">
+                            JB
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-mono text-amber-400 font-bold">01</span>
+                                <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors">John Bradford</h3>
+                            </div>
+                            <p class="text-xs font-mono text-slate-400">CEO · PetScreening</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-sans">
+                        "An external partner can rarely match the speed of an internal team, but <strong class="text-white">Gull Web</strong> blew past our expectations. Their dedication and technical rigor are unmatched."
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-amber-400 group-hover:text-white uppercase transition-colors">
+                    PETSCREENING CASE STUDY <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </article>
+
+            <article class="group bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(139,63,224,0.2)]">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-900/80 to-amber-500/30 border border-purple-500/40 flex items-center justify-center font-mono text-amber-400 font-bold text-sm shadow-inner">
+                            OD
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-mono text-amber-400 font-bold">02</span>
+                                <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors">Oliver Dlouhy</h3>
+                            </div>
+                            <p class="text-xs font-mono text-slate-400">Founder · Kiwi Mobility</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-sans">
+                        "We deal with constant complex edge cases. <strong class="text-white">Gull Web</strong> kept up without cutting corners. They remained completely responsive and agile across time zones."
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-amber-400 group-hover:text-white uppercase transition-colors">
+                    KIWI CASE STUDY <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </article>
+
+            <article class="group bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(139,63,224,0.2)]">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-900/80 to-amber-500/30 border border-purple-500/40 flex items-center justify-center font-mono text-amber-400 font-bold text-sm shadow-inner">
+                            RP
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-mono text-amber-400 font-bold">03</span>
+                                <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors">Ryan Pamplin</h3>
+                            </div>
+                            <p class="text-xs font-mono text-slate-400">CEO · Blendjet</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-sans">
+                        "Managing global scaling requires precision engineering. <strong class="text-white">Gull Web</strong> re-architected our storefront funnels to seamlessly sustain massive high-volume traffic."
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-amber-400 group-hover:text-white uppercase transition-colors">
+                    BLENDJET CASE STUDY <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </article>
+
+            <article class="group bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(139,63,224,0.2)]">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-900/80 to-amber-500/30 border border-purple-500/40 flex items-center justify-center font-mono text-amber-400 font-bold text-sm shadow-inner">
+                            SG
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-mono text-amber-400 font-bold">04</span>
+                                <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors">Steve Gebhardt</h3>
+                            </div>
+                            <p class="text-xs font-mono text-slate-400">Co-Founder · RSVLTs</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-sans">
+                        "Our old infrastructure crashed during every major launch until <strong class="text-white">Gull Web</strong> built a beast of a system for us. Our flash sales now run completely smooth."
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-amber-400 group-hover:text-white uppercase transition-colors">
+                    RSVLTS CASE STUDY <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </article>
+
+            <article class="group bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(139,63,224,0.2)]">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-900/80 to-amber-500/30 border border-purple-500/40 flex items-center justify-center font-mono text-amber-400 font-bold text-sm shadow-inner">
+                            FH
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-mono text-amber-400 font-bold">05</span>
+                                <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors">Farid Huseynov</h3>
+                            </div>
+                            <p class="text-xs font-mono text-slate-400">VP of Tech · Kapital Financial</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-sans">
+                        "Reliability and enterprise compliance were non-negotiables. <strong class="text-white">Gull Web</strong> approached our Fintech architecture with absolute technical mastery."
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-amber-400 group-hover:text-white uppercase transition-colors">
+                    FINTECH CASE STUDY <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </article>
+
+            <article class="group bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(139,63,224,0.2)]">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-900/80 to-amber-500/30 border border-purple-500/40 flex items-center justify-center font-mono text-amber-400 font-bold text-sm shadow-inner">
+                            DR
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-mono text-amber-400 font-bold">06</span>
+                                <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors">Davis Rosser</h3>
+                            </div>
+                            <p class="text-xs font-mono text-slate-400">Managing Director · Elite Luxury</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-sans">
+                        "The digital platform we co-engineered with <strong class="text-white">Gull Web</strong> transformed our customer workflow. Their design and dev teams are top-tier."
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-amber-400 group-hover:text-white uppercase transition-colors">
+                    ELITE AMENITY CASE STUDY <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </article>
+
+            <article class="group bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(139,63,224,0.2)]">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-900/80 to-amber-500/30 border border-purple-500/40 flex items-center justify-center font-mono text-amber-400 font-bold text-sm shadow-inner">
+                            VR
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-mono text-amber-400 font-bold">07</span>
+                                <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors">Vito Robles</h3>
+                            </div>
+                            <p class="text-xs font-mono text-slate-400">COO · Percensys Systems</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-sans">
+                        "They took complex feedback, refined every detail, and made sure our user onboarding flowed effortlessly. <strong class="text-white">Gull Web</strong> delivers real value."
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-amber-400 group-hover:text-white uppercase transition-colors">
+                    PERCENSYS CASE STUDY <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </article>
+
+            <article class="group bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(139,63,224,0.2)]">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-900/80 to-amber-500/30 border border-purple-500/40 flex items-center justify-center font-mono text-amber-400 font-bold text-sm shadow-inner">
+                            LD
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-mono text-amber-400 font-bold">08</span>
+                                <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors">Lisa Dunbar</h3>
+                            </div>
+                            <p class="text-xs font-mono text-slate-400">CEO · Paradigm Labs</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-sans">
+                        "They balanced scientific nuance with a sleek UX. <strong class="text-white">Gull Web</strong> cares deeply about engineering rigor as well as visual elegance."
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-amber-400 group-hover:text-white uppercase transition-colors">
+                    PARADIGM CASE STUDY <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </article>
+
+            <article class="group bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_30px_-10px_rgba(139,63,224,0.2)]">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-900/80 to-amber-500/30 border border-purple-500/40 flex items-center justify-center font-mono text-amber-400 font-bold text-sm shadow-inner">
+                            MO
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-mono text-amber-400 font-bold">09</span>
+                                <h3 class="text-base font-bold text-white group-hover:text-purple-300 transition-colors">Michael Ou</h3>
+                            </div>
+                            <p class="text-xs font-mono text-slate-400">Founder · CoolBitX Hardware</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-sans">
+                        "Security was paramount. <strong class="text-white">Gull Web</strong> demonstrated solid technical judgment, took our lead engineer's feedback, and executed fast."
+                    </p>
+                </div>
+                <a href="#" class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-amber-400 group-hover:text-white uppercase transition-colors">
+                    COOLBITX CASE STUDY <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                </a>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- GULL WEB — PROCESS & WHY GULL WEB SECTIONS -->
+<!-- ========================================================= -->
+
+<div class="w-full bg-[#040208] text-white font-sans selection:bg-purple-500 selection:text-white">
+
+    <section class="w-full border-b border-[#1b122c] py-20 px-4 sm:px-8 relative overflow-hidden">
+
+        <div class="absolute -top-32 -right-32 w-80 h-80 bg-purple-900/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto space-y-12 relative z-10">
+
+            <header class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-[#1b122c]">
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-purple-400 uppercase">
+                        <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                        PROCESS
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                        How we deliver every sprint.
+                    </h2>
+                </div>
+                <p class="text-xs sm:text-sm font-mono text-slate-400 max-w-sm lg:text-right leading-relaxed">
+                    Our engineers are not freelancers, and we are not a marketplace. Dedicated <strong class="text-amber-400">Gull Web</strong> seniors, seated with your team.
+                </p>
+            </header>
+
+            <div class="overflow-x-auto no-scrollbar border-b border-[#1b122c]">
+                <div class="flex gap-8 min-w-max pb-4 text-xs sm:text-sm font-mono tracking-wider uppercase font-semibold">
+                    <button onclick="switchTab(1)" id="tab-btn-1" class="tab-btn text-amber-400 border-b-2 border-amber-400 pb-4 -mb-[17px] transition-all flex items-center gap-2">
+                        <span class="text-amber-400 font-bold">01</span> TECHNICAL DEEP DIVE
+                    </button>
+                    <button onclick="switchTab(2)" id="tab-btn-2" class="tab-btn text-slate-400 hover:text-white pb-4 -mb-[17px] transition-all flex items-center gap-2">
+                        <span class="text-slate-500 font-bold">02</span> COMPLETE TEAM
+                    </button>
+                    <button onclick="switchTab(3)" id="tab-btn-3" class="tab-btn text-slate-400 hover:text-white pb-4 -mb-[17px] transition-all flex items-center gap-2">
+                        <span class="text-slate-500 font-bold">03</span> PROACTIVE MANAGEMENT
+                    </button>
+                    <button onclick="switchTab(4)" id="tab-btn-4" class="tab-btn text-slate-400 hover:text-white pb-4 -mb-[17px] transition-all flex items-center gap-2">
+                        <span class="text-slate-500 font-bold">04</span> REDUNDANT BY DESIGN
+                    </button>
+                </div>
+            </div>
+
+            <div class="pt-6">
+
+                <div id="tab-content-1" class="tab-content grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs font-mono font-bold tracking-widest text-amber-400/80 uppercase">BEFORE KICKOFF</span>
+                        <h3 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">First-touch deep dive.</h3>
+                        <p class="text-xs font-mono text-purple-300">Pre-kickoff technical and strategic review.</p>
+                        <p class="text-sm text-neutral-300 leading-relaxed font-sans max-w-lg">
+                            Before a single line of code, we sit with your team to align on stack, constraints, and what success looks like. Our VP Eng, CTO, and senior leads join — not a sales engineer.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-6 space-y-4">
+                        <div class="p-6 rounded-2xl bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/30 transition-all flex items-start gap-6">
+                            <span class="text-2xl font-mono font-bold text-amber-400">01</span>
+                            <p class="text-sm font-medium text-slate-200">Full review of your stack, goals, and constraints before kickoff.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/30 transition-all flex items-start gap-6">
+                            <span class="text-2xl font-mono font-bold text-amber-400">02</span>
+                            <p class="text-sm font-medium text-slate-200">Session led by VP Eng, CTO, and the senior leads who'll staff the work.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-[#0a0512]/60 border border-[#1b122c] hover:border-purple-500/30 transition-all flex items-start gap-6">
+                            <span class="text-2xl font-mono font-bold text-amber-400">03</span>
+                            <p class="text-sm font-medium text-slate-200">Architecture, tooling, and team shape agreed before the first sprint.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-content-2" class="tab-content hidden grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs font-mono font-bold tracking-widest text-amber-400/80 uppercase">EXECUTION TEAM</span>
+                        <h3 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">Dedicated senior pod.</h3>
+                        <p class="text-xs font-mono text-purple-300">Zero junior overhead, 100% full-stack mastery.</p>
+                        <p class="text-sm text-neutral-300 leading-relaxed font-sans max-w-lg">
+                            We deploy hand-picked senior engineers matched precisely to your stack requirements. They integrate into your Slack, Jira, and daily standups as core team members.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4">
+                        <div class="p-6 rounded-2xl bg-[#0a0512]/60 border border-[#1b122c] flex items-start gap-6">
+                            <span class="text-2xl font-mono font-bold text-amber-400">01</span>
+                            <p class="text-sm font-medium text-slate-200">Full-time dedicated developers assigned exclusively to your repository.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-[#0a0512]/60 border border-[#1b122c] flex items-start gap-6">
+                            <span class="text-2xl font-mono font-bold text-amber-400">02</span>
+                            <p class="text-sm font-medium text-slate-200">Direct Slack/Teams integration with continuous real-time communication.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-content-3" class="tab-content hidden grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs font-mono font-bold tracking-widest text-amber-400/80 uppercase">GOVERNANCE</span>
+                        <h3 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">Proactive management.</h3>
+                        <p class="text-xs font-mono text-purple-300">Weekly written updates & velocity tracking.</p>
+                        <p class="text-sm text-neutral-300 leading-relaxed font-sans max-w-lg">
+                            You never have to guess what got shipped. We manage sprint milestones, unblock technical bottlenecks, and maintain clear documentation throughout every cycle.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4">
+                        <div class="p-6 rounded-2xl bg-[#0a0512]/60 border border-[#1b122c] flex items-start gap-6">
+                            <span class="text-2xl font-mono font-bold text-amber-400">01</span>
+                            <p class="text-sm font-medium text-slate-200">Clear written status reports detailing shipped features & roadblocks.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-[#0a0512]/60 border border-[#1b122c] flex items-start gap-6">
+                            <span class="text-2xl font-mono font-bold text-amber-400">02</span>
+                            <p class="text-sm font-medium text-slate-200">Bi-weekly executive syncs with Gull Web technical directors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-content-4" class="tab-content hidden grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs font-mono font-bold tracking-widest text-amber-400/80 uppercase">RELIABILITY</span>
+                        <h3 class="text-2xl sm:text-4xl font-bold text-white tracking-tight">Redundant by design.</h3>
+                        <p class="text-xs font-mono text-purple-300">Shadow leads ready to step in anytime.</p>
+                        <p class="text-sm text-neutral-300 leading-relaxed font-sans max-w-lg">
+                            Key-person dependency is a risk of the past. Gull Web maintains shadow tech leads on every account who can seamlessly step in without losing momentum.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-6 space-y-4">
+                        <div class="p-6 rounded-2xl bg-[#0a0512]/60 border border-[#1b122c] flex items-start gap-6">
+                            <span class="text-2xl font-mono font-bold text-amber-400">01</span>
+                            <p class="text-sm font-medium text-slate-200">Shadow engineers keeping track of your code base architecture.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-[#0a0512]/60 border border-[#1b122c] flex items-start gap-6">
+                            <span class="text-2xl font-mono font-bold text-amber-400">02</span>
+                            <p class="text-sm font-medium text-slate-200">Zero downtime delivery guarantee during engineer vacations or sick leave.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="w-full py-20 px-4 sm:px-8 relative overflow-hidden">
+
+        <div class="absolute -bottom-32 -left-32 w-80 h-80 bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+
+            <header class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-[#1b122c]">
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-purple-400 uppercase">
+                        <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                        WHY GULL WEB
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+                        Six reasons teams stay past the pilot.
+                    </h2>
+                </div>
+                <p class="text-xs sm:text-sm font-mono text-slate-400 max-w-sm lg:text-right leading-relaxed">
+                    The shortlist we get praised about on every call — what actually separates <strong class="text-amber-400">Gull Web</strong> from a dev shop.
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+
+                <article class="p-8 rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 space-y-4 group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl sm:text-4xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">01</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-300 transition-colors">Time-zone aligned</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm font-mono text-slate-400 leading-relaxed pl-12">
+                        Nearshore teams in aligned time zones — your working day, not an overnight handoff.
+                    </p>
+                </article>
+
+                <article class="p-8 rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 space-y-4 group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl sm:text-4xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">02</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-300 transition-colors">Senior by default</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm font-mono text-slate-400 leading-relaxed pl-12">
+                        Hired for seniority, tested for expertise. No junior-heavy pods or hidden learning curves.
+                    </p>
+                </article>
+
+                <article class="p-8 rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 space-y-4 group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl sm:text-4xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">03</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-300 transition-colors">Flex up or down</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm font-mono text-slate-400 leading-relaxed pl-12">
+                        Scale team shape to match roadmap — ramp in a week, wind down cleanly with zero penalties.
+                    </p>
+                </article>
+
+                <article class="p-8 rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 space-y-4 group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl sm:text-4xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">04</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-300 transition-colors">Agile, written down</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm font-mono text-slate-400 leading-relaxed pl-12">
+                        Structured sprints, written status that says what's shipped and what isn't with complete honesty.
+                    </p>
+                </article>
+
+                <article class="p-8 rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 space-y-4 group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl sm:text-4xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">05</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-300 transition-colors">Predictable billing</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm font-mono text-slate-400 leading-relaxed pl-12">
+                        Monthly cadence, stopped any time, no multi-year platform lock-ins or hidden fees.
+                    </p>
+                </article>
+
+                <article class="p-8 rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-300 space-y-4 group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl sm:text-4xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">06</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-300 transition-colors">Proven model</h3>
+                    </div>
+                    <p class="text-xs sm:text-sm font-mono text-slate-400 leading-relaxed pl-12">
+                        Years of engagements across fintech, healthcare, commerce, logistics, and web development.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<!-- Tab Switching Script -->
+<script>
+    function switchTab(index) {
+        document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('text-amber-400', 'border-b-2', 'border-amber-400');
+            btn.classList.add('text-slate-400');
+            btn.querySelector('span').className = 'text-slate-500 font-bold';
+        });
+
+        document.getElementById(`tab-content-${index}`).classList.remove('hidden');
+
+        const activeBtn = document.getElementById(`tab-btn-${index}`);
+        activeBtn.classList.remove('text-slate-400');
+        activeBtn.classList.add('text-amber-400', 'border-b-2', 'border-amber-400');
+        activeBtn.querySelector('span').className = 'text-amber-400 font-bold';
+    }
+</script>
+
+<!-- ========================================================= -->
+<!-- GULL WEB — NEXT-GEN INSIGHTS & ENGINEERING BENCH -->
+<!-- ========================================================= -->
+
+<section class="w-full bg-[#040208] text-white font-sans py-24 px-4 sm:px-8 relative overflow-hidden border-b border-[#1b122c] selection:bg-purple-500 selection:text-white">
+
+    <div class="absolute -top-40 left-1/3 w-[500px] h-[500px] bg-purple-900/15 rounded-full blur-[160px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 right-10 w-[450px] h-[450px] bg-amber-500/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto space-y-14 relative z-10">
+
+        <header class="space-y-8 pb-8 border-b border-[#1b122c]">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 text-[11px] font-mono font-bold tracking-widest text-purple-400 uppercase">
+                        <span class="w-2 h-2 rounded-full bg-purple-400 animate-ping"></span>
+                        INSIGHTS & PERSPECTIVES
+                    </div>
+
+                    <h2 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
+                        Writing from our <br class="hidden sm:inline" />
+                        <span class="bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent">engineering bench.</span>
+                    </h2>
+                </div>
+
+                <a href="#" class="inline-flex items-center gap-3 px-5 py-2.5 rounded-xl bg-[#0a0512] border border-[#26173d] hover:border-amber-400/50 text-xs font-mono font-bold tracking-widest text-amber-400 hover:text-white uppercase transition-all duration-300 hover:shadow-[0_0_20px_rgba(245,158,11,0.2)] group">
+                    <span>EXPLORE ALL ARTICLES</span>
+                    <span class="transform group-hover:translate-x-1.5 transition-transform duration-300 text-sm">→</span>
+                </a>
+            </div>
+
+            <div class="flex items-center gap-3 overflow-x-auto no-scrollbar pt-4">
+                <button onclick="filterCategory('all')" id="btn-all" class="filter-btn active-filter text-xs font-mono font-bold px-4 py-2 rounded-lg border border-amber-400 bg-amber-400/10 text-amber-300 transition-all">
+                    ALL POSTS
+                </button>
+                <button onclick="filterCategory('healthcare')" id="btn-healthcare" class="filter-btn text-xs font-mono font-bold px-4 py-2 rounded-lg border border-[#1b122c] bg-[#0a0512] text-slate-400 hover:text-white hover:border-purple-500/40 transition-all">
+                    HEALTHCARE
+                </button>
+                <button onclick="filterCategory('ai')" id="btn-ai" class="filter-btn text-xs font-mono font-bold px-4 py-2 rounded-lg border border-[#1b122c] bg-[#0a0512] text-slate-400 hover:text-white hover:border-purple-500/40 transition-all">
+                    AI & TECH
+                </button>
+                <button onclick="filterCategory('saas')" id="btn-saas" class="filter-btn text-xs font-mono font-bold px-4 py-2 rounded-lg border border-[#1b122c] bg-[#0a0512] text-slate-400 hover:text-white hover:border-purple-500/40 transition-all">
+                    ENTERPRISE SAAS
+                </button>
+            </div>
+        </header>
+
+
+        <article class="post-item group relative bg-[#0a0512]/80 border border-[#1b122c] hover:border-amber-500/40 rounded-3xl p-6 sm:p-10 transition-all duration-500 hover:shadow-[0_20px_50px_-15px_rgba(139,63,224,0.3)] backdrop-blur-xl" data-category="healthcare">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+                <div class="lg:col-span-6 relative rounded-2xl overflow-hidden bg-[#040208] border border-[#23173d] aspect-[16/10] group-hover:border-purple-500/40 transition-colors">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040208] via-transparent to-transparent z-10 opacity-70"></div>
+
+                    <div class="absolute top-5 left-5 z-20 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#040208]/80 backdrop-blur-md border border-amber-400/40 text-[10px] font-mono font-bold tracking-widest text-amber-300 uppercase shadow-lg">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        FEATURED ARCHITECTURE
+                    </div>
+
+                    <div class="w-full h-full bg-gradient-to-br from-purple-950/70 via-[#0a0512] to-amber-950/30 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-700">
+                        <div class="w-full max-w-md p-5 rounded-2xl bg-[#040208]/90 border border-purple-500/30 shadow-2xl space-y-3 font-mono text-xs text-slate-300 relative">
+
+                            <div class="flex items-center justify-between pb-3 border-b border-purple-900/40">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                                    <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                                    <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                                </div>
+                                <span class="text-[10px] text-purple-400 font-semibold">gullweb-healthcare-v2.ts</span>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="https://gull-empire.github.io/gull-web-tech/image/Cardiovascular-Imaging-gull-web.jpg" alt="Healthcare Software Architecture Diagram" loading="lazy" />
+                            </div>
+
+                            <div class="absolute -bottom-2 -right-2 w-16 h-16 bg-amber-400/20 rounded-full blur-xl pointer-events-none"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="flex items-center gap-3 text-xs font-mono tracking-wider">
+                        <span class="px-2.5 py-1 rounded bg-purple-950 border border-purple-800/50 text-purple-300 font-bold uppercase">HEALTHCARE</span>
+                        <span class="text-slate-600">•</span>
+                        <span class="text-slate-400">JULY 31, 2026</span>
+                    </div>
+
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-white group-hover:text-amber-300 transition-colors leading-tight">
+                        Best Healthcare Software Development Agency in the USA (2026)
+                    </h3>
+
+                    <p class="text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
+                        Compare the top healthcare software development agencies in the USA by HIPAA architecture, seamless EHR integrations, clinical UX standards, and verified performance.
+                    </p>
+
+                    <div class="pt-4 flex items-center gap-4">
+                        <a href="#" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#040208] font-mono font-black text-xs uppercase tracking-widest transition-all shadow-[0_0_20px_rgba(245,158,11,0.3)]">
+                            READ THE POST <span class="text-sm">→</span>
+                        </a>
+                        <span class="text-xs font-mono text-slate-500">8 MIN READ</span>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+
+        <div class="space-y-4">
+
+            <article class="post-item group block p-6 sm:p-7 rounded-2xl bg-[#0a0512]/50 border border-[#1b122c] hover:border-purple-500/50 hover:bg-[#0a0512] transition-all duration-300" data-category="healthcare">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="flex items-start md:items-center gap-6">
+                        <span class="text-2xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">02</span>
+                        <div class="space-y-1.5">
+                            <div class="flex items-center gap-3 text-xs font-mono">
+                                <span class="text-purple-400 font-bold uppercase tracking-wider">HEALTHCARE</span>
+                                <span class="text-slate-600">—</span>
+                                <span class="text-slate-400">JULY 29, 2026</span>
+                            </div>
+                            <h4 class="text-lg sm:text-xl font-bold text-slate-100 group-hover:text-amber-300 transition-colors">
+                                How to Choose a Healthcare Software Development Agency in 2026
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 self-end md:self-center">
+                        <span class="text-xs font-mono text-slate-500 hidden sm:inline">5 MIN READ</span>
+                        <div class="w-10 h-10 rounded-xl bg-[#150a28] border border-purple-900/40 flex items-center justify-center text-amber-400 group-hover:text-white group-hover:bg-purple-600 transition-all">
+                            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-item group block p-6 sm:p-7 rounded-2xl bg-[#0a0512]/50 border border-[#1b122c] hover:border-purple-500/50 hover:bg-[#0a0512] transition-all duration-300" data-category="ai">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="flex items-start md:items-center gap-6">
+                        <span class="text-2xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">03</span>
+                        <div class="space-y-1.5">
+                            <div class="flex items-center gap-3 text-xs font-mono">
+                                <span class="text-amber-400 font-bold uppercase tracking-wider">AI & TECH</span>
+                                <span class="text-slate-600">—</span>
+                                <span class="text-slate-400">JULY 28, 2026</span>
+                            </div>
+                            <h4 class="text-lg sm:text-xl font-bold text-slate-100 group-hover:text-amber-300 transition-colors">
+                                Mental Health App Development: Complete 2026 Architectural Guide
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 self-end md:self-center">
+                        <span class="text-xs font-mono text-slate-500 hidden sm:inline">12 MIN READ</span>
+                        <div class="w-10 h-10 rounded-xl bg-[#150a28] border border-purple-900/40 flex items-center justify-center text-amber-400 group-hover:text-white group-hover:bg-purple-600 transition-all">
+                            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-item group block p-6 sm:p-7 rounded-2xl bg-[#0a0512]/50 border border-[#1b122c] hover:border-purple-500/50 hover:bg-[#0a0512] transition-all duration-300" data-category="saas">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="flex items-start md:items-center gap-6">
+                        <span class="text-2xl font-mono font-black text-amber-400 group-hover:scale-110 transition-transform">04</span>
+                        <div class="space-y-1.5">
+                            <div class="flex items-center gap-3 text-xs font-mono">
+                                <span class="text-purple-400 font-bold uppercase tracking-wider">ENTERPRISE SAAS</span>
+                                <span class="text-slate-600">—</span>
+                                <span class="text-slate-400">JULY 27, 2026</span>
+                            </div>
+                            <h4 class="text-lg sm:text-xl font-bold text-slate-100 group-hover:text-amber-300 transition-colors">
+                                AI in Healthcare: How Startups Are Building the Next Generation of Health Tech
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 self-end md:self-center">
+                        <span class="text-xs font-mono text-slate-500 hidden sm:inline">9 MIN READ</span>
+                        <div class="w-10 h-10 rounded-xl bg-[#150a28] border border-purple-900/40 flex items-center justify-center text-amber-400 group-hover:text-white group-hover:bg-purple-600 transition-all">
+                            <span class="transform group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Category Filtering Script -->
+<script>
+    function filterCategory(category) {
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.className = 'filter-btn text-xs font-mono font-bold px-4 py-2 rounded-lg border border-[#1b122c] bg-[#0a0512] text-slate-400 hover:text-white hover:border-purple-500/40 transition-all';
+        });
+
+        const activeBtn = document.getElementById(`btn-${category}`);
+        if(activeBtn) {
+            activeBtn.className = 'filter-btn active-filter text-xs font-mono font-bold px-4 py-2 rounded-lg border border-amber-400 bg-amber-400/10 text-amber-300 transition-all';
+        }
+
+        const posts = document.querySelectorAll('.post-item');
+        posts.forEach(post => {
+            if(category === 'all' || post.getAttribute('data-category') === category) {
+                post.style.display = 'block';
+            } else {
+                post.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+
+<!-- ========================================================= -->
+<!-- GULL WEB — FREQUENTLY ASKED QUESTIONS -->
+<!-- ========================================================= -->
+
+<section class="w-full bg-[#040208] text-white font-sans py-24 px-4 sm:px-8 relative overflow-hidden border-b border-[#1b122c] selection:bg-purple-500 selection:text-white">
+
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-900/15 rounded-full blur-[150px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-500/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto space-y-16 relative z-10">
+
+        <header class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-[#1b122c]">
+            <div class="space-y-3 max-w-2xl">
+                <div class="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 text-[11px] font-mono font-bold tracking-widest text-purple-400 uppercase">
+                    <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+                    QUESTIONS & CLARITY
+                </div>
+
+                <h2 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
+                    Frequently asked, <br class="hidden sm:inline" />
+                    <span class="bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent">honestly answered.</span>
+                </h2>
+            </div>
+
+            <p class="text-xs sm:text-sm font-mono text-slate-400 max-w-md lg:text-right leading-relaxed">
+                The exact questions CTOs and product leads ask us on every intro call — addressed direct, without agency fluff.
+            </p>
+        </header>
+
+        <div class="max-w-5xl mx-auto space-y-4">
+
+            <div class="faq-item is-open rounded-2xl bg-[#0a0512]/70 border border-amber-500/40 transition-all duration-500 shadow-[0_0_25px_rgba(245,158,11,0.08)]">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
+                    <div class="flex items-center gap-5 sm:gap-8">
+                        <span class="font-mono text-sm sm:text-base font-bold text-amber-400">01</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-300 transition-colors">
+                            What should you know about Gull Web?
+                        </h3>
+                    </div>
+
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out rotate-45 text-amber-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </button>
+
+                <div class="faq-accordion-grid grid grid-rows-[1fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            Gull Web is a high-velocity engineering and marketplace architecture firm. We blend nearshore cost efficiency with strict onshore delivery standards — zero timezone friction, zero language barriers, and absolute ownership over your codebase.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-500">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
+                    <div class="flex items-center gap-5 sm:gap-8">
+                        <span class="font-mono text-sm sm:text-base font-bold text-amber-400">02</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
+                            What types of projects do you specialize in?
+                        </h3>
+                    </div>
+
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out text-purple-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </button>
+
+                <div class="faq-accordion-grid grid grid-rows-[0fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            We build custom web platforms, complex enterprise Next.js applications, automated marketplace management architectures (including Amazon FBA infrastructure), and scalable backend APIs built for high throughput.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-500">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
+                    <div class="flex items-center gap-5 sm:gap-8">
+                        <span class="font-mono text-sm sm:text-base font-bold text-amber-400">03</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
+                            Where are your developers located and what time zone do they work in?
+                        </h3>
+                    </div>
+
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out text-purple-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </button>
+
+                <div class="faq-accordion-grid grid grid-rows-[0fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            Our engineering hubs are strategically aligned to overlap directly with US Eastern and European working hours. You get full real-time daily collaboration without overnight delays or waiting for email updates.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-500">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
+                    <div class="flex items-center gap-5 sm:gap-8">
+                        <span class="font-mono text-sm sm:text-base font-bold text-amber-400">04</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
+                            What's your pricing structure?
+                        </h3>
+                    </div>
+
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out text-purple-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </button>
+
+                <div class="faq-accordion-grid grid grid-rows-[0fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            We operate on predictable monthly retainers or dedicated team sprints. No hidden platform markups, no rigid multi-year lock-ins. You pay for pure senior execution with complete flexibility to scale up or down.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item rounded-2xl bg-[#0a0512]/40 border border-[#1b122c] hover:border-purple-500/40 transition-all duration-500">
+                <button onclick="toggleFaq(this)" class="w-full p-6 sm:p-7 text-left flex items-center justify-between gap-6 group cursor-pointer">
+                    <div class="flex items-center gap-5 sm:gap-8">
+                        <span class="font-mono text-sm sm:text-base font-bold text-amber-400">05</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-slate-200 group-hover:text-white transition-colors">
+                            Do you offer guarantees or quality assurance?
+                        </h3>
+                    </div>
+
+                    <div class="faq-icon-wrapper w-8 h-8 rounded-full bg-purple-950/80 border border-purple-500/30 flex items-center justify-center transition-transform duration-500 ease-in-out text-purple-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path>
+                        </svg>
+                    </div>
+                </button>
+
+                <div class="faq-accordion-grid grid grid-rows-[0fr] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                    <div class="overflow-hidden">
+                        <div class="px-6 pb-7 sm:px-7 sm:pb-8 pl-16 sm:pl-23 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans max-w-3xl">
+                            Every sprint undergoes automated CI/CD pipeline tests, code peer-reviews, and dedicated QA verification. We guarantee clean, production-ready code that meets enterprise security standards before any pull request is merged.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Smooth Toggle JavaScript -->
+<script>
+    function toggleFaq(btn) {
+        const item = btn.closest('.faq-item');
+        const grid = item.querySelector('.faq-accordion-grid');
+        const iconWrapper = item.querySelector('.faq-icon-wrapper');
+        const isOpen = item.classList.contains('is-open');
+
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+            otherItem.classList.remove('is-open', 'bg-[#0a0512]/70', 'border-amber-500/40', 'shadow-[0_0_25px_rgba(245,158,11,0.08)]');
+            otherItem.classList.add('bg-[#0a0512]/40', 'border-[#1b122c]');
+
+            const otherGrid = otherItem.querySelector('.faq-accordion-grid');
+            const otherIcon = otherItem.querySelector('.faq-icon-wrapper');
+
+            otherGrid.classList.remove('grid-rows-[1fr]');
+            otherGrid.classList.add('grid-rows-[0fr]');
+
+            otherIcon.classList.remove('rotate-45', 'text-amber-400');
+            otherIcon.classList.add('text-purple-400');
+        });
+
+        if (!isOpen) {
+            item.classList.add('is-open', 'bg-[#0a0512]/70', 'border-amber-500/40', 'shadow-[0_0_25px_rgba(245,158,11,0.08)]');
+            item.classList.remove('bg-[#0a0512]/40', 'border-[#1b122c]');
+
+            grid.classList.remove('grid-rows-[0fr]');
+            grid.classList.add('grid-rows-[1fr]');
+
+            iconWrapper.classList.add('rotate-45', 'text-amber-400');
+            iconWrapper.classList.remove('text-purple-400');
+        }
+    }
+</script>
+
+<!-- ========================================================= -->
+<!-- GULL WEB — HIGH-IMPACT CALL TO ACTION (CTA) BANNER -->
+<!-- ========================================================= -->
+
+<section class="w-full relative overflow-hidden bg-gradient-to-br from-[#4c1d95] via-[#2e1065] to-[#1e1b4b] py-20 px-6 sm:px-12 border-y border-purple-500/30 selection:bg-amber-400 selection:text-black">
+
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:32px_32px] opacity-40"></div>
+
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-purple-400/25 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-amber-400/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10 space-y-10">
+
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[11px] font-mono font-bold tracking-widest text-amber-300 uppercase">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            LET'S TALK ARCHITECTURE
+        </div>
+
+        <div class="space-y-8">
+            <h2 class="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight leading-none max-w-4xl">
+                Put a senior team <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-300">on your product.</span>
+            </h2>
+
+            <div class="w-full h-[1px] bg-gradient-to-r from-white/30 via-purple-300/20 to-transparent"></div>
+
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pt-2">
+
+                <p class="text-base sm:text-lg text-purple-100 font-sans max-w-xl font-normal leading-relaxed">
+                    Tell us what you're building. You'll be talking directly to a senior systems architect within 24 hours — zero sales decks, zero fluff.
+                </p>
+
+                <a href="#contact" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-[#040208] font-mono font-extrabold text-sm tracking-widest uppercase transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(245,158,11,0.35)] group">
+                    <span>SCHEDULE A CALL</span>
+                    <span class="transform group-hover:translate-x-1.5 transition-transform duration-300 text-lg">→</span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Start: Enterprise Dark Luxury Footer -->
+<footer class="w-full footer-glow text-slate-400 border-t border-borderViolet pt-12 md:pt-16 pb-8 relative overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-0 pb-12">
+
+            <div class="md:col-span-4 md:pr-8 space-y-5 md:border-r border-borderViolet">
+                <a href="#" class="inline-flex items-center shrink-0 group">
+                    <img src="https://gull-empire.github.io/gull-web-tech/ChatGPT_Image_Jul_30__2026__03_45_34_AM-removebg-preview.png" alt="Gull Empire Logo"
+                         class="h-9 sm:h-11 w-auto object-contain filter drop-shadow-[0_0_15px_rgba(139,63,224,0.35)] group-hover:scale-105 transition-all duration-300">
+                </a>
+
+                <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                    Building core scalable AI solutions, deep learning models, and production-grade architectures for modern global enterprises.
+                </p>
+
+                <div class="pt-2">
+                    <h5 class="text-[10px] uppercase font-bold tracking-widest text-brandGold mb-2">Headquarters</h5>
+                    <p class="text-xs text-slate-300 font-mono">Sarai Alamgir, Punjab<br>Pakistan</p>
+                </div>
+
+                <div class="flex items-center gap-3 pt-2">
+                    <a href="https://www.linkedin.com/in/abdullah-gull-amazon/" class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-brandGold hover:border-brandGold/50 transition">
+                        <i class="fa-brands fa-linkedin-in text-xs"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-brandGold hover:border-brandGold/50 transition">
+                        <i class="fa-brands fa-github text-xs"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-brandGold hover:border-brandGold/50 transition">
+                        <i class="fa-brands fa-x-twitter text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+
+                <div class="border-b md:border-b-0 md:border-r border-borderViolet py-4 md:py-0 md:px-6">
+                    <div class="accordion-header flex justify-between items-center cursor-pointer md:cursor-default mb-4">
+                        <h4 class="font-heading font-extrabold text-xs uppercase tracking-wider text-white flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brandGold"></span> Services
+                        </h4>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-500 md:hidden toggle-icon transition-transform"></i>
+                    </div>
+                    <ul class="mobile-accordion-content space-y-2.5 text-xs font-medium md:block">
+                        <li><a href="#" class="footer-link inline-block">All Services</a></li>
+                        <li><a href="#" class="footer-link inline-block">Dedicated Teams</a></li>
+                        <li><a href="#" class="footer-link inline-block">Software Staffing</a></li>
+                        <li><a href="#" class="footer-link inline-block">Project Management</a></li>
+                        <li><a href="#" class="footer-link inline-block">Virtual CTO</a></li>
+                        <li><a href="#" class="footer-link inline-block">Shopify Plus Agency</a></li>
+                        <li><a href="#" class="footer-link inline-block">Voice Chatbots</a></li>
+                        <li><a href="#" class="footer-link inline-block">Enterprise Search</a></li>
+                    </ul>
+                </div>
+
+                <div class="border-b md:border-b-0 md:border-r border-borderViolet py-4 md:py-0 md:px-6">
+                    <div class="accordion-header flex justify-between items-center cursor-pointer md:cursor-default mb-4">
+                        <h4 class="font-heading font-extrabold text-xs uppercase tracking-wider text-white flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brandViolet"></span> Expertise
+                        </h4>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-500 md:hidden toggle-icon transition-transform"></i>
+                    </div>
+                    <ul class="mobile-accordion-content space-y-2.5 text-xs font-medium md:block">
+                        <li><a href="#" class="footer-link inline-block">Artificial Intelligence</a></li>
+                        <li><a href="#" class="footer-link inline-block">Custom Software Dev</a></li>
+                        <li><a href="#" class="footer-link inline-block">Web App Development</a></li>
+                        <li><a href="#" class="footer-link inline-block">Mobile Development</a></li>
+                        <li><a href="#" class="footer-link inline-block">AI Chatbots</a></li>
+                        <li><a href="#" class="footer-link inline-block">Data Engineering</a></li>
+                        <li><a href="#" class="footer-link inline-block">Cloud Services</a></li>
+                        <li><a href="#" class="footer-link inline-block">Industry Expertise</a></li>
+                    </ul>
+                </div>
+
+                <div class="border-b md:border-b-0 md:border-r border-borderViolet py-4 md:py-0 md:px-6">
+                    <div class="accordion-header flex justify-between items-center cursor-pointer md:cursor-default mb-4">
+                        <h4 class="font-heading font-extrabold text-xs uppercase tracking-wider text-white flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brandGold"></span> About
+                        </h4>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-500 md:hidden toggle-icon transition-transform"></i>
+                    </div>
+                    <ul class="mobile-accordion-content space-y-2.5 text-xs font-medium md:block">
+                        <li><a href="#" class="footer-link inline-block">Clients</a></li>
+                        <li><a href="#" class="footer-link inline-block">Join Us</a></li>
+                        <li><a href="#" class="footer-link inline-block">Values</a></li>
+                        <li><a href="#" class="footer-link inline-block">About Us</a></li>
+                        <li><a href="#" class="footer-link inline-block">Awards</a></li>
+                        <li><a href="#" class="footer-link inline-block">Referral Program</a></li>
+                    </ul>
+                </div>
+
+                <div class="py-4 md:py-0 md:pl-6">
+                    <div class="accordion-header flex justify-between items-center cursor-pointer md:cursor-default mb-4">
+                        <h4 class="font-heading font-extrabold text-xs uppercase tracking-wider text-white flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brandViolet"></span> Resources
+                        </h4>
+                        <i class="fa-solid fa-chevron-down text-xs text-slate-500 md:hidden toggle-icon transition-transform"></i>
+                    </div>
+                    <ul class="mobile-accordion-content space-y-2.5 text-xs font-medium md:block">
+                        <li><a href="#" class="footer-link inline-block">Why Outsource</a></li>
+                        <li><a href="#" class="footer-link inline-block">Why Nearshore</a></li>
+                        <li><a href="#" class="footer-link inline-block">Insights</a></li>
+                        <li><a href="#" class="footer-link inline-block">Newsletter</a></li>
+                        <li><a href="#" class="footer-link inline-block">Tools</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="pt-8 border-t border-borderViolet flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brandViolet/10 text-brandGold border border-brandGold/30 font-semibold text-[11px]">
+                    <i class="fa-solid fa-shield-halved text-xs"></i> SOC 2 Compliant
+                </span>
+                <a href="#" class="text-slate-400 hover:text-white transition underline decoration-brandViolet underline-offset-4">See how we handle your data</a>
+            </div>
+
+            <div class="text-slate-500 font-mono text-[11px] text-center sm:text-right">
+                © 2026 <span class="text-slate-300 font-semibold">Gull Empire</span>. All Rights Reserved. | <a href="#" class="hover:text-slate-300 transition">Privacy Policy</a>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+<!-- End: Enterprise Dark Luxury Footer -->
+
+<script>
+(function(){
+  "use strict";
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.addEventListener('DOMContentLoaded', function(){
+    if (!reduceMotion && window.gsap) {
+      gsap.from(".hero-el", { y: 18, duration: .5, stagger: .08, ease: "power2.out" });
+      gsap.from(".cap-card", { y: 18, duration: .5, stagger: .1, delay: .2, ease: "power2.out" });
+    }
+  });
+
+  var canvas = document.getElementById('neuralCanvas');
+  var ctx = canvas.getContext('2d', { alpha: true });
+  var nodes = [], nodeCount = 26, raf;
+
+  function resizeCanvas(){
+    var r = canvas.parentElement.getBoundingClientRect();
+    canvas.width = r.width; canvas.height = r.height;
+  }
+  function seedNodes(){
+    nodes.length = 0;
+    for (var i=0;i<nodeCount;i++){
+      nodes.push({
+        x: Math.random()*canvas.width, y: Math.random()*canvas.height,
+        vx:(Math.random()-.5)*.7, vy:(Math.random()-.5)*.7, r: Math.random()*3+2
+      });
+    }
+  }
+  resizeCanvas(); seedNodes();
+
+  var resizeTimer;
+  window.addEventListener('resize', function(){
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function(){ resizeCanvas(); }, 150);
+  }, { passive:true });
+
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    for (var i=0;i<nodes.length;i++){
+      for (var j=i+1;j<nodes.length;j++){
+        var dx=nodes[i].x-nodes[j].x, dy=nodes[i].y-nodes[j].y;
+        var dist=Math.sqrt(dx*dx+dy*dy);
+        if (dist<110){
+          ctx.beginPath();
+          ctx.moveTo(nodes[i].x,nodes[i].y);
+          ctx.lineTo(nodes[j].x,nodes[j].y);
+          ctx.strokeStyle = 'rgba(139,63,224,'+(1-dist/110)*0.7+')';
+          ctx.lineWidth = .8;
+          ctx.stroke();
+        }
+      }
+    }
+    nodes.forEach(function(n){
+      n.x+=n.vx; n.y+=n.vy;
+      if (n.x<0||n.x>canvas.width) n.vx*=-1;
+      if (n.y<0||n.y>canvas.height) n.vy*=-1;
+      ctx.beginPath();
+      ctx.arc(n.x,n.y,n.r,0,Math.PI*2);
+      ctx.fillStyle = '#dba54e';
+      ctx.fill();
+    });
+    raf = requestAnimationFrame(draw);
+  }
+  draw();
+
+  var navItems = Array.prototype.slice.call(document.querySelectorAll('.nav-item'));
+  var megaContainer = document.getElementById('megaContainer');
+  var megaScrim = document.getElementById('megaScrim');
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.mega-content'));
+
+  function closeMega(){
+    navItems.forEach(function(i){ i.classList.remove('open'); });
+    megaContainer.classList.remove('open');
+    megaScrim.classList.remove('show');
+  }
+  function openMega(item, key){
+    navItems.forEach(function(i){ i.classList.remove('open'); });
+    panels.forEach(function(p){ p.style.display = (p.id === 'panel-'+key) ? 'grid' : 'none'; });
+    item.classList.add('open');
+    megaContainer.classList.add('open');
+    megaScrim.classList.add('show');
+  }
+  navItems.forEach(function(item){
+    var trigger = item.querySelector('.nav-trigger');
+    if (!trigger) return;
+    trigger.addEventListener('click', function(e){
+      e.stopPropagation();
+      var key = trigger.getAttribute('data-panel');
+      var isOpen = item.classList.contains('open');
+      isOpen ? closeMega() : openMega(item, key);
+    });
+  });
+  document.addEventListener('click', closeMega);
+  megaContainer.addEventListener('click', function(e){ e.stopPropagation(); });
+  megaScrim.addEventListener('click', closeMega);
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMega(); });
+
+  var hamburgerBtn = document.getElementById('hamburgerBtn');
+  var closeMobileBtn = document.getElementById('closeMobileBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var mobileOverlay = document.getElementById('mobileOverlay');
+
+  function openMobile(){
+    mobileMenu.classList.remove('translate-x-full');
+    mobileOverlay.classList.remove('opacity-0','pointer-events-none');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobile(){
+    mobileMenu.classList.add('translate-x-full');
+    mobileOverlay.classList.add('opacity-0','pointer-events-none');
+    document.body.style.overflow = '';
+  }
+  hamburgerBtn.addEventListener('click', openMobile);
+  closeMobileBtn.addEventListener('click', closeMobile);
+  mobileOverlay.addEventListener('click', closeMobile);
+
+  document.querySelectorAll('.mobile-acc-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var wasOpen = btn.classList.contains('open');
+      document.querySelectorAll('.mobile-acc-btn').forEach(function(b){ b.classList.remove('open'); });
+      if (!wasOpen) btn.classList.add('open');
+    });
+  });
+
+  document.querySelectorAll('.accordion-header').forEach(function(header){
+    header.addEventListener('click', function(){
+      if (window.innerWidth < 768) {
+        var content = header.nextElementSibling;
+        var icon = header.querySelector('.toggle-icon');
+        var isOpen = content.classList.contains('active');
+
+        document.querySelectorAll('.mobile-accordion-content').forEach(function(c){ c.classList.remove('active'); });
+        document.querySelectorAll('.toggle-icon').forEach(function(i){ i.style.transform = 'rotate(0deg)'; });
+
+        if (!isOpen) {
+          content.classList.add('active');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
